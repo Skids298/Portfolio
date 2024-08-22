@@ -6,90 +6,98 @@
         <meta name="viewport" content="width=device-width" />
         <style>
             /* colors to remember 
-                    #4aaec3  lightblue of computer screen
-                    #2F6D87  darkblue of computer screen
-                    #3D8EA5  mid point of both
-                    #d0ad8c  beige color of banner
+            #D0AD8C beige
+            #6C563B brown
+            #4A703C darker green
+            #92A06A lighter green
+            #577D8B blue accent
             */
             header{
-                background-color: white;
                 color: white;
             }
-            .menu{
-                text-align: center;
-                background-color: #4aaec3;
-                color: black;
-                border: solid;
-                border-color: black;
+            .header-text{
                 display: grid;
-                grid-auto-flow: column;
-                
-            }            
-            .link{
+                place-content: center;
+                position: relative;
+                height: 80svh;
+                overflow-x: clip;
+                z-index: 1;
+                opacity: 0.5;
+                animation: fade-in-out linear forwards;
+                animation-timeline: view();
+                animation-range: exit;
+            }
+            @keyframes fade-in-out{
+                25%{opacity: 1;}
+                85%, 100% {opacity: 0;}
+            }
+            .header-image{
+                grid-column: 1/-1;
+                position: absolute;
+                inset:0;
+                height: auto;
+                width: 100%;
+                z-index: -1;
+                animation: fade-out-picture linear forwards;
+                animation-timeline: view();
+                animation-range: exit;
+                opacity: 1;
+            }
+            @keyframes fade-out-picture{
+                to {opacity: 0;}
+            }
+            
+            body{
+               background-color: #92A06A; 
+            }
+            .Self-image{
                 display: block;
                 margin-left: auto;
+                margin-top: 5cm;
                 margin-right: auto;
-                width: 15%;
-                text-decoration: none;
-                color: black;
+                animation: fade-in linear forwards;
+                animation-timeline: view();
+                animation-range: entry;
+            }
+            @keyframes fade-in{
+                from {scale: .8; opacity: 0}   
+                to {scale: 1; opacity:1}
             }
             .body{
-                background-color: #d0ad8c;
                 border: black;
-
+                flex-wrap: wrap;
                 display: flex;
                 flex-direction: row;
-                flex-wrap: wrap;
                 justify-content: space-evenly;
                 align-items: stretch;
                 align-content: space-around;
             }
-            .center {
-                background-color: #d0ad8c;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 15%;
-            }
             .text{
-                margin-left: 4cm;
-                margin-right: 4cm;
-            }
-            .H2{
-                text-align: left;
+                margin-left: 10cm;
+                margin-right: 10cm;
             }
             .experience{
+                background-color: #92A06A;
                 display: flex;
                 justify-content: space-around;
-                flex-grow: 3;
+                flex-grow: 2;
             }
-            .discription{
-                text-align: left;
-            }
+            
+
+
         </style>
     </head>
     <body>
        <header>
-        <img src="C:\Users\noell\Documents\UMHB\Semester 8\Internship\computer banner.png"  width="100%">
-        
-        <!--this is a block for my menu bar-->
-        <!--<div class="menu">
-            <div>
-                <a class="link" href="Home.hmtl"><h2>Home</h2></a>                    HOME TAB DOES NOT WORK FOR SOME REASON, FIX
-            </div>
-            <div>
-                <a class="link" href="About.html"><h2>About</h2></a>
-            </div>
-            <div>
-                <a class="link" href="Socials.html"><h2>Socials</h2></a>
-            </div>
-
-        </div>-->
-         
+        <H1 class="header-text">RESUME <br> Noelle de Vries</H1>
+        <img class="header-image" 
+        src="C:\Users\noell\Documents\UMHB\Semester 8\Internship\Online resume Noelle de Vries.png"  width="100%">
        </header>
        
        <body>
-        <img src="C:\Users\noell\Pictures\Saved Pictures\Picture1.jpg" class="center">
+        <img class="Self-image" src="C:\Users\noell\Pictures\Saved Pictures\Picture1.jpg">
+        
+        <!--INTRODUCTION-->
         <div class="body">
             <div class="text">
                 <p>My name is Noelle de Vries and I was born and raised in The Netherlands.
@@ -102,7 +110,12 @@
                 Since, I am enjoying my time in the US so much I hope to figure out a way to move here permenantly.  
                 </p>
             </div>
-            <div class="H2">
+        </div>
+        
+        <!--EDUCATION ACCOMPLISHMENTS-->
+        <h1>Education</h1>
+        <div class="body">
+            <div>
                 <h2>Classes I have taken</h2>
                 <ul>
                     <li>Algorithms & Data Structures</li>            
@@ -120,7 +133,7 @@
                     <li>Web Development</li>                         
                 </ul>
             </div>
-            <div class="H2">
+            <div>
                 <h2>Languages learned</h2>
                 <ul>
                     <li>C</li>
@@ -134,7 +147,7 @@
                     <li>SQL</li>
                 </ul>
             </div>
-            <div class="H2">
+            <div>
                 <h2>Computer environments used and other tools</h2>
                 <ul>
                     <li>Apache Netbeans</li>
@@ -151,9 +164,11 @@
                 </ul>
             </div>
         </div>
-        <h2>Work Experience</h2>
+        
+        <!--WORK EXPERIANCE AND RESPONSIBILITIES-->
+        <h1>Work Experience</h1>
         <div class="experience">
-            <div class="discription">
+            <div>
                 <H2>Happy Pizza cook</H2>
                 <h5>October 23 2023 - August 1 2024</h5>
                 <p>
@@ -162,7 +177,7 @@
                     - Working in a fast-paced environment
                 </p>
             </div>
-            <div class="discription">
+            <div>
                 <H2>Barrow Brewing</H2>
                 <h5>March 1 2024 - August 1 2024</h5>
                 <p>
@@ -172,7 +187,17 @@
                     -	Dealing with cash on a regular basis
                 </p>
             </div>
-        </div>        
+            <div>
+                <H2>Website development intern</H2>
+                <h5>August 12 2024 - November 26 2024</h5>
+                <p>
+                    - Doing a personal project<br>
+                    - learning about flex and grid<br>
+                </p>
+            </div>
+        </div> 
+        
+        
        </body>
        
        <footer>
