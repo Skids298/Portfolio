@@ -12,9 +12,7 @@
             #92A06A lighter green
             #577D8B blue accent
             */
-            header{
-                color: white;
-            }
+
             .header-text{
                 display: grid;
                 place-content: center;
@@ -65,17 +63,8 @@
                 from {scale: .8; opacity: 0}   
                 to {scale: 1; opacity:1}
             }
-            .body{
-                flex-wrap: wrap;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                align-items: stretch;
-                align-content: space-around;
-                scroll-snap-type: y mandatory;
-                overflow-y: scroll;
-            }
-            .text{
+
+            .introduction{
                 margin-left: 10cm;
                 margin-right: 10cm;
             }
@@ -84,24 +73,51 @@
                 justify-content: space-around;
                 flex-grow: 2;
             }
+            .Education-container{
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+            .education-item{
+                flex-basis: calc(50% - 20px); 
+                margin: 10px; 
+                padding: 20px;
+            }
+
+            .Skills-level{
+                animation: appear linear forwards;
+                animation-timeline: view();
+                animation-range: entry 0 cover 45%;
+            }
+
+            @keyframes appear{
+                from{
+                    opacity: 0;
+                    transform: translateX(-100px);
+                }
+                to {
+                   opacity: 1;
+                   transform: translateX(0px);
+                }
+            }
 
         </style>
     </head>
     
     
     <body>
-       <header>
+        <header>
         <H1 class="header-text">RESUME <br> Noelle de Vries</H1>
         <img class="header-image" 
         src="C:\Users\noell\Documents\UMHB\Semester 8\Internship\Online resume Noelle de Vries.png"  width="100%">
        </header>
        
-       <body>
+        <main>
         <img class="Self-image" src="C:\Users\noell\Pictures\Saved Pictures\Picture1.jpg">
         
         <!--INTRODUCTION-->
-        <div class="body">
-            <div class="text">
+        <div>
+            <div class="introduction">
                 <p>My name is Noelle de Vries and I was born and raised in The Netherlands.
                 When I was 18 me and my family moved to Texas for my dads work.
                 Because of this I was able to achieve a bacholors degree in computer science
@@ -116,8 +132,8 @@
         
         <!--EDUCATION ACCOMPLISHMENTS-->
         <h1>Education</h1>
-        <div class="body">
-            <div>
+        <div class="Education-container">
+            <div class="education-item">
                 <h2>Classes I have taken</h2>
                 <ul>
                     <li>Algorithms & Data Structures</li>            
@@ -135,7 +151,12 @@
                     <li>Web Development</li>                         
                 </ul>
             </div>
-            <div>
+            <div class="education-item">
+                <div class="Skill-level">
+
+                </div>
+            </div>
+            <!--<div class="Skills-enter">
                 <h2>Languages learned</h2>
                 <ul>
                     <li>C</li>
@@ -146,10 +167,11 @@
                     <li>Javascript</li>
                     <li>PHP</li>
                     <li>Python</li>
+                    <li>R</li>
                     <li>SQL</li>
                 </ul>
             </div>
-            <div>
+            <div class="Skills-enter">
                 <h2>Computer environments used and other tools</h2>
                 <ul>
                     <li>Apache Netbeans</li>
@@ -164,43 +186,41 @@
                     <li>Python 3.11.4</li>
                     <li>XAMPP</li>
                 </ul>
-            </div>
+            </div>-->
         </div>
         
         <!--WORK EXPERIANCE AND RESPONSIBILITIES-->
-        <h1>Work Experience</h1>
-        <div class="experience">
-            <div>
-                <H2>Happy Pizza cook</H2>
-                <h5>October 23 2023 - August 1 2024</h5>
-                <p>
+            <h1>Work Experience</h1>
+            <div class="experience">
+                <div>
+                    <H2>Happy Pizza cook</H2>
+                    <h5>October 23 2023 - August 1 2024</h5>
+                    <p>
                     - responsible for taking orders, making pizza's, and grabbing ingredients as needed<br>
                     - ability to adapt quickly if there is a rush<br>
                     - Working in a fast-paced environment
-                </p>
-            </div>
-            <div>
-                <H2>Barrow Brewing</H2>
-                <h5>March 1 2024 - August 1 2024</h5>
-                <p>
+                    </p>
+                </div>
+                <div>
+                    <H2>Barrow Brewing</H2>
+                    <h5>March 1 2024 - August 1 2024</h5>
+                    <p>
                     -	Have knowledge and be able to describe the new beers<br>
                     -	Recommend beers to customers based on preferences<br>
                     -	Fast-paced environment, greeting customers taking orders, and preparing it<br>
                     -	Dealing with cash on a regular basis
-                </p>
-            </div>
-            <div>
-                <H2>Website development intern</H2>
-                <h5>August 12 2024 - November 26 2024</h5>
-                <p>
+                    </p>
+                </div>
+                <div>
+                    <H2>Website development intern</H2>
+                    <h5>August 12 2024 - November 26 2024</h5>
+                    <p>
                     - Doing a personal project<br>
                     - learning about flex and grid<br>
-                </p>
+                    </p>
+                </div>
             </div>
-        </div> 
-        
-    
-       </body>
+        </main>
        
        <footer>
         
