@@ -48,7 +48,9 @@
             }
             
             body{
-               background-color: #92A06A; 
+                background: linear-gradient(0deg, #6C563B, #92A06A);
+                background-attachment: fixed;
+                transition: background 1s ease;   
             }
             .Self-image{
                 display: block;
@@ -64,20 +66,20 @@
                 to {scale: 1; opacity:1}
             }
             .body{
-                border: black;
                 flex-wrap: wrap;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
                 align-items: stretch;
                 align-content: space-around;
+                scroll-snap-type: y mandatory;
+                overflow-y: scroll;
             }
             .text{
                 margin-left: 10cm;
                 margin-right: 10cm;
             }
             .experience{
-                background-color: #92A06A;
                 display: flex;
                 justify-content: space-around;
                 flex-grow: 2;
