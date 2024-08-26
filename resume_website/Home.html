@@ -76,12 +76,9 @@
             .Education-container{
                 display: flex;
                 flex-wrap: wrap;
-
             }
             .education-item{
-                flex-basis: calc(50% - 20px); 
-                margin: 10px; 
-                padding: 20px;
+                flex: 1 0 40%;
                 animation: appear-left linear forwards;
                 animation-timeline: view();
                 animation-range: entry 0 cover 45%;
@@ -103,26 +100,64 @@
                    transform: translateX(0px);
                 }
             }
-            .container{
+            .container-grade{
+                position: relative;
+                width: 50%;
+                background-color: #6C563B;
+                text-align: right; 
+                color: white;
+            }
+                .Algorithms_DataStructures          {width:100%; background-color: #577D8B ;}            
+                .Artificialintelligence             {width:80%; background-color: #577D8B ;}                 
+                .BigData                            {width:100%; background-color: #577D8B ;}                
+                .Computerorganization_architecture  {width:100%; background-color: #577D8B ;}   
+                .ComputerScienceEthicsSeminar       {width:100%; background-color: #577D8B ;}        
+                .DataAnalysis_Visualization         {width:100%; background-color: #577D8B ;}        
+                .DatabaseTheory_Application         {width:100%; background-color: #577D8B ;}        
+                .DiscreteStructures                 {width:80%; background-color: #577D8B ;}        
+                .InformationSystems                 {width:100%; background-color: #577D8B ;}        
+                .Object-OrientedDevelopment         {width:100%; background-color: #577D8B ;}        
+                .OperatingSystems                   {width:100%; background-color: #577D8B ;} 
+                .Telecomunications_Networks         {width:100%; background-color: #577D8B ;}       
+                .WebDevelopment                     {width:100%; background-color: #577D8B ;}
+
+            .container-experiance{
+                position: relative;
                 width: 50%;
                 background-color: #6C563B;
                 text-align: right; 
                 color: white; 
             }
-            @keyframes appear-right{
+                .C              {width:30%; background-color: #577D8B ;}
+                .Cplusplus      {width:40%; background-color: #577D8B ;}
+                .CSS            {width:80%; background-color: #577D8B ;}
+                .HTML           {width:90%; background-color: #577D8B ;}
+                .JAVA           {width:50%; background-color: #577D8B ;}
+                .JavaScript     {width:60%; background-color: #577D8B ;}
+                .PHP            {width:70%; background-color: #577D8B ;}
+                .Python         {width:40%; background-color: #577D8B ;}
+                .R              {width:10%; background-color: #577D8B ;}
+                .SQL            {width:20%; background-color: #577D8B ;}
+            .container-tools{
+                position: relative;
 
+                width: 50%;
+                background-color: #6C563B;
+                text-align: right; 
+                color: white; 
             }
+            .ApacheNetbeans     {width:90%; background-color: #577D8B ;}
+            .Jupyternotebook    {width:80%; background-color: #577D8B ;}
+            .Linux              {width:20%; background-color: #577D8B ;}
+            .WinSCP             {width:70%; background-color: #577D8B ;}
+            .Putty              {width:20%; background-color: #577D8B ;}
+            .Rstudio            {width:30%; background-color: #577D8B ;}
+            .Visualstudiocode   {width:95%; background-color: #577D8B ;}
+            .Anaconda3          {width:40%; background-color: #577D8B ;}
+            .MySQLworkbench     {width:70%; background-color: #577D8B ;}
+            .Python             {width:40%; background-color: #577D8B ;}
+            .XAMPP              {width:30%; background-color: #577D8B ;}
 
-            .C{width:40%; background-color: #577D8B ;}
-            .Cplusplus{width:40%; background-color: #577D8B ;}
-            .CSS{width:80%; background-color: #577D8B ;}
-            .HTML{width:80%; background-color: #577D8B ;}
-            .JAVA{width:60%; background-color: #577D8B ;}
-            .JavaScript{width:60%; background-color: #577D8B ;}
-            .PHP{width:40%; background-color: #577D8B ;}
-            .Python{width:40%; background-color: #577D8B ;}
-            .R{width:20%; background-color: #577D8B ;}
-            .SQL{width:20%; background-color: #577D8B ;}
         </style>
     </head>
     
@@ -174,7 +209,25 @@
                 </ul>
             </div>
             <div class="education-item">
-                <h2>Languages learned</h2>
+                <div class="container-grade">
+                    <div class="Algorithms_DataStructures">A</div>
+                    <div class="Artificialintelligence">B</div>
+                    <div class="BigData">A</div>
+                    <div class="Computerorganization_architecture">A</div>
+                    <div class="ComputerScienceEthicsSeminar">A</div>
+                    <div class="DataAnalysis_Visualization">A</div>
+                    <div class="DatabaseTheory_Application">A</div>
+                    <div class="DiscreteStructures">B</div>
+                    <div class="InformationSystems">A</div>
+                    <div class="Object-OrientedDevelopment">A</div>
+                    <div class="OperatingSystems">A</div>
+                    <div class="Telecomunications_Networks">A</div>
+                    <div class="WebDevelopment">A</div>
+                </div>
+
+            </div>
+            <div class="education-item">
+                <h2>Languages learned and comprehension</h2>
                 <ul>
                     <li>C</li>
                     <li>C++</li>
@@ -188,20 +241,23 @@
                     <li>SQL</li>
                 </ul>
             </div>
-            <div class="container">
-                <div class="C">40%</div>
+            
+            <div class="education-item">
+            <div class="container-experiance">
+                <div class="C">30%</div>
                 <div class="Cplusplus">40%</div>
                 <div class="CSS">80%</div>
-                <div class="HTML">80%</div>
-                <div class="JAVA">60%</div>
+                <div class="HTML">90%</div>
+                <div class="JAVA">50%</div>
                 <div class="JavaScript">60%</div>
-                <div class="PHP">40%</div>
+                <div class="PHP">70%</div>
                 <div class="Python">40%</div>
-                <div class="R">20%</div>
+                <div class="R">10%</div>
                 <div class="SQL">20%</div>
             </div>
+            </div>
             <div class="education-item">
-                <h2>Computer environments used and other tools</h2>
+                <h2>Computer environments, other tools and comprehension</h2>
                 <ul>
                     <li>Apache Netbeans</li>
                     <li>Jupyter notebook</li>
@@ -215,6 +271,21 @@
                     <li>Python 3.11.4</li>
                     <li>XAMPP</li>
                 </ul>
+            </div>
+            <div class="education-item">
+                <div class="container-tools">
+                    <div class="ApacheNetbeans">90%</div>
+                    <div class="Jupyternotebook">80%</div>
+                    <div class="Linux">20%</div>
+                    <div class="WinSCP">70%</div>
+                    <div class="Putty">20%</div>
+                    <div class="Rstudio">30%</div>
+                    <div class="Visualstudiocode">95%</div>
+                    <div class="Anaconda3">40%</div>
+                    <div class="MySQLworkbench">70%</div>
+                    <div class="Python">40%</div>
+                    <div class="XAMPP">30%</div>
+                </div>
             </div>
         </div>
         
