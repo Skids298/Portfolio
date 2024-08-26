@@ -46,7 +46,7 @@
             }
             
             body{
-                background: linear-gradient(0deg, #6C563B, #92A06A);
+                background: linear-gradient(0deg, #4A703C, #92A06A);
                 background-attachment: fixed;
                 transition: background 1s ease;   
             }
@@ -82,15 +82,18 @@
                 flex-basis: calc(50% - 20px); 
                 margin: 10px; 
                 padding: 20px;
-            }
-
-            .Skills-level{
-                animation: appear linear forwards;
+                animation: appear-left linear forwards;
                 animation-timeline: view();
                 animation-range: entry 0 cover 45%;
             }
 
-            @keyframes appear{
+            .Skills-level{
+                animation: appear-right linear forwards;
+                animation-timeline: view();
+                animation-range: entry 0 cover 45%;
+            }
+
+            @keyframes appear-left{
                 from{
                     opacity: 0;
                     transform: translateX(-100px);
@@ -100,7 +103,26 @@
                    transform: translateX(0px);
                 }
             }
+            .container{
+                width: 50%;
+                background-color: #6C563B;
+                text-align: right; 
+                color: white; 
+            }
+            @keyframes appear-right{
 
+            }
+
+            .C{width:40%; background-color: #577D8B ;}
+            .Cplusplus{width:40%; background-color: #577D8B ;}
+            .CSS{width:80%; background-color: #577D8B ;}
+            .HTML{width:80%; background-color: #577D8B ;}
+            .JAVA{width:60%; background-color: #577D8B ;}
+            .JavaScript{width:60%; background-color: #577D8B ;}
+            .PHP{width:40%; background-color: #577D8B ;}
+            .Python{width:40%; background-color: #577D8B ;}
+            .R{width:20%; background-color: #577D8B ;}
+            .SQL{width:20%; background-color: #577D8B ;}
         </style>
     </head>
     
@@ -152,11 +174,6 @@
                 </ul>
             </div>
             <div class="education-item">
-                <div class="Skill-level">
-
-                </div>
-            </div>
-            <!--<div class="Skills-enter">
                 <h2>Languages learned</h2>
                 <ul>
                     <li>C</li>
@@ -171,7 +188,19 @@
                     <li>SQL</li>
                 </ul>
             </div>
-            <div class="Skills-enter">
+            <div class="container">
+                <div class="C">40%</div>
+                <div class="Cplusplus">40%</div>
+                <div class="CSS">80%</div>
+                <div class="HTML">80%</div>
+                <div class="JAVA">60%</div>
+                <div class="JavaScript">60%</div>
+                <div class="PHP">40%</div>
+                <div class="Python">40%</div>
+                <div class="R">20%</div>
+                <div class="SQL">20%</div>
+            </div>
+            <div class="education-item">
                 <h2>Computer environments used and other tools</h2>
                 <ul>
                     <li>Apache Netbeans</li>
@@ -186,7 +215,7 @@
                     <li>Python 3.11.4</li>
                     <li>XAMPP</li>
                 </ul>
-            </div>-->
+            </div>
         </div>
         
         <!--WORK EXPERIANCE AND RESPONSIBILITIES-->
