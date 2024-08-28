@@ -28,21 +28,26 @@
                 animation-timeline: view();
                 animation-range: exit;
             }
+            @media(max-width:500px){
+              .header-text{
+                height:auto;
+              }
+            }
             @keyframes fade-in-out{
                 25%{opacity: 1;}
                 85%, 100% {opacity: 0;}
             }
             .header-image{
-                grid-column: 1/-1;
-                position: absolute;
-                inset:0;
-                height: auto;
-                width: 100%;
-                z-index: -1;
-                animation: fade-out-picture linear forwards;
-                animation-timeline: view();
-                animation-range: exit;
-                opacity: 1;
+              grid-column: 1/-1;
+              position: absolute;
+              inset:0;
+              height: auto;
+              width: 100%;
+              z-index: -1;
+              animation: fade-out-picture linear forwards;
+              animation-timeline: view();
+              animation-range: exit;
+              opacity: 1; 
             }
             @keyframes fade-out-picture{
                 to {opacity: 0;}
@@ -55,13 +60,20 @@
                 transition: background 1s ease;   
             }
             .Self-image{
-                display: block;
-                margin-left: auto;
-                margin-top: 15%;
-                margin-right: auto;
-                animation: fade-in linear forwards;
-                animation-timeline: view();
-                animation-range: entry;
+              display: flex;
+              flex-direction: column;
+              align-items: center; /* Centers items horizontally */
+              justify-content: center; /* Centers items vertically */
+              margin: 0 auto;
+              margin-top: 15%;
+              animation: fade-in linear forwards;
+              animation-timeline: view();
+              animation-range: entry;
+            }
+            @media(max-width:200px){
+              .header-text{
+                height:500px;
+              }
             }
             @keyframes fade-in{
                 from {scale: .8; opacity: 0}   
@@ -86,7 +98,7 @@
                 animation-timeline: view();
                 animation-range: entry 0 cover 40%;
             }
-
+            
             @keyframes appear-left{
                 from{
                     opacity: 0;
@@ -123,10 +135,23 @@
                 .WebDevelopment                     {width:100%; background-color: #577D8B ;}
           
     /*Work experiance*/
-            .experience{
+            .experience-container{
               display: flex;
+              flex-direction: row;
               justify-content: space-around;
               flex-grow: 2;
+            }
+            @media(max-width: 800px){
+              .experience-container{
+                flex-direction: column;
+                padding: 0;
+                h5{
+                  margin-left: 10px;
+                }
+                p{
+                  margin-left: 10px;
+                }
+              }
             }
 
         </style>
@@ -136,12 +161,46 @@
     <body>
         <header>
         <H1 class="header-text">RESUME <br> Noelle de Vries</H1>
-        <img class="header-image" 
-        src="C:\Users\noell\Documents\UMHB\Semester 8\Internship\Online resume Noelle de Vries.png"  width="100%">
+  <!--HERO image-->      
+        <picture class="header-image">
+          <source media="(min-width: 300px)" 
+                  srcset="Forest-300w.png 300w
+                          Forest-800w.png 800w,
+                          Forest-2000w.png 2000w, 
+                          Forest-6912w.png 6912w ">
+          <source media="(min-width: 800px)" 
+                  srcset="Forest-800w.png 800w,
+                          Forest-2000w.png 2000w, 
+                          Forest-6912w.png 6912w ">
+          <source media="(min-width: 2000px)" 
+                  srcset="Forest-800w.png 800w,
+                          Forest-2000w.png 2000w, 
+                          Forest-6912w.png 6912w ">
+          <source media="(min-width: 6912px)" 
+                  srcset="Forest-800w.png 800w,
+                          Forest-2000w.png 2000w, 
+                          Forest-6912w.png 6912w ">  
+          <img src="Forest-6912.png"  width="100%">
+        </picture>
        </header>
        
         <main>
-        <img class="Self-image" src="C:\Users\noell\Pictures\Saved Pictures\Picture1.jpg">
+        <picture class="Self-image">
+          <source media="(min-width: 300px)" 
+                  srcset="Self-100w.jpg 100w,
+                          Self-300w.jpg 300w,
+                          Self-884w.jpg 884w">
+          <source media="(min-width: 300px)" 
+                  srcset="Self-100w.jpg 100w,
+                          Self-300w.jpg 300w,
+                          Self-884w.jpg 884w">
+          <source media="(min-width: 500px)" 
+                  srcset="Self-100w.jpg 100w,
+                          Self-300w.jpg 300w,
+                          Self-884w.jpg 884w">
+          <img src="Self-884w.jpg" width="15%">  
+        </picture>
+        
         
   <!--INTRODUCTION-->
         <div>
@@ -343,7 +402,7 @@
  
   <!--WORK EXPERIANCE AND RESPONSIBILITIES-->
             <h1>Work Experience</h1>
-            <div class="experience">
+            <div class="experience-container">
                 <div>
                     <H2>Happy Pizza cook</H2>
                     <h5>October 23 2023 - August 1 2024</h5>
