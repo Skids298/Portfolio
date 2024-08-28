@@ -13,6 +13,7 @@
             #577D8B blue accent
             */
 
+    /*header or Hero*/
             .header-text{
                 display: grid;
                 place-content: center;
@@ -20,7 +21,7 @@
                 height: 80svh;
                 overflow-x: clip;
                 z-index: 1;
-                opacity: 0.5;
+                opacity: 0.8;
                 animation: fade-in-out linear forwards;
                 animation-timeline: view();
                 animation-range: exit;
@@ -45,8 +46,9 @@
                 to {opacity: 0;}
             }
             
+    /*main*/        
             body{
-                background: linear-gradient(0deg, #4A703C, #92A06A);
+                background: linear-gradient(0deg, #6C563B, #92A06A);
                 background-attachment: fixed;
                 transition: background 1s ease;   
             }
@@ -68,11 +70,10 @@
                 margin-left: 20%;
                 margin-right: 20%;
             }
-            .experience{
-                display: flex;
-                justify-content: space-around;
-                flex-grow: 2;
-            }
+
+            
+
+    /*layout for skills container*/        
             .Education-container{
                 display: flex;
                 flex-wrap: wrap;
@@ -81,13 +82,7 @@
                 flex: 1 0 40%;
                 animation: appear-left linear forwards;
                 animation-timeline: view();
-                animation-range: entry 0 cover 45%;
-            }
-
-            .Skills-level{
-                animation: appear-right linear forwards;
-                animation-timeline: view();
-                animation-range: entry 0 cover 45%;
+                animation-range: entry 0 cover 40%;
             }
 
             @keyframes appear-left{
@@ -101,6 +96,8 @@
                 }
             }
             
+            
+    /*Classes I have taken and grade*/        
             .container-grade{
                 position: relative;
                 margin-top: 10%;
@@ -122,25 +119,97 @@
                 .OperatingSystems                   {width:100%; background-color: #577D8B ;} 
                 .Telecomunications_Networks         {width:100%; background-color: #577D8B ;}       
                 .WebDevelopment                     {width:100%; background-color: #577D8B ;}
-
-            .container-experiance{
-                position: relative;
-                margin-top: 12%;
-                width: 50%;
-                background-color: #6C563B;
-                text-align: right; 
-                color: white; 
+                
+    /*Language skill bar*/
+            #Languages-container {
+              display: grid;
+              grid-template-columns: repeat(5, 1fr);
+              max-width: 600px;
             }
-                .C              {width:30%; background-color: #577D8B ;}
-                .Cplusplus      {width:40%; background-color: #577D8B ;}
-                .CSS            {width:80%; background-color: #577D8B ;}
-                .HTML           {width:90%; background-color: #577D8B ;}
-                .JAVA           {width:50%; background-color: #577D8B ;}
-                .JavaScript     {width:60%; background-color: #577D8B ;}
-                .PHP            {width:70%; background-color: #577D8B ;}
-                .Python         {width:40%; background-color: #577D8B ;}
-                .R              {width:10%; background-color: #577D8B ;}
-                .SQL            {width:20%; background-color: #577D8B ;}
+
+            .skill-level-text {
+              grid-column: span 5;
+              text-align: center;
+              font-weight: bold;
+              margin-bottom: 10px;
+              margin-left: 100px;
+            }
+
+            .language-skill {
+              display: flex;
+              align-items: center;
+              grid-column: span 5;
+              margin-bottom: 15px;
+            }
+
+            .skill-ribbon {
+              flex: 1;
+              font-weight: bold;
+              margin-right: 20px;
+              text-align: left;
+            }
+
+            .skill-bar {
+              flex: 4;
+              background-color: #6C563B;
+              height: 20px;
+              border-radius: 10px;
+              position: relative;
+            }
+
+            .comprehension {
+              height: 100%;
+              background-color: #577D8B;
+              border-radius: 10px;
+            }
+
+            .expert {
+              width: 0%;
+              animation: fill-100 linear forwards;
+                animation-timeline: view();
+                animation-range: entry 0 cover 40%;
+            }
+            .advanced {
+              width: 0%;
+              animation: fill-80 linear forwards;
+              animation-timeline: view();
+              animation-range: entry 0 cover 40%;
+            }
+            .intermediate {
+              width: 0%;
+              animation: fill-60 linear forwards;
+              animation-timeline: view();
+              animation-range: entry 0 cover 40%;
+            }
+            .elementary {
+              width: 0%;
+              animation: fill-40 linear forwards;
+              animation-timeline: view();
+              animation-range: entry 0 cover 40%;
+            }
+            .beginner {
+              width: 0%;
+              animation: fill-20 linear forwards;
+              animation-timeline: view();
+              animation-range: entry 0 cover 40%;
+            }
+            
+            @keyframes fill-100{
+              to{width: 100%;}
+            }
+            @keyframes fill-80{
+              to{width: 80%;}
+            }
+            @keyframes fill-60{
+              to{width: 60%;}
+            }
+            @keyframes fill-40{
+              to{width: 40%;}
+            }
+            @keyframes fill-20{
+              to{width: 20%;}
+            }
+    /*Computer environments, and other tools*/
             .container-tools{
                 position: relative;
                 margin-top: 10%;
@@ -160,55 +229,13 @@
             .MySQLworkbench     {width:70%; background-color: #577D8B ;}
             .Python             {width:40%; background-color: #577D8B ;}
             .XAMPP              {width:30%; background-color: #577D8B ;}
-
-
-#Languages-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-}
-
-.language-skill {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.skill-ribbon {
-  flex: 1;
-  font-weight: bold;
-  margin-right: 20px;
-  text-align: left;
-}
-
-.skill-bar {
-  flex: 4;
-  background-color: #e0e0e0;
-  height: 20px;
-  border-radius: 10px;
-  position: relative;
-}
-
-.comprehension {
-  height: 100%;
-  background-color: #577D8B;
-  border-radius: 10px;
-}
-
-.expert { width: 100%; }
-.advanced { width: 80%; }
-.intermediate { width: 60%; }
-.elementary { width: 40%; }
-.beginner { width: 20%; }
-
-.skill-level-text {
-  font-size: 14px;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
+          
+    /*Work experiance*/
+            .experience{
+              display: flex;
+              justify-content: space-around;
+              flex-grow: 2;
+            }
 
         </style>
     </head>
@@ -279,36 +306,8 @@
                     <div class="WebDevelopment">A</div>
                 </div>
             </div>
-            <div class="education-item">
-                <h2>Languages learned and comprehension</h2>
-                <ul>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>Java</li>
-                    <li>Javascript</li>
-                    <li>PHP</li>
-                    <li>Python</li>
-                    <li>R</li>
-                    <li>SQL</li>
-                </ul>
-            </div>
-            
-            <div class="education-item">
-            <div class="container-experiance">
-                <div class="C">30%</div>
-                <div class="Cplusplus">40%</div>
-                <div class="CSS">80%</div>
-                <div class="HTML">90%</div>
-                <div class="JAVA">50%</div>
-                <div class="JavaScript">60%</div>
-                <div class="PHP">70%</div>
-                <div class="Python">40%</div>
-                <div class="R">10%</div>
-                <div class="SQL">20%</div>
-            </div>
-            </div>
+          </div>
+          <!--
             <div class="education-item">
                 <h2>Computer environments, other tools and comprehension</h2>
                 <ul>
@@ -340,78 +339,75 @@
                     <div class="XAMPP">30%</div>
                 </div>
             </div>
-        </div>
+          -->
+        
 
 
-    <div id="Languages-container">
-        <div class="skill-level-text">EXPERT</div>
-        <div class="skill-level-text">ADVANCED</div>
-        <div class="skill-level-text">INTERMEDIATE</div>
-        <div class="skill-level-text">ELEMENTARY</div>
-        <div class="skill-level-text">BEGINNER</div>
-      
-        <div class="language-skill">
-          <div class="skill-ribbon">C</div>
-          <div class="skill-bar">
-            <div class="comprehension elementary"></div>
-          </div>
-        </div>
-        <div class="language-skill">
-          <div class="skill-ribbon">C++</div>
-          <div class="skill-bar">
-            <div class="comprehension intermediate"></div>
-          </div>
-        </div>
-        <div class="language-skill">
-          <div class="skill-ribbon">CSS</div>
-          <div class="skill-bar">
-            <div class="comprehension expert"></div>
-          </div>
-        </div>
-        <div class="language-skill">
-          <div class="skill-ribbon">HTML</div>
-          <div class="skill-bar">
-            <div class="comprehension expert"></div>
-          </div>
-        </div>
-        <div class="language-skill">
-          <div class="skill-ribbon">Java</div>
-          <div class="skill-bar">
-            <div class="comprehension intermediate"></div>
-          </div>
-        </div>
-        <div class="language-skill">
-            <div class="skill-ribbon">JavaScript</div>
+        <div id="Languages-container">
+          <span class="skill-level-text">
+            BEGINNER ELEMENTARY INTERMEDIATE ADVANCED EXPERT
+          </span>
+          <div class="language-skill">
+            <div class="skill-ribbon">C</div>                 <!--C language-->
             <div class="skill-bar">
-              <div class="comprehension advanced"></div>
+              <div class="comprehension elementary"></div>    <!--skill level-->
             </div>
           </div>
           <div class="language-skill">
-            <div class="skill-ribbon">PHP</div>
+            <div class="skill-ribbon">C++</div>               <!--C++ language-->
             <div class="skill-bar">
-              <div class="comprehension beginner"></div>
+              <div class="comprehension intermediate"></div>  <!--skill level-->
             </div>
           </div>
           <div class="language-skill">
-            <div class="skill-ribbon">Python</div>
+            <div class="skill-ribbon">CSS</div>               <!--CSS language-->
             <div class="skill-bar">
-              <div class="comprehension intermediate"></div>
+              <div class="comprehension expert"></div>        <!--skill level-->
             </div>
           </div>
           <div class="language-skill">
-            <div class="skill-ribbon">R</div>
+            <div class="skill-ribbon">HTML</div>              <!--HTML language-->
             <div class="skill-bar">
-              <div class="comprehension beginner"></div>
+              <div class="comprehension expert"></div>        <!--skill level-->
             </div>
           </div>
           <div class="language-skill">
-            <div class="skill-ribbon">SQL</div>
+            <div class="skill-ribbon">Java</div>              <!--Java language-->
             <div class="skill-bar">
-              <div class="comprehension elementary"></div>
+              <div class="comprehension intermediate"></div>   <!--skill level-->
             </div>
           </div>
-      
-      </div>
+          <div class="language-skill">
+            <div class="skill-ribbon">JavaScript</div>        <!--JavaScript language-->
+              <div class="skill-bar">
+                <div class="comprehension advanced"></div>    <!--skill level-->
+              </div>
+          </div>
+          <div class="language-skill">
+            <div class="skill-ribbon">PHP</div>               <!--PHP language-->
+              <div class="skill-bar">
+                <div class="comprehension beginner"></div>    <!--skill level-->
+              </div>
+          </div>
+          <div class="language-skill">
+            <div class="skill-ribbon">Python</div>            <!--Python language-->
+              <div class="skill-bar">
+                <div class="comprehension intermediate"></div><!--skill level-->
+              </div>
+          </div>
+          <div class="language-skill">
+            <div class="skill-ribbon">R</div>                 <!--R language-->
+              <div class="skill-bar">
+                <div class="comprehension beginner"></div>    <!--skill level-->
+              </div>
+          </div>
+          <div class="language-skill">
+            <div class="skill-ribbon">SQL</div>               <!--SQL language-->
+              <div class="skill-bar">
+                <div class="comprehension elementary"></div>  <!--skill level-->
+              </div>
+          </div>
+        </div>
         
         <!--WORK EXPERIANCE AND RESPONSIBILITIES-->
             <h1>Work Experience</h1>
