@@ -4,6 +4,8 @@
         <meta charset="utf-8" />
         <title>Portfolio website of Noelle de Vries</title>
         <meta name="viewport" content="width=device-width" />
+        <link href="language.css" rel="stylesheet" type="text/css">
+        <link href="tools.css" rel="stylesheet" type="text/css">
         <style>
             /* colors to remember 
             #D0AD8C beige
@@ -119,116 +121,6 @@
                 .OperatingSystems                   {width:100%; background-color: #577D8B ;} 
                 .Telecomunications_Networks         {width:100%; background-color: #577D8B ;}       
                 .WebDevelopment                     {width:100%; background-color: #577D8B ;}
-                
-    /*Language skill bar*/
-            #Languages-container {
-              display: grid;
-              grid-template-columns: repeat(5, 1fr);
-              max-width: 600px;
-            }
-
-            .skill-level-text {
-              grid-column: span 5;
-              text-align: center;
-              font-weight: bold;
-              margin-bottom: 10px;
-              margin-left: 100px;
-            }
-
-            .language-skill {
-              display: flex;
-              align-items: center;
-              grid-column: span 5;
-              margin-bottom: 15px;
-            }
-
-            .skill-ribbon {
-              flex: 1;
-              font-weight: bold;
-              margin-right: 20px;
-              text-align: left;
-            }
-
-            .skill-bar {
-              flex: 4;
-              background-color: #6C563B;
-              height: 20px;
-              border-radius: 10px;
-              position: relative;
-            }
-
-            .comprehension {
-              height: 100%;
-              background-color: #577D8B;
-              border-radius: 10px;
-            }
-
-            .expert {
-              width: 0%;
-              animation: fill-100 linear forwards;
-                animation-timeline: view();
-                animation-range: entry 0 cover 40%;
-            }
-            .advanced {
-              width: 0%;
-              animation: fill-80 linear forwards;
-              animation-timeline: view();
-              animation-range: entry 0 cover 40%;
-            }
-            .intermediate {
-              width: 0%;
-              animation: fill-60 linear forwards;
-              animation-timeline: view();
-              animation-range: entry 0 cover 40%;
-            }
-            .elementary {
-              width: 0%;
-              animation: fill-40 linear forwards;
-              animation-timeline: view();
-              animation-range: entry 0 cover 40%;
-            }
-            .beginner {
-              width: 0%;
-              animation: fill-20 linear forwards;
-              animation-timeline: view();
-              animation-range: entry 0 cover 40%;
-            }
-            
-            @keyframes fill-100{
-              to{width: 100%;}
-            }
-            @keyframes fill-80{
-              to{width: 80%;}
-            }
-            @keyframes fill-60{
-              to{width: 60%;}
-            }
-            @keyframes fill-40{
-              to{width: 40%;}
-            }
-            @keyframes fill-20{
-              to{width: 20%;}
-            }
-    /*Computer environments, and other tools*/
-            .container-tools{
-                position: relative;
-                margin-top: 10%;
-                width: 50%;
-                background-color: #6C563B;
-                text-align: right; 
-                color: white; 
-            }
-            .ApacheNetbeans     {width:90%; background-color: #577D8B ;}
-            .Jupyternotebook    {width:80%; background-color: #577D8B ;}
-            .Linux              {width:20%; background-color: #577D8B ;}
-            .WinSCP             {width:70%; background-color: #577D8B ;}
-            .Putty              {width:20%; background-color: #577D8B ;}
-            .Rstudio            {width:30%; background-color: #577D8B ;}
-            .Visualstudiocode   {width:95%; background-color: #577D8B ;}
-            .Anaconda3          {width:40%; background-color: #577D8B ;}
-            .MySQLworkbench     {width:70%; background-color: #577D8B ;}
-            .Python             {width:40%; background-color: #577D8B ;}
-            .XAMPP              {width:30%; background-color: #577D8B ;}
           
     /*Work experiance*/
             .experience{
@@ -251,7 +143,7 @@
         <main>
         <img class="Self-image" src="C:\Users\noell\Pictures\Saved Pictures\Picture1.jpg">
         
-        <!--INTRODUCTION-->
+  <!--INTRODUCTION-->
         <div>
             <div class="introduction">
                 <p>My name is Noelle de Vries and I was born and raised in The Netherlands.
@@ -266,7 +158,7 @@
             </div>
         </div>
         
-        <!--EDUCATION ACCOMPLISHMENTS-->
+  <!--EDUCATION ACCOMPLISHMENTS-->
         
 
         <h1>Education</h1>
@@ -306,43 +198,9 @@
                     <div class="WebDevelopment">A</div>
                 </div>
             </div>
-          </div>
-          <!--
-            <div class="education-item">
-                <h2>Computer environments, other tools and comprehension</h2>
-                <ul>
-                    <li>Apache Netbeans</li>
-                    <li>Jupyter notebook</li>
-                    <li>Linux</li>
-                    <li>WinSCP</li>
-                    <li>Putty</li>
-                    <li>Rstudio</li>
-                    <li>Visual studio code</li>
-                    <li>Anaconda 3</li>
-                    <li>MySQL workbench</li>
-                    <li>Python 3.11.4</li>
-                    <li>XAMPP</li>
-                </ul>
-            </div>
-            <div class="education-item">
-                <div class="container-tools">
-                    <div class="ApacheNetbeans">90%</div>
-                    <div class="Jupyternotebook">80%</div>
-                    <div class="Linux">20%</div>
-                    <div class="WinSCP">70%</div>
-                    <div class="Putty">20%</div>
-                    <div class="Rstudio">30%</div>
-                    <div class="Visualstudiocode">95%</div>
-                    <div class="Anaconda3">40%</div>
-                    <div class="MySQLworkbench">70%</div>
-                    <div class="Python">40%</div>
-                    <div class="XAMPP">30%</div>
-                </div>
-            </div>
-          -->
-        
+          </div>    
 
-
+  <!--Languages and profitiency-->
         <div id="Languages-container">
           <span class="skill-level-text">
             BEGINNER ELEMENTARY INTERMEDIATE ADVANCED EXPERT
@@ -408,8 +266,82 @@
               </div>
           </div>
         </div>
-        
-        <!--WORK EXPERIANCE AND RESPONSIBILITIES-->
+
+  <!--Tools and profitiency-->
+        <div id="tools-container">
+          <span class="skill-level-text">
+            BEGINNER ELEMENTARY INTERMEDIATE ADVANCED EXPERT
+          </span>
+          <div class="tool-skill">
+            <div class="tool-name">ApacheNetbeans</div>       <!--ApacheNetbeans-->
+              <div class="skill-bar">
+                <div class="comprehension advanced"></div>  <!--skill level-->
+              </div>
+          </div>
+          <div class="tool-skill">
+            <div class="tool-name">Jupyternotebook</div>      <!--Jupyternotebook-->
+              <div class="skill-bar">
+                <div class="comprehension intermediate"></div>  <!--skill level-->
+              </div>
+          </div>
+          <div class="tool-skill">
+            <div class="tool-name">Linux</div>                <!--Linux-->
+              <div class="skill-bar">
+                <div class="comprehension elementary"></div>  <!--skill level-->
+              </div>
+          </div>
+          <div class="tool-skill">
+            <div class="tool-name">WinSCP</div>               <!--WinSCP-->
+              <div class="skill-bar">
+                <div class="comprehension intermediate"></div>  <!--skill level-->
+              </div>
+          </div>
+          <div class="tool-skill">
+            <div class="tool-name">Putty</div>                <!--Putty-->
+              <div class="skill-bar">
+                <div class="comprehension elementary"></div>  <!--skill level-->
+              </div>
+          </div>
+          <div class="tool-skill">
+            <div class="tool-name">Rstudio</div>              <!--Rstudio-->
+              <div class="skill-bar">
+                <div class="comprehension elementary"></div>  <!--skill level-->
+              </div>
+          </div>
+          <div class="tool-skill">
+            <div class="tool-name">Visualstudiocode</div>     <!--Visualstudiocode-->
+              <div class="skill-bar">
+                <div class="comprehension advanced"></div>  <!--skill level-->
+              </div>
+          </div>
+          <div class="tool-skill">
+            <div class="tool-name">Anaconda3</div>            <!--Anacona3-->
+              <div class="skill-bar">
+                <div class="comprehension elementary"></div>  <!--skill level-->
+              </div>
+          </div>
+          <div class="tool-skill">
+            <div class="tool-name">MySQL</div>       <!--MySQLworkbench-->
+              <div class="skill-bar">
+                <div class="comprehension intermediate"></div>  <!--skill level-->
+              </div>
+          </div>
+          <div class="tool-skill">
+            <div class="tool-name">Python</div>               <!--Python-->
+              <div class="skill-bar">
+                <div class="comprehension elementary"></div>  <!--skill level-->
+              </div>
+          </div>
+          <div class="tool-skill">
+            <div class="tool-name">XAMPP</div>                <!--XAMPP-->
+              <div class="skill-bar">
+                <div class="comprehension intermediate"></div>  <!--skill level-->
+              </div>
+          </div>
+          
+        </div>
+ 
+  <!--WORK EXPERIANCE AND RESPONSIBILITIES-->
             <h1>Work Experience</h1>
             <div class="experience">
                 <div>
