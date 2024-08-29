@@ -22,14 +22,6 @@
                 place-content: center;
                 overflow-x: clip;
                 z-index: 1;
-                opacity: 0.8;
-                animation: fade-in-out linear forwards;
-                animation-timeline: view();
-                animation-range: exit;
-            }
-            @keyframes fade-in-out{
-                25%{opacity: 1;}
-                85%, 100% {opacity: 0;}
             }
             .header-image{
               grid-column: 1/-1;
@@ -75,8 +67,6 @@
             }
             .education-item{
                 flex: 1 0 40%;
-                animation: appear-left linear forwards;
-                animation-timeline: view();
             }
             
             
