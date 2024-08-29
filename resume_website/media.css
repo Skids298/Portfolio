@@ -1,0 +1,159 @@
+/*Media for different size screens*/
+
+/* Mobile  ranging from 360×640 to 414×896. */
+  @media(max-width:600px){
+    .header-text{
+      height:100px;
+      font-size: 24px;
+      place-content: center;
+    }
+    #body{
+      animation: fade-in-out ls;
+    }
+    .Self-image{
+      align-items: center; 
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 25%;
+    }
+    .introduction{
+      margin-left: 0%;
+      margin-right: 0%;
+      font-size: 15px;
+    }
+    .education-item{
+      animation-range: entry 0 cover 10%;
+      font-size: 15px;
+    }
+    @keyframes appear-left{
+      from{
+          opacity: 0;
+          transform: translateX(-200px);
+      }
+      to {
+         opacity: 1;
+         transform: translateX(100px);
+      }
+    }
+    .container-grade{
+      position: relative;
+      margin-top: 50%;
+      width: 40%;
+    }
+    .experience-container{
+      flex-direction: column;
+      padding: 0;
+      h5{
+        margin-left: 10px;
+      }
+      p{
+      margin-left: 10px;
+      font-size: 15px;
+      }
+    }  
+  }
+
+
+
+/* Tablet  ranging from 601×962 to 1280×800. */
+  @media(min-width:601px){
+    .header-text{
+      height: 200px;
+      font-size: 29px;
+      place-content: center;
+    }
+    .Self-image{
+      align-items: center; 
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 15%;
+    }
+    .introduction{
+      margin-left: 10%; 
+      margin-right: 10%;
+      font-size: 20px;
+    }
+    .education-item{
+      animation-range: entry 0 cover 30%;
+      font-size: 20px;
+    }
+    @keyframes appear-left{
+      from{
+          opacity: 0;
+          transform: translateX(-200px);
+      }
+      to {
+         opacity: 1;
+         transform: translateX(50px);
+      }
+    }
+    .container-grade{
+      position: relative;
+      margin-top: 10%;
+      width: 35%;
+    }
+    .experience-container{
+      flex-direction: column;
+      padding: 0;
+      h5{
+        margin-left: 10px;
+      }
+      p{
+        margin-left: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+
+
+/* Computer ranging from 1280×720 to 1920×1080 */
+  @media(min-width:1301px){
+    .header-text{
+      place-content: center;
+      position: relative;
+      height: 300px;
+      font-size: 34px;
+    }
+    .Self-image{
+      align-items: center; 
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 30%;
+    }
+    .introduction{
+      margin-left: 20%;
+      margin-right: 20%;
+      font-size: 20px;
+    }
+    .education-item{
+      animation-range: entry 0 cover 30%;
+      font-size: 20px;
+    }
+    @keyframes appear-left{
+      from{
+          opacity: 0;
+          transform: translateX(-100px);
+      }
+      to {
+         opacity: 1;
+         transform: translateX(50px);
+      }
+    }
+    .container-grade{
+      position: relative;
+      margin-top: 10%;
+      width: 50%;
+    }
+    .experience-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      h5{
+        margin-left: 10px;
+      }
+      p{
+        margin-left: 10px;
+        font-size: 20px;
+      }
+    }
+  }

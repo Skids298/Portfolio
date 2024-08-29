@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width" />
         <link href="language.css" rel="stylesheet" type="text/css">
         <link href="tools.css" rel="stylesheet" type="text/css">
+        <link href="media.css" rel="stylesheet" type="text/css">
         <style>
             /* colors to remember 
             #D0AD8C beige
@@ -19,19 +20,12 @@
             .header-text{
                 display: grid;
                 place-content: center;
-                position: relative;
-                height: 80svh;
                 overflow-x: clip;
                 z-index: 1;
                 opacity: 0.8;
                 animation: fade-in-out linear forwards;
                 animation-timeline: view();
                 animation-range: exit;
-            }
-            @media(max-width:500px){
-              .header-text{
-                height:auto;
-              }
             }
             @keyframes fade-in-out{
                 25%{opacity: 1;}
@@ -57,32 +51,19 @@
             body{
                 background: linear-gradient(0deg, #6C563B, #92A06A);
                 background-attachment: fixed;
-                transition: background 1s ease;   
+                transition: 1s ease;
             }
+
             .Self-image{
               display: flex;
               flex-direction: column;
-              align-items: center; /* Centers items horizontally */
-              justify-content: center; /* Centers items vertically */
-              margin: 0 auto;
-              margin-top: 15%;
               animation: fade-in linear forwards;
               animation-timeline: view();
               animation-range: entry;
             }
-            @media(max-width:500px){
-              .header-text{
-                height:150px;
-              }
-            }
             @keyframes fade-in{
                 from {scale: .8; opacity: 0}   
                 to {scale: 1; opacity:1}
-            }
-
-            .introduction{
-                margin-left: 20%;
-                margin-right: 20%;
             }
 
             
@@ -96,26 +77,11 @@
                 flex: 1 0 40%;
                 animation: appear-left linear forwards;
                 animation-timeline: view();
-                animation-range: entry 0 cover 40%;
-            }
-            
-            @keyframes appear-left{
-                from{
-                    opacity: 0;
-                    transform: translateX(-100px);
-                }
-                to {
-                   opacity: 1;
-                   transform: translateX(50px);
-                }
             }
             
             
     /*Classes I have taken and grade*/        
             .container-grade{
-                position: relative;
-                margin-top: 10%;
-                width: 50%;
                 background-color: #6C563B;
                 text-align: right; 
                 color: white;
@@ -133,26 +99,6 @@
                 .OperatingSystems                   {width:100%; background-color: #577D8B ;} 
                 .Telecomunications_Networks         {width:100%; background-color: #577D8B ;}       
                 .WebDevelopment                     {width:100%; background-color: #577D8B ;}
-          
-    /*Work experiance*/
-            .experience-container{
-              display: flex;
-              flex-direction: row;
-              justify-content: space-around;
-              flex-grow: 2;
-            }
-            @media(max-width: 800px){
-              .experience-container{
-                flex-direction: column;
-                padding: 0;
-                h5{
-                  margin-left: 10px;
-                }
-                p{
-                  margin-left: 10px;
-                }
-              }
-            }
 
         </style>
     </head>
@@ -163,12 +109,12 @@
         <H1 class="header-text">RESUME <br> Noelle de Vries</H1>
   <!--HERO image-->      
         <picture class="header-image">
-          <source media="(min-width: 300px)" 
+          <source media="(max-width: 600px)" 
                   srcset="Forest-300w.png 300w
                           Forest-800w.png 800w,
                           Forest-2000w.png 2000w, 
                           Forest-6912w.png 6912w ">
-          <source media="(min-width: 800px)" 
+          <source media="(min-width: 601px)" 
                   srcset="Forest-800w.png 800w,
                           Forest-2000w.png 2000w, 
                           Forest-6912w.png 6912w ">
@@ -176,7 +122,7 @@
                   srcset="Forest-800w.png 800w,
                           Forest-2000w.png 2000w, 
                           Forest-6912w.png 6912w ">
-          <source media="(min-width: 6912px)" 
+          <source media="(min-width: 1301px)" 
                   srcset="Forest-800w.png 800w,
                           Forest-2000w.png 2000w, 
                           Forest-6912w.png 6912w ">  
@@ -186,15 +132,15 @@
        
         <main>
         <picture class="Self-image">
-          <source media="(min-width: 300px)" 
+          <source media="(max-width: 600px)" 
                   srcset="Self-100w.jpg 100w,
                           Self-300w.jpg 300w,
                           Self-884w.jpg 884w">
-          <source media="(min-width: 300px)" 
+          <source media="(min-width: 601px)" 
                   srcset="Self-100w.jpg 100w,
                           Self-300w.jpg 300w,
                           Self-884w.jpg 884w">
-          <source media="(min-width: 500px)" 
+          <source media="(min-width: 1301px)" 
                   srcset="Self-100w.jpg 100w,
                           Self-300w.jpg 300w,
                           Self-884w.jpg 884w">
@@ -423,9 +369,10 @@
                     </p>
                 </div>
                 <div>
-                    <H2>Website development intern</H2>
+                    <H2>Website development</H2>
                     <h5>August 12 2024 - November 26 2024</h5>
                     <p>
+                    - Internship at school<br>
                     - Doing a personal project<br>
                     - learning about flex and grid<br>
                     </p>
