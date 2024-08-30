@@ -1,10 +1,110 @@
 /*Tools skill bar*/
-#tools-container {
+/* Mobile  ranging from 360×640 to 414×896. */
+@media(max-width:600px){
+  #tools-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 223px;
+    justify-content: start;
+  }
+  .skill-level-text {
+    grid-column: span 5;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .tool-skill {
+    display: flex;
+    align-items: center;
+    grid-column: span 5;
+    margin-bottom: 15px;
+  }
+  .tool-name {
+    flex: 0 0 150px;
+    font-weight: bold;
+    margin-right: 20px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   }
+  .skill-bar {
+    flex: 4;
+    background-color: #6C563B;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: auto;
+    position: relative;
+    width: 100%; 
+    max-width: 223px; 
+    min-width: 150px; 
+    margin-left: 10px; 
+  }
+  .comprehension {
+    height: 100%;
+    background-color: #577D8B;
+    border-radius: 10px;
+    width: 0%;
+  }
+
+  .expert {
+    width: 0%;
+    animation: fill-100 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+  }
+  .advanced {
+    width: 0%;
+    animation: fill-80 linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+  }
+  .intermediate {
+    width: 0%;
+    animation: fill-60 linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+  }
+  .elementary {
+    width: 0%;
+    animation: fill-40 linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+  }
+  .beginner {
+    width: 0%;
+    animation: fill-20 linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+  }
+  
+  /*animation of filling the bar */
+  @keyframes fill-100{
+    to{width: 100%;}
+  }
+  @keyframes fill-80{
+    to{width: 80%;}
+  }
+  @keyframes fill-60{
+    to{width: 60%;}
+  }
+  @keyframes fill-40{
+    to{width: 40%;}
+  }
+  @keyframes fill-20{
+    to{width: 20%;}
+  }
+}
+
+
+/* Tablet  ranging from 601×962 to 1280×800. */
+@media(min-width:601px){
+  #tools-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     max-width: 600px;
   }
-
   .skill-level-text {
     grid-column: span 5;
     text-align: center;
@@ -12,21 +112,18 @@
     margin-bottom: 10px;
     margin-left: 100px;
   }
-
   .tool-skill {
     display: flex;
     align-items: center;
     grid-column: span 5;
     margin-bottom: 15px;
   }
-
   .tool-name {
     flex: 1;
     font-weight: bold;
     margin-right: 20px;
     text-align: left;
    }
-
   .skill-bar {
     flex: 4;
     background-color: #6C563B;
@@ -34,7 +131,6 @@
     border-radius: 10px;
     position: relative;
   }
-
   .comprehension {
     height: 100%;
     background-color: #577D8B;
@@ -88,3 +184,92 @@
   @keyframes fill-20{
     to{width: 20%;}
   }
+}
+
+/* Computer ranging from 1280×720 to 1920×1080 */
+@media(min-width:1301px){
+  #tools-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 600px;
+  }
+  .skill-level-text {
+    grid-column: span 5;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 100px;
+  }
+  .tool-skill {
+    display: flex;
+    align-items: center;
+    grid-column: span 5;
+    margin-bottom: 15px;
+  }
+  .tool-name {
+    flex: 1;
+    font-weight: bold;
+    margin-right: 20px;
+    text-align: left;
+   }
+  .skill-bar {
+    flex: 4;
+    background-color: #6C563B;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .comprehension {
+    height: 100%;
+    background-color: #577D8B;
+    border-radius: 10px;
+  }
+
+  .expert {
+    width: 0%;
+    animation: fill-100 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 40%;
+  }
+  .advanced {
+    width: 0%;
+    animation: fill-80 linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+  }
+  .intermediate {
+    width: 0%;
+    animation: fill-60 linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+  }
+  .elementary {
+    width: 0%;
+    animation: fill-40 linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+  }
+  .beginner {
+    width: 0%;
+    animation: fill-20 linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+  }
+  
+  /*animation of filling the bar */
+  @keyframes fill-100{
+    to{width: 100%;}
+  }
+  @keyframes fill-80{
+    to{width: 80%;}
+  }
+  @keyframes fill-60{
+    to{width: 60%;}
+  }
+  @keyframes fill-40{
+    to{width: 40%;}
+  }
+  @keyframes fill-20{
+    to{width: 20%;}
+  }
+}
