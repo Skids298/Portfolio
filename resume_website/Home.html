@@ -33,7 +33,7 @@
               z-index: -1;
               animation: fade-out-picture linear forwards;
               animation-timeline: view();
-              animation-range: exit;
+              animation-range: exit cover 95%;
               opacity: 1; 
             }
             @keyframes fade-out-picture{
@@ -96,33 +96,29 @@
     
     
     <body>
-        <header>
+      <header>
         <H1 class="header-text">RESUME <br> Noelle de Vries</H1>
   <!--HERO image-->      
-        <picture class="header-image">
-          <source media="(max-width: 600px)" 
-                  srcset="Forest-300w.png 300w
-                          Forest-800w.png 800w,
-                          Forest-2000w.png 2000w, 
-                          Forest-6912w.png 6912w ">
-          <source media="(min-width: 601px)" 
-                  srcset="Forest-300w.png 300w,
-                          Forest-800w.png 800w,
-                          Forest-2000w.png 2000w, 
-                          Forest-6912w.png 6912w ">
-          <source media="(min-width: 2000px)" 
-                  srcset="Forest-300w.png 300w,
-                          Forest-800w.png 800w,
-                          Forest-2000w.png 2000w, 
-                          Forest-6912w.png 6912w ">
-          <source media="(min-width: 1301px)" 
-                  srcset="Forest-300w.png 300w,
-                          Forest-800w.png 800w,
-                          Forest-2000w.png 2000w, 
-                          Forest-6912w.png 6912w ">  
-          <img src="Forest-6912.png"  width="100%">
-        </picture>
-       </header>
+  <picture class="header-image">
+    <source media="(max-width: 320px)" 
+            srcset="Forest-320w.png 320w">
+    <source media="(max-width: 375px)" 
+            srcset="Forest-375w.png 375w">
+    <source media="(max-width: 430px)" 
+            srcset="Forest-430w.png 430w">
+    <source media="(max-width: 768px)" 
+            srcset="Forest-768w.png 768w">
+    <source media="(max-width: 800px)" 
+            srcset="Forest-800w.png 800w">
+    <source media="(max-width: 1024px)" 
+            srcset="Forest-1024w.png 1024w">
+    <source media="(max-width: 2000px)"
+            srcset="Forest-2000w.png 2000w">  
+    <source media="(min-width: 2001px)" 
+            srcset="Forest-6912w.png 6912w">
+    <img src="Forest-6912w.png" alt="Forest Image" width="100%">
+  </picture>
+      </header>
        
         <main>
         <picture class="Self-image">
@@ -376,7 +372,15 @@
             </div>
         </main>
        <footer>
-        
-       </footer>
+        <5>
+          Contact me and see my work
+        </5>
+        <img src="cv_blue.png">
+        <img src="cv_green.png">
+        <img src="git_blue.svg">
+        <img src="git_green.svg">
+        <img src="linkedin_blue.png">
+        <img src="linkedin_green.png">
+      </footer>
     </body>
 </html>

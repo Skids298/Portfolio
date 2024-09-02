@@ -1,5 +1,300 @@
 /*Media for different size screens*/
 
+/* Small Phones (Portrait) Max-width: 320px
+    Recommended sizes:
+      Font size: 12px - 14px
+      Padding: 5px - 10px
+      Image width: 100% of the container*/
+      @media(max-width:320px){
+        .header-text{
+          height:100px;
+          font-size: 24px;
+          place-content: center;
+          }
+        .Self-image{
+          align-items: center; 
+          justify-content: center;
+          margin: 0 auto;
+          margin-top: 25%;
+        }
+        .introduction{
+          margin-left: 0%;
+          margin-right: 0%;
+          padding: 7px;
+          font-size: 13px;
+        }
+        .education-item{
+          animation: appear-left linear forwards;
+          animation-timeline: view();
+          animation-range: entry 0 cover 30%;
+          padding: 7px;
+          font-size: 13px;
+        }
+        @keyframes appear-left{
+          from{
+              opacity: 0;
+              transform: translateX(-150px);
+          }
+          to {
+             opacity: 1;
+             transform: translateX(15px);
+          }
+        }
+        .container-grade{
+          position: relative;
+          margin-top: 50%;
+          width: 40%;
+        }
+        .experience-container{
+          flex-direction: column;
+          padding: 7px;
+          h5{
+            margin-left: 10px;
+          }
+          p{
+          margin-left: 10px;
+          font-size: 13px;
+          }
+        }  
+      }
+
+
+/*Small to Medium Phones (Portrait) Max-width: 375px (e.g., iPhone 12 Mini)
+    Recommended sizes:
+      Font size: 14px - 16px
+      Padding: 10px - 15px
+      Image width: 100% of the container*/
+      @media(max-width:375px){
+        .header-text{
+          height:100px;
+          font-size: 24px;
+          place-content: center;
+          }
+        .Self-image{
+          align-items: center; 
+          justify-content: center;
+          margin: 0 auto;
+          margin-top: 25%;
+        }
+        .introduction{
+          margin-left: 0%;
+          margin-right: 0%;
+          padding: 13px;
+          font-size: 15px;
+        }
+        .education-item{
+          animation: appear-left linear forwards;
+          animation-timeline: view();
+          animation-range: entry 0 cover 30%;
+          padding: 13px;
+          font-size: 15px;
+        }
+        @keyframes appear-left{
+          from{
+              opacity: 0;
+              transform: translateX(-150px);
+          }
+          to {
+             opacity: 1;
+             transform: translateX(15px);
+          }
+        }
+        .container-grade{
+          position: relative;
+          margin-top: 50%;
+          width: 40%;
+        }
+        .experience-container{
+          flex-direction: column;
+          padding: 13px;
+          h5{
+            margin-left: 10px;
+          }
+          p{
+          margin-left: 10px;
+          font-size: 15px;
+          }
+        }  
+      }
+
+
+/*Medium Phones (Portrait) Max-width: 425px (e.g., Google Pixel 5, iPhone 12/13)
+    Recommended sizes:
+      Font size: 16px - 18px
+      Padding: 15px - 20px
+      Image width: 100% of the container*/
+      @media(max-width:425px){
+        .header-text{
+          height:100px;
+          font-size: 24px;
+          place-content: center;
+          }
+        .Self-image{
+          align-items: center; 
+          justify-content: center;
+          margin: 0 auto;
+          margin-top: 25%;
+        }
+        .introduction{
+          margin-left: 0%;
+          margin-right: 0%;
+          padding: 18px;
+          font-size: 17px;
+        }
+        .education-item{
+          animation: appear-left linear forwards;
+          animation-timeline: view();
+          animation-range: entry 0 cover 30%;
+          padding: 18px;
+          font-size: 17px;
+        }
+        @keyframes appear-left{
+          from{
+              opacity: 0;
+              transform: translateX(-150px);
+          }
+          to {
+             opacity: 1;
+             transform: translateX(15px);
+          }
+        }
+        .container-grade{
+          position: relative;
+          margin-top: 50%;
+          width: 40%;
+        }
+        .experience-container{
+          flex-direction: column;
+          padding: 18px;
+          h5{
+            margin-left: 10px;
+          }
+          p{
+          margin-left: 10px;
+          font-size: 17px;
+          }
+        }  
+      }
+
+/*Large Phones / Small Tablets (Portrait) Max-width: 768px (e.g., iPad Mini, iPad in Portrait Mode)
+    Recommended sizes:
+      Font size: 18px - 20px
+      Padding: 20px - 30px
+      Image width: 100% of the container*/
+      @media(max-width:768px){
+        .header-text{
+          height:100px;
+          font-size: 24px;
+          place-content: center;
+          }
+        .Self-image{
+          align-items: center; 
+          justify-content: center;
+          margin: 0 auto;
+          margin-top: 25%;
+        }
+        .introduction{
+          margin-left: 0%;
+          margin-right: 0%;
+          padding: 25px;
+          font-size: 19px;
+        }
+        .education-item{
+          animation: appear-left linear forwards;
+          animation-timeline: view();
+          animation-range: entry 0 cover 30%;
+          padding: 25px;
+          font-size: 19px;
+        }
+        @keyframes appear-left{
+          from{
+              opacity: 0;
+              transform: translateX(-150px);
+          }
+          to {
+             opacity: 1;
+             transform: translateX(15px);
+          }
+        }
+        .container-grade{
+          position: relative;
+          margin-top: 50%;
+          width: 40%;
+        }
+        .experience-container{
+          flex-direction: column;
+          padding: 25px;
+          h5{
+            margin-left: 10px;
+          }
+          p{
+          margin-left: 10px;
+          font-size: 19px;
+          }
+        }  
+      }
+
+
+/*Small Tablets (Landscape) Max-width: 1024px (e.g., iPad in Landscape Mode)
+    Recommended sizes:
+      Font size: 20px - 22px
+      Padding: 25px - 35px
+      Image width: 100% of the container*/
+      @media(max-width:1024px){
+        .header-text{
+          height:100px;
+          font-size: 24px;
+          place-content: center;
+          }
+        .Self-image{
+          align-items: center; 
+          justify-content: center;
+          margin: 0 auto;
+          margin-top: 25%;
+        }
+        .introduction{
+          margin-left: 0%;
+          margin-right: 0%;
+          padding: 25px;
+          font-size: 21px;
+        }
+        .education-item{
+          animation: appear-left linear forwards;
+          animation-timeline: view();
+          animation-range: entry 0 cover 30%;
+          padding: 25px;
+          font-size: 21px;
+        }
+        @keyframes appear-left{
+          from{
+              opacity: 0;
+              transform: translateX(-150px);
+          }
+          to {
+             opacity: 1;
+             transform: translateX(15px);
+          }
+        }
+        .container-grade{
+          position: relative;
+          margin-top: 50%;
+          width: 40%;
+        }
+        .experience-container{
+          flex-direction: column;
+          padding: 25px;
+          h5{
+            margin-left: 10px;
+          }
+          p{
+          margin-left: 10px;
+          font-size: 21px;
+          }
+        }  
+      }
+
+
+
 /* Mobile  ranging from 360×640 to 414×896. */
   @media(max-width:600px){
     .header-text{
@@ -72,18 +367,18 @@
       align-items: center; 
       justify-content: center;
       margin: 0 auto;
-      margin-top: 30%;
+      margin-top: 18rem;
     }
     .introduction{
       margin-left: 10%; 
       margin-right: 10%;
-      font-size: 20px;
+      font-size: 15px;
     }
     .education-item{
       animation: appear-left linear forwards;
       animation-timeline: view();
       animation-range: entry 0 cover 30%;
-      font-size: 20px;
+      font-size: 15px;
     }
     @keyframes appear-left{
       from{
@@ -108,7 +403,7 @@
       }
       p{
         margin-left: 10px;
-        font-size: 20px;
+        font-size: 15px;
       }
     }
   }

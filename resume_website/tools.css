@@ -1,4 +1,495 @@
 /*Tools skill bar*/
+
+  /* Small Phones (Portrait) Max-width: 320px*/
+  @media(max-width:320px){
+    #tools-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      max-width: 320px;
+      justify-content: start;
+    }
+    .skill-level-text {
+      grid-column: span 5;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+    .tool-skill {
+      display: flex;
+      align-items: center;
+      grid-column: span 5;
+      margin-bottom: 15px;
+    }
+    .tool-name {
+      flex: 0 0 150px;
+      font-weight: bold;
+      margin-right: 20px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+     }
+    .skill-bar {
+      flex: 4;
+      background-color: #6C563B;
+      height: 20px;
+      border-radius: 10px;
+      margin-left: auto;
+      position: relative;
+      width: 100%; 
+      max-width: 223px; 
+      min-width: 150px; 
+      margin-left: 10px; 
+    }
+    .comprehension {
+      height: 100%;
+      background-color: #577D8B;
+      border-radius: 10px;
+      width: 0%;
+    }
+  
+    .expert {
+      width: 0%;
+      animation: fill-100 linear forwards;
+        animation-timeline: view();
+        animation-range: entry 0 cover 20%;
+    }
+    .advanced {
+      width: 0%;
+      animation: fill-80 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .intermediate {
+      width: 0%;
+      animation: fill-60 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .elementary {
+      width: 0%;
+      animation: fill-40 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .beginner {
+      width: 0%;
+      animation: fill-20 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    
+    /*animation of filling the bar */
+    @keyframes fill-100{
+      to{width: 100%;}
+    }
+    @keyframes fill-80{
+      to{width: 80%;}
+    }
+    @keyframes fill-60{
+      to{width: 60%;}
+    }
+    @keyframes fill-40{
+      to{width: 40%;}
+    }
+    @keyframes fill-20{
+      to{width: 20%;}
+    }
+  }
+
+  /*Small to Medium Phones (Portrait) Max-width: 375px (e.g., iPhone 12 Mini)*/
+  @media(max-width:375px){
+    #tools-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      max-width: 375px;
+      justify-content: start;
+    }
+    .skill-level-text {
+      grid-column: span 5;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+    .tool-skill {
+      display: flex;
+      align-items: center;
+      grid-column: span 5;
+      margin-bottom: 15px;
+    }
+    .tool-name {
+      flex: 0 0 150px;
+      font-weight: bold;
+      margin-right: 20px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+     }
+    .skill-bar {
+      flex: 4;
+      background-color: #6C563B;
+      height: 20px;
+      border-radius: 10px;
+      margin-left: auto;
+      position: relative;
+      width: 100%; 
+      max-width: 223px; 
+      min-width: 150px; 
+      margin-left: 10px; 
+    }
+    .comprehension {
+      height: 100%;
+      background-color: #577D8B;
+      border-radius: 10px;
+      width: 0%;
+    }
+  
+    .expert {
+      width: 0%;
+      animation: fill-100 linear forwards;
+        animation-timeline: view();
+        animation-range: entry 0 cover 20%;
+    }
+    .advanced {
+      width: 0%;
+      animation: fill-80 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .intermediate {
+      width: 0%;
+      animation: fill-60 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .elementary {
+      width: 0%;
+      animation: fill-40 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .beginner {
+      width: 0%;
+      animation: fill-20 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    
+    /*animation of filling the bar */
+    @keyframes fill-100{
+      to{width: 100%;}
+    }
+    @keyframes fill-80{
+      to{width: 80%;}
+    }
+    @keyframes fill-60{
+      to{width: 60%;}
+    }
+    @keyframes fill-40{
+      to{width: 40%;}
+    }
+    @keyframes fill-20{
+      to{width: 20%;}
+    }
+  }
+
+  /*Medium Phones (Portrait) Max-width: 425px (e.g., Google Pixel 5, iPhone 12/13)*/
+  @media(max-width:425px){
+    #tools-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      max-width: 425px;
+      justify-content: start;
+    }
+    .skill-level-text {
+      grid-column: span 5;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+    .tool-skill {
+      display: flex;
+      align-items: center;
+      grid-column: span 5;
+      margin-bottom: 15px;
+    }
+    .tool-name {
+      flex: 0 0 150px;
+      font-weight: bold;
+      margin-right: 20px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+     }
+    .skill-bar {
+      flex: 4;
+      background-color: #6C563B;
+      height: 20px;
+      border-radius: 10px;
+      margin-left: auto;
+      position: relative;
+      width: 100%; 
+      max-width: 223px; 
+      min-width: 150px; 
+      margin-left: 10px; 
+    }
+    .comprehension {
+      height: 100%;
+      background-color: #577D8B;
+      border-radius: 10px;
+      width: 0%;
+    }
+  
+    .expert {
+      width: 0%;
+      animation: fill-100 linear forwards;
+        animation-timeline: view();
+        animation-range: entry 0 cover 20%;
+    }
+    .advanced {
+      width: 0%;
+      animation: fill-80 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .intermediate {
+      width: 0%;
+      animation: fill-60 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .elementary {
+      width: 0%;
+      animation: fill-40 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .beginner {
+      width: 0%;
+      animation: fill-20 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    
+    /*animation of filling the bar */
+    @keyframes fill-100{
+      to{width: 100%;}
+    }
+    @keyframes fill-80{
+      to{width: 80%;}
+    }
+    @keyframes fill-60{
+      to{width: 60%;}
+    }
+    @keyframes fill-40{
+      to{width: 40%;}
+    }
+    @keyframes fill-20{
+      to{width: 20%;}
+    }
+  }
+
+  /*Large Phones / Small Tablets (Portrait) Max-width: 768px (e.g., iPad Mini, iPad in Portrait Mode)*/
+  @media(max-width:768px){
+    #tools-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      max-width: 768px;
+      justify-content: start;
+    }
+    .skill-level-text {
+      grid-column: span 5;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+    .tool-skill {
+      display: flex;
+      align-items: center;
+      grid-column: span 5;
+      margin-bottom: 15px;
+    }
+    .tool-name {
+      flex: 0 0 150px;
+      font-weight: bold;
+      margin-right: 20px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+     }
+    .skill-bar {
+      flex: 4;
+      background-color: #6C563B;
+      height: 20px;
+      border-radius: 10px;
+      margin-left: auto;
+      position: relative;
+      width: 100%; 
+      max-width: 223px; 
+      min-width: 150px; 
+      margin-left: 10px; 
+    }
+    .comprehension {
+      height: 100%;
+      background-color: #577D8B;
+      border-radius: 10px;
+      width: 0%;
+    }
+  
+    .expert {
+      width: 0%;
+      animation: fill-100 linear forwards;
+        animation-timeline: view();
+        animation-range: entry 0 cover 20%;
+    }
+    .advanced {
+      width: 0%;
+      animation: fill-80 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .intermediate {
+      width: 0%;
+      animation: fill-60 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .elementary {
+      width: 0%;
+      animation: fill-40 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .beginner {
+      width: 0%;
+      animation: fill-20 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    
+    /*animation of filling the bar */
+    @keyframes fill-100{
+      to{width: 100%;}
+    }
+    @keyframes fill-80{
+      to{width: 80%;}
+    }
+    @keyframes fill-60{
+      to{width: 60%;}
+    }
+    @keyframes fill-40{
+      to{width: 40%;}
+    }
+    @keyframes fill-20{
+      to{width: 20%;}
+    }
+  }
+
+  /*Small Tablets (Landscape) Max-width: 1024px (e.g., iPad in Landscape Mode)*/
+  @media(max-width:1024px){
+    #tools-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      max-width: 1024px;
+      justify-content: start;
+    }
+    .skill-level-text {
+      grid-column: span 5;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+    .tool-skill {
+      display: flex;
+      align-items: center;
+      grid-column: span 5;
+      margin-bottom: 15px;
+    }
+    .tool-name {
+      flex: 0 0 150px;
+      font-weight: bold;
+      margin-right: 20px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+     }
+    .skill-bar {
+      flex: 4;
+      background-color: #6C563B;
+      height: 20px;
+      border-radius: 10px;
+      margin-left: auto;
+      position: relative;
+      width: 100%; 
+      max-width: 223px; 
+      min-width: 150px; 
+      margin-left: 10px; 
+    }
+    .comprehension {
+      height: 100%;
+      background-color: #577D8B;
+      border-radius: 10px;
+      width: 0%;
+    }
+  
+    .expert {
+      width: 0%;
+      animation: fill-100 linear forwards;
+        animation-timeline: view();
+        animation-range: entry 0 cover 20%;
+    }
+    .advanced {
+      width: 0%;
+      animation: fill-80 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .intermediate {
+      width: 0%;
+      animation: fill-60 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .elementary {
+      width: 0%;
+      animation: fill-40 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    .beginner {
+      width: 0%;
+      animation: fill-20 linear forwards;
+      animation-timeline: view();
+      animation-range: entry 0 cover 20%;
+    }
+    
+    /*animation of filling the bar */
+    @keyframes fill-100{
+      to{width: 100%;}
+    }
+    @keyframes fill-80{
+      to{width: 80%;}
+    }
+    @keyframes fill-60{
+      to{width: 60%;}
+    }
+    @keyframes fill-40{
+      to{width: 40%;}
+    }
+    @keyframes fill-20{
+      to{width: 20%;}
+    }
+  }
+
 /* Mobile  ranging from 360×640 to 414×896. */
 @media(max-width:600px){
   #tools-container {
@@ -192,6 +683,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     max-width: 600px;
+    margin-left: 4rem;
   }
   .skill-level-text {
     grid-column: span 5;
