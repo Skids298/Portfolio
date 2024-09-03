@@ -4,8 +4,8 @@
         <meta charset="utf-8" />
         <title>Portfolio website of Noelle de Vries</title>
         <meta name="viewport" content="width=device-width" />
-        <link href="language.css" rel="stylesheet" type="text/css">
-        <link href="tools.css" rel="stylesheet" type="text/css">
+        <link href="language_container.css" rel="stylesheet" type="text/css">
+        <link href="tools_container.css" rel="stylesheet" type="text/css">
         <link href="media.css" rel="stylesheet" type="text/css">
         <style>
             /* colors to remember 
@@ -91,6 +91,12 @@
                 .Telecomunications_Networks         {width:100%; background-color: #577D8B ;}       
                 .WebDevelopment                     {width:100%; background-color: #577D8B ;}
 
+    /*FOOTER*/
+            .contact{
+              display: flex;
+              justify-content: center;
+              margin-left: 50px;
+            }
         </style>
     </head>
     
@@ -122,19 +128,23 @@
        
         <main>
         <picture class="Self-image">
-          <source media="(max-width: 600px)" 
-                  srcset="Self-100w.jpg 100w,
-                          Self-300w.jpg 300w,
-                          Self-884w.jpg 884w">
-          <source media="(min-width: 601px)" 
-                  srcset="Self-100w.jpg 100w,
-                          Self-300w.jpg 300w,
-                          Self-884w.jpg 884w">
-          <source media="(min-width: 1301px)" 
-                  srcset="Self-100w.jpg 100w,
-                          Self-300w.jpg 300w,
-                          Self-884w.jpg 884w">
-          <img src="Self-884w.jpg" width="15%">  
+          <source media="(max-width: 320px)" 
+                 srcset="/resume_website/IMG/self-image/Self-300w.jpg 320w">
+          <source media="(max-width: 375px)" 
+                  srcset="/resume_website/IMG/self-image/Self-300w.jpg 375w">
+          <source media="(max-width: 430px)" 
+                  srcset="/resume_website/IMG/self-image/Self-300w.jpg 430w">
+          <source media="(max-width: 768px)" 
+                  srcset="/resume_website/IMG/self-image/Self-300w.jpg 768w">
+          <source media="(max-width: 800px)" 
+                  srcset="/resume_website/IMG/self-image/Self-300w.jpg 800w">
+          <source media="(max-width: 1024px)" 
+                  srcset="/resume_website/IMG/self-image/Self-884w.jpg 1024w">
+          <source media="(max-width: 2000px)"
+                  srcset="/resume_website/IMG/self-image/Self-884w.jpg 2000w">  
+          <source media="(min-width: 2001px)" 
+                  srcset="Forest-6912w.png 6912w">
+          <img src="/resume_website/IMG/self-image/Self-884w.jpg" alt="selfie" width="20%"> 
         </picture>
         
         
@@ -372,18 +382,20 @@
             </div>
         </main>
        <footer>
-        <h5>
+        <h4>
           Contact me and see my work
-        </h5>
-        <a href="https://github.com/Skids298">
-          <img src="/resume_website/IMG/socials/git_blue.svg">
+        </h4>
+        <div class="contact">
+          <a href="https://github.com/Skids298">
+          <img src="/resume_website/IMG/socials/git_blue.svg" alt="github_logo" width="30%">
         </a>
         <a href="www.linkedin.com/in/noëlle-de-vries-02a667262">
-          <img src="/resume_website/IMG/socials/linkedin_blue.png">
+          <img src="/resume_website/IMG/socials/linkedin_blue.png" alt="linkedin_logo" width="30%"">
         </a>
         <a>
-          <img src="/resume_website/IMG/socials/cv_blue.png">
+          <img src="/resume_website/IMG/socials/cv_blue.png" alt="CV" width="30%">
         </a>
+        </div>
       </footer>
     </body>
 </html>
