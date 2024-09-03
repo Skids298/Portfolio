@@ -6,24 +6,24 @@
       Padding: 5px - 10px
       Image width: 100% of the container*/
       @media(max-width:320px){
-        .header-text{
+        .header-text{           /*RESUME NOELLE DE VRIES TEXT*/
           height:100px;
           font-size: 24px;
           place-content: center;
           }
-        .Self-image{
+        .Self-image{            /*SELFIE IMAGE*/
           align-items: center; 
           justify-content: center;
           margin: 0 auto;
           margin-top: 25%;
         }
-        .introduction{
+        .introduction{          /*ABOUT ME SECTION*/
           margin-left: 0%;
           margin-right: 0%;
           padding: 7px;
           font-size: 13px;
         }
-        .education-item{
+        .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
           animation: appear-left linear forwards;
           animation-timeline: view();
           animation-range: entry 0 cover 30%;
@@ -40,12 +40,12 @@
              transform: translateX(15px);
           }
         }
-        .container-grade{
+        .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
           position: relative;
           margin-top: 50%;
           width: 40%;
         }
-        .experience-container{
+        .experience-container{    /*WORK EXPERIANCE I HAVE*/
           flex-direction: column;
           padding: 7px;
           h5{
@@ -55,6 +55,9 @@
           margin-left: 10px;
           font-size: 13px;
           }
+        }
+        .contact{             /*PICTURES WITH LINKS TO SOME SOCIALS*/
+          padding: 7px;
         }  
       }
 
@@ -65,18 +68,18 @@
       Padding: 10px - 15px
       Image width: 100% of the container*/
       @media(max-width:375px){
-        .header-text{
+        .header-text{           /*RESUME NOELLE DE VRIES TEXT*/
           height:100px;
           font-size: 24px;
           place-content: center;
           }
-        .Self-image{
+        .Self-image{            /*SELFIE IMAGE*/
           align-items: center; 
           justify-content: center;
           margin: 0 auto;
           margin-top: 25%;
         }
-        .introduction{
+        .introduction{          /*ABOUT ME SECTION*/
           margin-left: 0%;
           margin-right: 0%;
           padding: 13px;
@@ -99,12 +102,12 @@
              transform: translateX(15px);
           }
         }
-        .container-grade{
+        .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
           position: relative;
           margin-top: 50%;
           width: 40%;
         }
-        .experience-container{
+        .experience-container{    /*WORK EXPERIANCE I HAVE*/
           flex-direction: column;
           padding: 13px;
           h5{
@@ -114,7 +117,10 @@
           margin-left: 10px;
           font-size: 15px;
           }
-        }  
+        }
+        .contact{             /*PICTURES WITH LINKS TO SOME SOCIALS*/
+          padding: 13px;
+        }
       }
 
 
@@ -124,24 +130,24 @@
       Padding: 15px - 20px
       Image width: 100% of the container*/
       @media(max-width:425px){
-        .header-text{
+        .header-text{           /*RESUME NOELLE DE VRIES TEXT*/
           height:100px;
           font-size: 24px;
           place-content: center;
           }
-        .Self-image{
+        .Self-image{            /*SELFIE IMAGE*/
           align-items: center; 
           justify-content: center;
           margin: 0 auto;
           margin-top: 25%;
         }
-        .introduction{
+        .introduction{          /*ABOUT ME SECTION*/
           margin-left: 0%;
           margin-right: 0%;
           padding: 18px;
           font-size: 17px;
         }
-        .education-item{
+        .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
           animation: appear-left linear forwards;
           animation-timeline: view();
           animation-range: entry 0 cover 30%;
@@ -158,12 +164,12 @@
              transform: translateX(15px);
           }
         }
-        .container-grade{
+        .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
           position: relative;
           margin-top: 50%;
           width: 40%;
         }
-        .experience-container{
+        .experience-container{    /*WORK EXPERIANCE I HAVE*/
           flex-direction: column;
           padding: 18px;
           h5{
@@ -173,6 +179,9 @@
           margin-left: 10px;
           font-size: 17px;
           }
+        }
+        .contact{             /*PICTURES WITH LINKS TO SOME SOCIALS*/
+          padding: 18px;
         }  
       }
 
@@ -182,24 +191,24 @@
       Padding: 20px - 30px
       Image width: 100% of the container*/
       @media(max-width:768px){
-        .header-text{
+        .header-text{           /*RESUME NOELLE DE VRIES TEXT*/
           height:100px;
           font-size: 24px;
           place-content: center;
           }
-        .Self-image{
+        .Self-image{            /*SELFIE IMAGE*/
           align-items: center; 
           justify-content: center;
           margin: 0 auto;
           margin-top: 25%;
         }
-        .introduction{
+        .introduction{          /*ABOUT ME SECTION*/
           margin-left: 0%;
           margin-right: 0%;
           padding: 25px;
           font-size: 19px;
         }
-        .education-item{
+        .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
           animation: appear-left linear forwards;
           animation-timeline: view();
           animation-range: entry 0 cover 30%;
@@ -216,12 +225,12 @@
              transform: translateX(15px);
           }
         }
-        .container-grade{
+        .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
           position: relative;
           margin-top: 50%;
           width: 40%;
         }
-        .experience-container{
+        .experience-container{    /*WORK EXPERIANCE I HAVE*/
           flex-direction: column;
           padding: 25px;
           h5{
@@ -231,6 +240,9 @@
           margin-left: 10px;
           font-size: 19px;
           }
+        }
+        .contact{             /*PICTURES WITH LINKS TO SOME SOCIALS*/
+          padding: 25px;
         }  
       }
 
@@ -241,24 +253,24 @@
       Padding: 25px - 35px
       Image width: 100% of the container*/
       @media(max-width:1024px){
-        .header-text{
+        .header-text{           /*RESUME NOELLE DE VRIES TEXT*/
           height:100px;
           font-size: 24px;
           place-content: center;
           }
-        .Self-image{
+        .Self-image{            /*SELFIE IMAGE*/
           align-items: center; 
           justify-content: center;
           margin: 0 auto;
           margin-top: 25%;
         }
-        .introduction{
+        .introduction{          /*ABOUT ME SECTION*/
           margin-left: 0%;
           margin-right: 0%;
           padding: 25px;
           font-size: 21px;
         }
-        .education-item{
+        .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
           animation: appear-left linear forwards;
           animation-timeline: view();
           animation-range: entry 0 cover 30%;
@@ -275,12 +287,12 @@
              transform: translateX(15px);
           }
         }
-        .container-grade{
+        .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
           position: relative;
           margin-top: 50%;
           width: 40%;
         }
-        .experience-container{
+        .experience-container{    /*WORK EXPERIANCE I HAVE*/
           flex-direction: column;
           padding: 25px;
           h5{
@@ -290,6 +302,9 @@
           margin-left: 10px;
           font-size: 21px;
           }
+        }
+        .contact{             /*PICTURES WITH LINKS TO SOME SOCIALS*/
+          padding: 25px;
         }  
       }
 
@@ -297,23 +312,23 @@
 
 /* Mobile  ranging from 360×640 to 414×896. */
   @media(max-width:600px){
-    .header-text{
+    .header-text{           /*RESUME NOELLE DE VRIES TEXT*/
       height:100px;
       font-size: 24px;
       place-content: center;
       }
-    .Self-image{
+    .Self-image{            /*SELFIE IMAGE*/
       align-items: center; 
       justify-content: center;
       margin: 0 auto;
       margin-top: 25%;
     }
-    .introduction{
+    .introduction{          /*ABOUT ME SECTION*/
       margin-left: 0%;
       margin-right: 0%;
       font-size: 15px;
     }
-    .education-item{
+    .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
       animation: appear-left linear forwards;
       animation-timeline: view();
       animation-range: entry 0 cover 30%;
@@ -329,12 +344,12 @@
          transform: translateX(15px);
       }
     }
-    .container-grade{
+    .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
       position: relative;
       margin-top: 50%;
       width: 40%;
     }
-    .experience-container{
+    .experience-container{    /*WORK EXPERIANCE I HAVE*/
       flex-direction: column;
       padding: 0;
       h5{
@@ -344,6 +359,9 @@
       margin-left: 10px;
       font-size: 15px;
       }
+    }
+    .contact{             /*PICTURES WITH LINKS TO SOME SOCIALS*/
+      padding: 7px;
     }  
   }
 
@@ -351,7 +369,7 @@
 
 /* Tablet  ranging from 601×962 to 1280×800. */
   @media(min-width:601px){
-    .header-text{
+    .header-text{           /*RESUME NOELLE DE VRIES TEXT*/
       height: 200px;
       font-size: 29px;
       opacity: 0.8;
@@ -363,18 +381,18 @@
       25%{opacity: 1;}
       85%, 100% {opacity: 0;}
     }
-    .Self-image{
+    .Self-image{            /*SELFIE IMAGE*/
       align-items: center; 
       justify-content: center;
       margin: 0 auto;
       margin-top: 18rem;
     }
-    .introduction{
+    .introduction{          /*ABOUT ME SECTION*/
       margin-left: 10%; 
       margin-right: 10%;
       font-size: 15px;
     }
-    .education-item{
+    .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
       animation: appear-left linear forwards;
       animation-timeline: view();
       animation-range: entry 0 cover 30%;
@@ -390,12 +408,12 @@
          transform: translateX(50px);
       }
     }
-    .container-grade{
+    .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
       position: relative;
       margin-top: 10%;
       width: 35%;
     }
-    .experience-container{
+    .experience-container{    /*WORK EXPERIANCE I HAVE*/
       flex-direction: column;
       padding: 0;
       h5{
@@ -406,12 +424,15 @@
         font-size: 15px;
       }
     }
+    .contact{             /*PICTURES WITH LINKS TO SOME SOCIALS*/
+      padding: 15px;
+    }
   }
 
 
 /* Computer ranging from 1280×720 to 1920×1080 */
   @media(min-width:1301px){
-    .header-text{
+    .header-text{           /*RESUME NOELLE DE VRIES TEXT*/
       place-content: center;
       position: relative;
       height: 300px;
@@ -424,18 +445,18 @@
       25%{opacity: 1;}
       85%, 100% {opacity: 0;}
     }
-    .Self-image{
+    .Self-image{            /*SELFIE IMAGE*/
       align-items: center; 
       justify-content: center;
       margin: 0 auto;
       margin-top: 30%;
     }
-    .introduction{
+    .introduction{          /*ABOUT ME SECTION*/
       margin-left: 20%;
       margin-right: 20%;
       font-size: 20px;
     }
-    .education-item{
+    .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
       animation: appear-left linear forwards;
       animation-timeline: view();
       animation-range: entry 0 cover 40%;
@@ -451,12 +472,12 @@
          transform: translateX(50px);
       }
     }
-    .container-grade{
+    .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
       position: relative;
       margin-top: 10%;
       width: 50%;
     }
-    .experience-container{
+    .experience-container{    /*WORK EXPERIANCE I HAVE*/
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
@@ -468,4 +489,7 @@
         font-size: 20px;
       }
     }
+    .contact{             /*PICTURES WITH LINKS TO SOME SOCIALS*/
+      padding: 25px;
     }
+  }
