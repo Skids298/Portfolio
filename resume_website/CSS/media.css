@@ -281,6 +281,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
 
 /* Computer ranging from 1280×720 to 1920×1080 */
   @media(min-width:1301px){
+    body{
+      padding: 40px;
+    }
     .header-text{           /*RESUME NOELLE DE VRIES TEXT*/
       place-content: center;
       position: relative;
@@ -299,11 +302,13 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
       justify-content: center;
       margin: 0 auto;
       margin-top: 30%;
+      width: 50%
     }
     .introduction{          /*ABOUT ME SECTION*/
       margin-left: 20%;
       margin-right: 20%;
       font-size: 20px;
+      margin-bottom: 8rem;
     }
     .experience-container{    /*WORK EXPERIANCE I HAVE*/
       display: flex;
@@ -319,5 +324,6 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
     }
     .contact{             /*PICTURES WITH LINKS TO SOME SOCIALS*/
       padding: 25px;
+      
     }
   }

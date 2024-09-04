@@ -683,13 +683,14 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     max-width: 600px;
-    margin-left: 4rem;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
   }
   .skill-level-text {
     grid-column: span 5;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-left: 100px;
   }
   .tool-skill {
@@ -721,31 +722,31 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
     width: 0%;
     animation: fill-100 linear forwards;
       animation-timeline: view();
-      animation-range: entry 0 cover 30%;
+      animation-range: entry 0 cover 20%;
   }
   .advanced {
     width: 0%;
     animation: fill-80 linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 30%;
+    animation-range: entry 0 cover 20%;
   }
   .intermediate {
     width: 0%;
     animation: fill-60 linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 30%;
+    animation-range: entry 0 cover 20%;
   }
   .elementary {
     width: 0%;
     animation: fill-40 linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 30%;
+    animation-range: entry 0 cover 20%;
   }
   .beginner {
     width: 0%;
     animation: fill-20 linear forwards;
     animation-timeline: view();
-    animation-range: entry 0 cover 30%;
+    animation-range: entry 0 cover 20%;
   }
   
   /*animation of filling the bar */
