@@ -1,0 +1,17 @@
+Hello and welcome to my website and the about page, where I will go more indept about the project and the reason behind creating it.
+Ofcourse it is not mandetory to read this and you are more than welcome to enjoy the website and the code.
+
+I started this project around august of 2024 as a part of my internship at my college where i did 300 hours of work.
+The main idea was to become more profitient in HTML, CSS, and even some JavaScript, 
+ while working on something that I had creative freedom over.
+It was neccecarry to esstablish a strong foundation before starting on a project for my university.
+This way I was able to learn the stuff i needed to know on a black canvas, instead of starting
+ with an already esstablish website.
+
+I was thinking about what I should make and though it would be a good and fun idea to make a portfolio website.
+This way I was able to make a fun way to display my skills, while also learning how to put them there effitiently.
+While looking at insperation of how others had done it I found two that really inspired me in this project.
+    http://www.rleonardi.com/interactive-resume/
+    https://www.moritzpetersen.com/
+They were fun to watch and gave me ideas on what I wanted to do for my website. 
+

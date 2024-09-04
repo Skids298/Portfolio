@@ -1,4 +1,5 @@
-/*Media for different size screens*/
+/*Media for different size screens
+all media tags are the same but sizes are adjusted for the different viewscreen*/
 
 /* Small Phones (Portrait) Max-width: 320px
     Recommended sizes:
@@ -22,28 +23,6 @@
           margin-right: 0%;
           padding: 7px;
           font-size: 13px;
-        }
-        .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
-          animation: appear-left linear forwards;
-          animation-timeline: view();
-          animation-range: entry 0 cover 30%;
-          padding: 7px;
-          font-size: 13px;
-        }
-        @keyframes appear-left{
-          from{
-              opacity: 0;
-              transform: translateX(-150px);
-          }
-          to {
-             opacity: 1;
-             transform: translateX(15px);
-          }
-        }
-        .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
-          position: relative;
-          margin-top: 50%;
-          width: 40%;
         }
         .experience-container{    /*WORK EXPERIANCE I HAVE*/
           flex-direction: column;
@@ -85,28 +64,6 @@
           padding: 13px;
           font-size: 15px;
         }
-        .education-item{
-          animation: appear-left linear forwards;
-          animation-timeline: view();
-          animation-range: entry 0 cover 30%;
-          padding: 13px;
-          font-size: 15px;
-        }
-        @keyframes appear-left{
-          from{
-              opacity: 0;
-              transform: translateX(-150px);
-          }
-          to {
-             opacity: 1;
-             transform: translateX(15px);
-          }
-        }
-        .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
-          position: relative;
-          margin-top: 50%;
-          width: 40%;
-        }
         .experience-container{    /*WORK EXPERIANCE I HAVE*/
           flex-direction: column;
           padding: 13px;
@@ -147,28 +104,6 @@
           padding: 18px;
           font-size: 17px;
         }
-        .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
-          animation: appear-left linear forwards;
-          animation-timeline: view();
-          animation-range: entry 0 cover 30%;
-          padding: 18px;
-          font-size: 17px;
-        }
-        @keyframes appear-left{
-          from{
-              opacity: 0;
-              transform: translateX(-150px);
-          }
-          to {
-             opacity: 1;
-             transform: translateX(15px);
-          }
-        }
-        .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
-          position: relative;
-          margin-top: 50%;
-          width: 40%;
-        }
         .experience-container{    /*WORK EXPERIANCE I HAVE*/
           flex-direction: column;
           padding: 18px;
@@ -207,28 +142,6 @@
           margin-right: 0%;
           padding: 25px;
           font-size: 19px;
-        }
-        .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
-          animation: appear-left linear forwards;
-          animation-timeline: view();
-          animation-range: entry 0 cover 30%;
-          padding: 25px;
-          font-size: 19px;
-        }
-        @keyframes appear-left{
-          from{
-              opacity: 0;
-              transform: translateX(-150px);
-          }
-          to {
-             opacity: 1;
-             transform: translateX(15px);
-          }
-        }
-        .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
-          position: relative;
-          margin-top: 50%;
-          width: 40%;
         }
         .experience-container{    /*WORK EXPERIANCE I HAVE*/
           flex-direction: column;
@@ -270,28 +183,6 @@
           padding: 25px;
           font-size: 21px;
         }
-        .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
-          animation: appear-left linear forwards;
-          animation-timeline: view();
-          animation-range: entry 0 cover 30%;
-          padding: 25px;
-          font-size: 21px;
-        }
-        @keyframes appear-left{
-          from{
-              opacity: 0;
-              transform: translateX(-150px);
-          }
-          to {
-             opacity: 1;
-             transform: translateX(15px);
-          }
-        }
-        .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
-          position: relative;
-          margin-top: 50%;
-          width: 40%;
-        }
         .experience-container{    /*WORK EXPERIANCE I HAVE*/
           flex-direction: column;
           padding: 25px;
@@ -327,27 +218,6 @@
       margin-left: 0%;
       margin-right: 0%;
       font-size: 15px;
-    }
-    .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
-      animation: appear-left linear forwards;
-      animation-timeline: view();
-      animation-range: entry 0 cover 30%;
-      font-size: 15px;
-    }
-    @keyframes appear-left{
-      from{
-          opacity: 0;
-          transform: translateX(-150px);
-      }
-      to {
-         opacity: 1;
-         transform: translateX(15px);
-      }
-    }
-    .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
-      position: relative;
-      margin-top: 50%;
-      width: 40%;
     }
     .experience-container{    /*WORK EXPERIANCE I HAVE*/
       flex-direction: column;
@@ -392,27 +262,6 @@
       margin-right: 10%;
       font-size: 15px;
     }
-    .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
-      animation: appear-left linear forwards;
-      animation-timeline: view();
-      animation-range: entry 0 cover 30%;
-      font-size: 15px;
-    }
-    @keyframes appear-left{
-      from{
-          opacity: 0;
-          transform: translateX(-100px);
-      }
-      to {
-         opacity: 1;
-         transform: translateX(50px);
-      }
-    }
-    .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
-      position: relative;
-      margin-top: 10%;
-      width: 35%;
-    }
     .experience-container{    /*WORK EXPERIANCE I HAVE*/
       flex-direction: column;
       padding: 0;
@@ -455,27 +304,6 @@
       margin-left: 20%;
       margin-right: 20%;
       font-size: 20px;
-    }
-    .education-item{       /*CLASSES TAKEN -----COMMENTED OUT FOR NOW*/
-      animation: appear-left linear forwards;
-      animation-timeline: view();
-      animation-range: entry 0 cover 40%;
-      font-size: 20px;
-    }
-    @keyframes appear-left{
-      from{
-          opacity: 0;
-          transform: translateX(-100px);
-      }
-      to {
-         opacity: 1;
-         transform: translateX(50px);
-      }
-    }
-    .container-grade{     /*GRADE I GOT FOR THE CLASSES ------COMMENTED OUT FOR NOW*/
-      position: relative;
-      margin-top: 10%;
-      width: 50%;
     }
     .experience-container{    /*WORK EXPERIANCE I HAVE*/
       display: flex;
