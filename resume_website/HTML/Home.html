@@ -7,6 +7,7 @@
         <link href="/resume_website/CSS/language_container.css" rel="stylesheet" type="text/css">
         <link href="/resume_website/CSS/tools_container.css"    rel="stylesheet" type="text/css">
         <link href="/resume_website/CSS/media.css"              rel="stylesheet" type="text/css">
+        <link href="/resume_website/CSS/Project.css"             rel="stylesheet" type="text/css">
         
         <style>
             /* colors to remember 
@@ -98,22 +99,36 @@
       <main>
         <picture class="Self-image">
           <source media="(max-width: 320px)" 
-                 srcset="/resume_website/IMG/self-image/Self-300w.jpg 320w">
+                 srcset="/resume_website/IMG/self-image/Self-300w.jpg 320w"
+                 oncontextmenu=return false;>
           <source media="(max-width: 375px)" 
-                  srcset="/resume_website/IMG/self-image/Self-300w.jpg 375w">
+                  srcset="/resume_website/IMG/self-image/Self-300w.jpg 375w"
+                  oncontextmenu=return false;>
           <source media="(max-width: 430px)" 
-                  srcset="/resume_website/IMG/self-image/Self-300w.jpg 430w">
+                  srcset="/resume_website/IMG/self-image/Self-300w.jpg 430w"
+                  oncontextmenu=return false;>
           <source media="(max-width: 768px)" 
-                  srcset="/resume_website/IMG/self-image/Self-300w.jpg 768w">
+                  srcset="/resume_website/IMG/self-image/Self-300w.jpg 768w"
+                  oncontextmenu="return false;">
           <source media="(max-width: 800px)" 
-                  srcset="/resume_website/IMG/self-image/Self-300w.jpg 800w">
+                  srcset="/resume_website/IMG/self-image/Self-300w.jpg 800w"
+                  oncontextmenu="return false;">
           <source media="(max-width: 1024px)" 
-                  srcset="/resume_website/IMG/self-image/Self-884w.jpg 1024w">
+                  srcset="/resume_website/IMG/self-image/Self-884w.jpg 1024w"
+                  oncontextmenu="return false;">
           <source media="(max-width: 2000px)"
-                  srcset="/resume_website/IMG/self-image/Self-884w.jpg 2000w">  
+                  srcset="/resume_website/IMG/self-image/Self-884w.jpg 2000w"
+                  oncontextmenu="return false;">  
           <source media="(min-width: 2001px)" 
-                  srcset="Forest-6912w.png 6912w">
-          <img src="/resume_website/IMG/self-image/Self-884w.jpg" alt="selfie" width="20%"> 
+                  srcset="Forest-6912w.png 6912w"
+                  oncontextmenu="return false;">
+          <img src="/resume_website/IMG/self-image/Self-884w.jpg" alt="selfie" width="20%" oncontextmenu="return false;"> 
+          <script>
+                const image = document.getElementById('Self-image');
+                image.addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                });
+            </script>
         </picture>
         
         

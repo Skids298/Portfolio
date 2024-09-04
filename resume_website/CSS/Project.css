@@ -1,0 +1,70 @@
+/*Media for different size screens
+all media tags are the same but sizes are adjusted for the different viewscreen*/
+
+/* Small Phones (Portrait) Max-width: 320px
+    Recommended sizes:
+      Font size: 12px - 14px
+      Padding: 5px - 10px
+      Image width: 100% of the container*/
+    @media(max-width:320px){
+
+    }
+/*Small to Medium Phones (Portrait) Max-width: 375px (e.g., iPhone 12 Mini)
+    Recommended sizes:
+      Font size: 14px - 16px
+      Padding: 10px - 15px
+      Image width: 100% of the container*/
+    @media(max-width:375px){
+        
+    }
+/*Medium Phones (Portrait) Max-width: 425px (e.g., Google Pixel 5, iPhone 12/13)
+    Recommended sizes:
+      Font size: 16px - 18px
+      Padding: 15px - 20px
+      Image width: 100% of the container*/
+    @media(max-width:425px){
+        
+    }
+/*Large Phones / Small Tablets (Portrait) Max-width: 768px (e.g., iPad Mini, iPad in Portrait Mode)
+    Recommended sizes:
+      Font size: 18px - 20px
+      Padding: 20px - 30px
+      Image width: 100% of the container*/
+    @media(max-width:768px){
+        
+    }
+/*Small Tablets (Landscape) Max-width: 1024px (e.g., iPad in Landscape Mode)
+    Recommended sizes:
+      Font size: 20px - 22px
+      Padding: 25px - 35px
+      Image width: 100% of the container*/
+    @media(max-width:600px){
+        
+    }
+/* Mobile  ranging from 360×640 to 414×896. */
+    @media(max-width:600px){
+        
+    }
+/* Tablet  ranging from 601×962 to 1280×800. */
+    @media(min-width:601px){
+        
+    }
+/* Computer ranging from 1280×720 to 1920×1080 */
+    @media(min-width:1301px){
+        .project-container{
+            padding: 40px;
+        }
+        .project-section{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            
+        }
+        .project-pic {
+            transition: transform .2s;
+            
+        }
+        .project-pic:hover{
+            transform: scale(1.2); 
+        }
+    }
