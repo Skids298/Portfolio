@@ -47,6 +47,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
     background-color: #577D8B;
     border-radius: 10px;
     width: 0%;
+    text-align: right;
+    line-height: 20px;
+    color: white; 
   }
   .expert {
     width: 0%;
@@ -143,6 +146,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
     background-color: #577D8B;
     border-radius: 10px;
     width: 0%;
+    text-align: right;
+    line-height: 20px;
+    color: white; 
   }
   .expert {
     width: 0%;
@@ -239,6 +245,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
     background-color: #577D8B;
     border-radius: 10px;
     width: 0%;
+    text-align: right;
+    line-height: 20px;
+    color: white; 
   }
   .expert {
     width: 0%;
@@ -335,6 +344,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
     background-color: #577D8B;
     border-radius: 10px;
     width: 0%;
+    text-align: right;
+    line-height: 20px;
+    color: white; 
   }
   .expert {
     width: 0%;
@@ -431,6 +443,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
     background-color: #577D8B;
     border-radius: 10px;
     width: 0%;
+    text-align: right;
+    line-height: 20px;
+    color: white; 
   }
   .expert {
     width: 0%;
@@ -527,6 +542,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
     background-color: #577D8B;
     border-radius: 10px;
     width: 0%;
+    text-align: right;
+    line-height: 20px;
+    color: white; 
   }
   .expert {
     width: 0%;
@@ -615,6 +633,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
     height: 100%;
     background-color: #577D8B;
     border-radius: 10px;
+    text-align: right;
+    line-height: 20px;
+    color: white; 
   }
   .expert {
     width: 0%;
@@ -707,6 +728,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
       height: 100%;
       background-color: #577D8B;
       border-radius: 10px;
+      text-align: right;
+      line-height: 20px; /* Vertically center the text */
+      color: white; /* Ensure the text is readable on the dark background */
     }
     .expert {
       width: 0%;
