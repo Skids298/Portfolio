@@ -28,27 +28,22 @@ document.addEventListener("DOMContentLoaded", function() {
         .catch(error => console.error('Error loading the HTML file:', error));
 });
 
-
+//make the project image clickable
 function centerImage(img) {
     var overlay = document.getElementById("overlay");
     var scrollableBlock = document.getElementById("scrollable-block");
-
     if (img.classList.contains('sticky')) {
-        // Remove the sticky class to return to the original position
         img.classList.remove('sticky');
-        scrollableBlock.style.display = "none"; // Hide the scrollable block
-        overlay.style.display = "none"; // Hide the overlay
+        scrollableBlock.style.display = "none"; 
+        overlay.style.display = "none"; 
     } else {
-        // Remove any previously sticky images
         var existingStickyImage = document.querySelector('.sticky');
         if (existingStickyImage) {
             existingStickyImage.classList.remove('sticky');
-            document.getElementById("scrollable-block").style.display = "none"; // Hide scrollable block if another image was sticky
+            document.getElementById("scrollable-block").style.display = "none"; 
         }
-
-        // Add sticky class to the clicked image
         img.classList.add('sticky');
-        scrollableBlock.style.display = "block"; // Show the scrollable block
-        overlay.style.display = "block"; // Show the overlay
+        scrollableBlock.style.display = "block"; 
+        overlay.style.display = "block";
     }
 }
