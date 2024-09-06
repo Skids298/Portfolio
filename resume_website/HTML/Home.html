@@ -19,14 +19,14 @@
             */
 
     /*header or Hero*/
-            .header-text{
+            .header-text{                               /*main page title "Resume of Noelle de Vries"*/
                 display: grid;
                 place-content: center;
                 overflow-x: clip;
                 z-index: 1;
                 color: white;
             }
-            .header-image{
+            .header-image{                              /*Background forest image*/
               grid-column: 1/-1;
               position: absolute;
               inset:0;
@@ -38,7 +38,7 @@
               animation-range: exit cover 95%;
               opacity: 1; 
             }
-            @keyframes fade-out-picture{
+            @keyframes fade-out-picture{                /*Forest background fades when scrolling down*/
                 to {opacity: 0;}
             }
             
@@ -49,20 +49,20 @@
                 transition: 1s ease;
             }
 
-            .Self-image{
+            .Self-image{                                /*Selfie image*/
               display: flex;
               flex-direction: column;
               animation: fade-in linear forwards;
               animation-timeline: view();
               animation-range: entry;
             }
-            @keyframes fade-in{
+            @keyframes fade-in{                         /*Fades in when scrolling down*/
                 from {scale: .8; opacity: 0}   
                 to {scale: 1; opacity:1}
             }
 
     /*footer*/
-            .contact{
+            .contact{                                   /*social media and contact info*/
               display: flex;
               justify-content: center;
               align-items: center;
@@ -75,29 +75,29 @@
       <header>
         <H1 class="header-text">RESUME <br> Noelle de Vries</H1>
 <!--HERO image-->      
-        <picture class="header-image">
-    <source media="(max-width: 320px)" 
+        <picture class="header-image">                  <!--Forest image in different sizes for different screens-->
+        <source media="(max-width: 320px)" 
             srcset="/resume_website\IMG\forest_banner\Forest-320w.png 320w">
-    <source media="(max-width: 375px)" 
+        <source media="(max-width: 375px)" 
             srcset="/resume_website\IMG\forest_banner\Forest-375w.png 375w">
-    <source media="(max-width: 430px)" 
+        <source media="(max-width: 430px)" 
             srcset="/resume_website\IMG\forest_banner\Forest-430w.png 430w">
-    <source media="(max-width: 768px)" 
+        <source media="(max-width: 768px)" 
             srcset="/resume_website\IMG\forest_banner\Forest-768w.png 768w">
-    <source media="(max-width: 800px)" 
+        <source media="(max-width: 800px)" 
             srcset="/resume_website\IMG\forest_banner\Forest-800w.png 800w">
-    <source media="(max-width: 1024px)" 
+        <source media="(max-width: 1024px)" 
             srcset="/resume_website\IMG\forest_banner\Forest-1024w.png 1024w">
-    <source media="(max-width: 2000px)"
+        <source media="(max-width: 2000px)"
             srcset="/resume_website\IMG\forest_banner\Forest-2000w.png 2000w">  
-    <source media="(min-width: 2001px)" 
+        <source media="(min-width: 2001px)" 
             srcset="Forest-6912w.png 6912w">
-    <img src="/resume_website\IMG\forest_banner\Forest-6912w.png" alt="Forest Image" width="100%">
+        <img src="/resume_website\IMG\forest_banner\Forest-6912w.png" alt="Forest Image" width="100%">
         </picture>
       </header>
        
       <main>
-        <picture class="Self-image">
+        <picture class="Self-image">                    <!--Selfie image in different sizes for different screens-->
           <source media="(max-width: 320px)" 
                  srcset="/resume_website/IMG/self-image/Self-300w.jpg 320w"
                  oncontextmenu=return false;>
@@ -134,7 +134,7 @@
         
   <!--INTRODUCTION-->
         <div>
-            <div class="introduction">
+            <div class="introduction">                  <!--Introduction text under selfie to explain who I am-->
                 <p>My name is Noelle de Vries and I was born and raised in The Netherlands.
                 When I was 18 me and my family moved to Texas for my dads work.
                 Because of this I was able to achieve a bacholors degree in computer science
@@ -149,38 +149,38 @@
         
 <!--EDUCATION ACCOMPLISHMENTS-->
         <h1>Computer science experience</h1>
-  <!--Languages and profitiency-->
-          <div id="languages-section"></div>
+  <!--Languages and profitiency-->                      <!--shows languages I know and the profitiency,-->
+          <div id="languages-section"></div>            <!--made in another HTML file for easy reading-->       
           <script src="/resume_website/JavaScript.js"></script>
 
-  <!--Tools and profitiency-->
-        <div id="tools-section"></div>
+  <!--Tools and profitiency-->                          <!--shows computer tools I know and the profitiency,-->
+        <div id="tools-section"></div>                  <!--made in another HTML file for easy reading-->
         <script src="/resume_website/JavaScript.js"></script>
   
 
 <!--PROJECTS-->
-        <h1>Projects</h1>
-        <div id="PROJECTS"></div>
+        <h1>Projects</h1>                               <!--shows projects i have done with info about them-->
+        <div id="PROJECTS"></div>                       <!--made in another HTML file for easy reading-->
         <script src="/resume_website/JavaScript.js"></script>
 
 
 <!--WORK EXPERIANCE AND RESPONSIBILITIES-->
             <h1>Work experience</h1>
-            <div class="experience-container">
+            <div class="experience-container">          <!--work experiance with a timeline and skills needed for the job-->
                 <div>
-                    <H2>Happy Pizza cook</H2>
-                    <h4>October 23 2023 - August 1 2024</h4>
-                    <p>
-                    - responsible for taking orders, making pizza's, <br>
+                    <H2>Happy Pizza cook</H2>                           <!--name of work/job-->
+                    <h4>October 23 2023 - August 1 2024</h4>            <!--time worked there-->
+                    <p>                                                 <!--Skills needed at the job or tasks performed-->
+                    - responsible for taking orders, making pizza's, <br>      
                       and grabbing ingredients as needed<br>
                     - ability to adapt quickly if there is a rush<br>
                     - Working in a fast-paced environment
                     </p>
                 </div>
                 <div>
-                    <H2>Barrow Brewing</H2>
-                    <h4>March 1 2024 - August 1 2024</h4>
-                    <p>
+                    <H2>Barrow Brewing</H2>                             <!--name of work/job-->
+                    <h4>March 1 2024 - August 1 2024</h4>               <!--time worked there-->
+                    <p>                                                 <!--Skills needed at the job or tasks performed-->
                     - Have knowledge and be able to describe the new beers<br>
                     - Recommend beers to customers based on preferences<br>
                     - Fast-paced environment<br>
@@ -189,9 +189,9 @@
                     </p>
                 </div>
                 <div>
-                    <H2>Website development</H2>
-                    <h4>August 12 2024 - November 26 2024</h4>
-                    <p>
+                    <H2>Website development</H2>                        <!--name of work/job-->
+                    <h4>August 12 2024 - November 26 2024</h4>          <!--time worked there-->
+                    <p>                                                 <!--Skills needed at the job or tasks performed-->
                     - 300 hours of an internship at school<br>
                     - Doing a personal project and working of school website<br>
                     - learning about flex and grid<br>
