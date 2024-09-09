@@ -47,3 +47,38 @@ function centerImage(img) {
         overlay.style.display = "block";
     }
 }
+
+function centerImage(img) {
+    var modal = img.parentElement.querySelector('.modal');
+    var overlay = img.parentElement.querySelector('.overlay');
+
+    if (img.classList.contains('sticky')) {
+        img.classList.remove('sticky');
+        modal.classList.remove('open');
+        overlay.classList.remove('open');
+        document.body.classList.remove('no-scroll'); // Allow scrolling again
+    } else {
+        var existingStickyImage = document.querySelector('.sticky');
+        if (existingStickyImage) {
+            existingStickyImage.classList.remove('sticky');
+            existingStickyImage.parentElement.querySelector('.modal').classList.remove('open');
+            existingStickyImage.parentElement.querySelector('.overlay').classList.remove('open');
+        }
+        img.classList.add('sticky');
+        modal.classList.add('open');
+        overlay.classList.add('open');
+        document.body.classList.add('no-scroll'); // Prevent scrolling
+    }
+}
+
+function closeModal() {
+    var stickyImage = document.querySelector('.sticky');
+    if (stickyImage) {
+        stickyImage.classList.remove('sticky');
+        var modal = stickyImage.parentElement.querySelector('.modal');
+        var overlay = stickyImage.parentElement.querySelector('.overlay');
+        modal.classList.remove('open');
+        overlay.classList.remove('open');
+        document.body.classList.remove('no-scroll'); // Allow scrolling again
+    }
+}
