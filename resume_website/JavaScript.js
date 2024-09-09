@@ -1,31 +1,31 @@
 //fetch the languages-profitiency file with the languages-container and put on home.html
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('/resume_website/HTML/Languages-profitiency.html')
+    fetch('/resume_website/HTML/Languages-profitiency.html')                    //the languages-profitiency file will the fetched
         .then(response => response.text())
         .then(data => {
             document.getElementById('languages-section').innerHTML = data;
         })
-        .catch(error => console.error('Error loading the HTML file:', error));
+        .catch(error => console.error('Error loading the HTML file:', error)); //if it cannot fetch the file then give error message
 });
 
 //fetch the tools-profitiency file with the tools-container and put on home.html
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('/resume_website/HTML/tools-profitiency.html')
-        .then(response => response.text())
+    fetch('/resume_website/HTML/tools-profitiency.html')                        //the tool-profitiency file will the fetched
+        .then(response => response.text())                                      
         .then(data => {
             document.getElementById('tools-section').innerHTML = data;
         })
-        .catch(error => console.error('Error loading the HTML file:', error));
+        .catch(error => console.error('Error loading the HTML file:', error)); //if it cannot fetch the file then give error message
 });
 
 //fetch the Projects file with the projects-container and put on home.html
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('/resume_website/HTML/Projects.html')
+    fetch('/resume_website/HTML/Projects.html')                                 //the projects-container file will the fetched
         .then(response => response.text())
         .then(data => {
             document.getElementById('PROJECTS').innerHTML = data;
         })
-        .catch(error => console.error('Error loading the HTML file:', error));
+        .catch(error => console.error('Error loading the HTML file:', error)); //if it cannot fetch the file then give error message
 });
 
 //make the project image clickable
