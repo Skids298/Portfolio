@@ -1,0 +1,28 @@
+/*Media for different size screens
+all media tags are the same but sizes are adjusted for the different viewscreen*/
+
+/* Small Phones (Portrait) Max-width: 320px*/
+    @media(max-width:320px){
+        .project-container {
+        padding: 7px;
+        }
+        .project-section {
+            flex-direction: column;
+            padding: 7px;
+            align-items: left;
+            margin-bottom: 10rem;
+        }
+    }
+
+/* Computer ranging from 1280×720 to 1920×1080 */
+    @media(min-width:1301px){
+        .project-container {
+        padding: 25px;
+        }
+        .project-section {
+            display: flex;
+            padding: 7px;
+            align-items: left;
+            margin-bottom: 10rem;
+        }
+    }
