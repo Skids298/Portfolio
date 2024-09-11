@@ -17,7 +17,7 @@
             "runtimeArgs": [
                 "--remote-debugging-port=9222"
             ],
-            "url": "c:\\Users\\noell\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.5\\out\\startpage\\index.html", // Provide your project's url to finish configuring
+            "url": "c:\\Users\\noell\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.5\\out\\startpage\\index.html",
             "presentation": {
                 "hidden": true
             }
@@ -30,7 +30,7 @@
                 "--headless",
                 "--remote-debugging-port=9222"
             ],
-            "url": "c:\\Users\\noell\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.5\\out\\startpage\\index.html", // Provide your project's url to finish configuring
+            "url": "c:\\Users\\noell\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.5\\out\\startpage\\index.html",
             "presentation": {
                 "hidden": true
             }
@@ -39,10 +39,16 @@
             "type": "vscode-edge-devtools.debug",
             "name": "Open Edge DevTools",
             "request": "attach",
-            "url": "c:\\Users\\noell\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.5\\out\\startpage\\index.html", // Provide your project's url to finish configuring
+            "url": "c:\\Users\\noell\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.5\\out\\startpage\\index.html",
             "presentation": {
                 "hidden": true
             }
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/resume_website/HTML/Home.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/resume_website/HTML/Home.html"
         }
     ],
     "compounds": [

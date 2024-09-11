@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //make the project image clickable
 function centerImage(img) {
-    //var modal = img.parentElement.querySelector('.modal');
-    //var overlay = img.parentElement.querySelector('.overlay');
+    var modal = img.parentElement.querySelector('.modal');
+    var overlay = img.parentElement.querySelector('.overlay');
 
     if (img.classList.contains('sticky')) {
         img.classList.remove('sticky');
