@@ -8,54 +8,43 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
       Image width: 100% of the container*/
     @media(max-width:320px){
         .project-container {
-            padding: 20px;
+            padding: 7px;
+            max-width: 320px;
         }
-        
         .project-section {
             flex-direction: column;
             padding: 7px;
-            align-items: center;
+            align-items: left;
             margin-bottom: 10rem;
         }
-        
         .clickable-image {
-            width: 300px;
+            width: 100px;
             height: auto;
-            cursor: pointer;
-            transition: transform 0.3s ease;
         }
-        
-        .clickable-image:hover {
-            transform: scale(1.5);
-        }
-        
         .modal {
             display: none;
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: auto;
+            left: auto;
+            width: 70%;
+            max-width: 320px;
             background: white;
-            padding: 20px;
+            padding: 7px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             z-index: 1000;
             max-height: 90vh;
             overflow-y: auto;
         }
-        
         .modal.open {
             display: block;
         }
-        
         .modal-content {
-            text-align: center;
+            text-align: left;
         }
-        
         .modal img {
             max-width: 100%;
             height: auto;
         }
-        
         .close-modal {
             background: #333;
             color: white;
@@ -64,11 +53,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             cursor: pointer;
             margin-top: 10px;
         }
-        
         .close-modal:hover {
             background: #555;
         }
-        
         .overlay {
             display: none;
             position: fixed;
@@ -79,15 +66,21 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             background: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
-        
         .overlay.open {
             display: block;
         }
-
+        .sticky {
+            position: fixed; /* Position it independently of the rest of the layout */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
         .no-scroll {
             overflow: hidden;
         }
     }
+
 /*Small to Medium Phones (Portrait) Max-width: 375px (e.g., iPhone 12 Mini)
     Recommended sizes:
       Font size: 14px - 16px
@@ -95,50 +88,45 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
       Image width: 100% of the container*/
     @media(max-width:375px){
         .project-container {
-            padding: 20px;
+            padding: 13px;
+            max-width: 375px;
         }
-        
         .project-section {
-            flex-direction: column;
-            padding: 7px;
+            display: flex;
+            justify-content: space-evenly;
             align-items: center;
             margin-bottom: 10rem;
         }
-        
         .clickable-image {
-            width: 300px;
+            width: 100px;
             height: auto;
             cursor: pointer;
             transition: transform 0.3s ease;
         }
-        
         .modal {
             display: none;
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: auto;
+            left: auto;
+            width: 70%;
+            max-width: 375px;
             background: white;
-            padding: 20px;
+            padding: 13px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             z-index: 1000;
             max-height: 90vh;
             overflow-y: auto;
         }
-        
         .modal.open {
             display: block;
         }
-        
         .modal-content {
-            text-align: center;
+            text-align: left;
         }
-        
         .modal img {
             max-width: 100%;
             height: auto;
         }
-        
         .close-modal {
             background: #333;
             color: white;
@@ -147,11 +135,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             cursor: pointer;
             margin-top: 10px;
         }
-        
         .close-modal:hover {
             background: #555;
         }
-        
         .overlay {
             display: none;
             position: fixed;
@@ -162,15 +148,21 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             background: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
-        
         .overlay.open {
             display: block;
         }
-
+        .sticky {
+            position: fixed; /* Position it independently of the rest of the layout */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
         .no-scroll {
             overflow: hidden;
         }
     }
+
 /*Medium Phones (Portrait) Max-width: 425px (e.g., Google Pixel 5, iPhone 12/13)
     Recommended sizes:
       Font size: 16px - 18px
@@ -178,50 +170,45 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
       Image width: 100% of the container*/
     @media(max-width:425px){
         .project-container {
-            padding: 20px;
+            padding: 18px;
+            max-width: 425px;
         }
-        
         .project-section {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             margin-bottom: 10rem;
         }
-        
         .clickable-image {
             width: 300px;
             height: auto;
             cursor: pointer;
             transition: transform 0.3s ease;
         }
-        
         .modal {
             display: none;
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: auto;
+            left: auto;
+            width: 70%;
+            max-width: 425px;
             background: white;
-            padding: 20px;
+            padding: 18px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             z-index: 1000;
             max-height: 90vh;
             overflow-y: auto;
         }
-        
         .modal.open {
             display: block;
         }
-        
         .modal-content {
             text-align: center;
         }
-        
         .modal img {
             max-width: 100%;
             height: auto;
         }
-        
         .close-modal {
             background: #333;
             color: white;
@@ -230,11 +217,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             cursor: pointer;
             margin-top: 10px;
         }
-        
         .close-modal:hover {
             background: #555;
         }
-        
         .overlay {
             display: none;
             position: fixed;
@@ -245,15 +230,21 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             background: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
-        
         .overlay.open {
             display: block;
         }
-
+        .sticky {
+            position: fixed; /* Position it independently of the rest of the layout */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
         .no-scroll {
             overflow: hidden;
         }
     }
+
 /*Large Phones / Small Tablets (Portrait) Max-width: 768px (e.g., iPad Mini, iPad in Portrait Mode)
     Recommended sizes:
       Font size: 18px - 20px
@@ -261,9 +252,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
       Image width: 100% of the container*/
     @media(max-width:768px){
         .project-container {
-            padding: 20px;
+            padding: 19px;
+            max-width: 768px;
         }
-        
         .project-section {
             display: flex;
             justify-content: space-evenly;
@@ -271,45 +262,39 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             margin-bottom: 10rem;
 
         }
-        
         .clickable-image {
             width: 300px;
             height: auto;
             cursor: pointer;
             transition: transform 0.3s ease;
         }
-        
         .clickable-image:hover {
             transform: scale(1.5);
         }
-        
         .modal {
             display: none;
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: auto;
+            left: auto;
+            width: 70%;
+            max-width: 768;
             background: white;
-            padding: 20px;
+            padding: 19px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             z-index: 1000;
             max-height: 90vh;
             overflow-y: auto;
         }
-        
         .modal.open {
             display: block;
         }
-        
         .modal-content {
             text-align: center;
         }
-        
         .modal img {
             max-width: 100%;
             height: auto;
         }
-        
         .close-modal {
             background: #333;
             color: white;
@@ -318,11 +303,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             cursor: pointer;
             margin-top: 10px;
         }
-        
         .close-modal:hover {
             background: #555;
         }
-        
         .overlay {
             display: none;
             position: fixed;
@@ -333,15 +316,21 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             background: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
-        
         .overlay.open {
             display: block;
         }
-
+        .sticky {
+            position: fixed; /* Position it independently of the rest of the layout */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
         .no-scroll {
             overflow: hidden;
         }
     }
+
 /*Small Tablets (Landscape) Max-width: 1024px (e.g., iPad in Landscape Mode)
     Recommended sizes:
       Font size: 20px - 22px
@@ -349,9 +338,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
       Image width: 100% of the container*/
     @media(max-width:600px){
         .project-container {
-            padding: 20px;
+            padding: 25px;
+            max-width: 600px;
         }
-        
         .project-section {
             display: flex;
             justify-content: space-evenly;
@@ -359,45 +348,40 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             margin-bottom: 10rem;
 
         }
-        
         .clickable-image {
             width: 300px;
             height: auto;
             cursor: pointer;
             transition: transform 0.3s ease;
         }
-        
         .clickable-image:hover {
             transform: scale(1.5);
         }
-        
         .modal {
             display: none;
             position: fixed;
-            top: 50%;
-            left: 50%;
+            top: auto;
+            left: auto;
+            width: 70%;
+            max-width: 600px;
             transform: translate(-50%, -50%);
             background: white;
-            padding: 20px;
+            padding: 25px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             z-index: 1000;
             max-height: 90vh;
             overflow-y: auto;
         }
-        
         .modal.open {
             display: block;
         }
-        
         .modal-content {
             text-align: center;
         }
-        
         .modal img {
             max-width: 100%;
             height: auto;
         }
-        
         .close-modal {
             background: #333;
             color: white;
@@ -406,11 +390,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             cursor: pointer;
             margin-top: 10px;
         }
-        
         .close-modal:hover {
             background: #555;
         }
-        
         .overlay {
             display: none;
             position: fixed;
@@ -421,39 +403,42 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             background: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
-        
         .overlay.open {
             display: block;
         }
-
+        .sticky {
+            position: fixed; /* Position it independently of the rest of the layout */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
         .no-scroll {
             overflow: hidden;
         }
     }
+
 /* Mobile  ranging from 360×640 to 414×896. */
     @media(max-width:600px){
         .project-container {
             padding: 20px;
+            max-width: 600px;
         }
-        
         .project-section {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             margin-bottom: 10rem;
         }
-        
         .clickable-image {
             width: 300px;
             height: auto;
             cursor: pointer;
             transition: transform 0.3s ease;
         }
-        
         .clickable-image:hover {
             transform: scale(1.5);
         }
-        
         .modal {
             display: none;
             position: fixed;
@@ -467,20 +452,16 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             max-height: 90vh;
             overflow-y: auto;
         }
-        
         .modal.open {
             display: block;
         }
-        
         .modal-content {
             text-align: center;
         }
-        
         .modal img {
             max-width: 100%;
             height: auto;
         }
-        
         .close-modal {
             background: #333;
             color: white;
@@ -489,11 +470,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             cursor: pointer;
             margin-top: 10px;
         }
-        
         .close-modal:hover {
             background: #555;
         }
-        
         .overlay {
             display: none;
             position: fixed;
@@ -504,40 +483,43 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             background: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
-        
         .overlay.open {
             display: block;
         }
-
+        .sticky {
+            position: fixed; /* Position it independently of the rest of the layout */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
         .no-scroll {
             overflow: hidden;
         }
     }
+
 /* Tablet  ranging from 601×962 to 1280×800. */
-    @media(min-width:1301px){
+    @media(min-width:601px){
         .project-container {
-            padding: 20px;
+            padding: 15px;
+            min-width: 601px;
             max-height: max-content;
         }
-        
         .project-section {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             margin-bottom: 10rem;
         }
-        
         .clickable-image {
             width: 300px;
             height: auto;
             cursor: pointer;
             transition: transform 0.3s ease;
         }
-        
         .clickable-image:hover {
             transform: scale(1.5);
         }
-        
         .modal {
             display: none;
             position: fixed;
@@ -545,26 +527,22 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             left: 50%;
             transform: translate(-50%, -50%);
             background: white;
-            padding: 20px;
+            padding: 15px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             z-index: 1000;
             max-height: 90vh;
             overflow-y: auto;
         }
-        
         .modal.open {
             display: block;
         }
-        
         .modal-content {
             text-align: center;
         }
-        
         .modal img {
             max-width: 100%;
             height: auto;
         }
-        
         .close-modal {
             background: #333;
             color: white;
@@ -573,11 +551,9 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             cursor: pointer;
             margin-top: 10px;
         }
-        
         .close-modal:hover {
             background: #555;
         }
-        
         .overlay {
             display: none;
             position: fixed;
@@ -588,12 +564,98 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             background: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
-        
         .overlay.open {
             display: block;
         }
-
+        .sticky {
+            position: fixed; /* Position it independently of the rest of the layout */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
         .no-scroll {
             overflow: hidden;
         }
     }
+
+/* Computer ranging from 1280×720 to 1920×1080 */
+  @media(min-width:1301px){
+    .project-container {
+        padding: 25px;
+        min-width: 1301px;
+        max-height: max-content;
+    }
+    .project-section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 10rem;
+    }
+    .clickable-image {
+        width: 300px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    .clickable-image:hover {
+        transform: scale(1.5);
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    .modal.open {
+        display: block;
+    }
+    .modal-content {
+        text-align: center;
+    }
+    .modal img {
+        max-width: 100%;
+        height: auto;
+    }
+    .close-modal {
+        background: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .close-modal:hover {
+        background: #555;
+    }
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+    .overlay.open {
+        display: block;
+    }
+    .sticky {
+        position: fixed; /* Position it independently of the rest of the layout */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+  }

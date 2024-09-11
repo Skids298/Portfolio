@@ -30,25 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //make the project image clickable
 function centerImage(img) {
-    var overlay = document.getElementById("overlay");
-    var scrollableBlock = document.getElementById("scrollable-block");
-    if (img.classList.contains('sticky')) {
-        img.classList.remove('sticky');
-        scrollableBlock.style.display = "none"; 
-        overlay.style.display = "none"; 
-    } else {
-        var existingStickyImage = document.querySelector('.sticky');
-        if (existingStickyImage) {
-            existingStickyImage.classList.remove('sticky');
-            document.getElementById("scrollable-block").style.display = "none"; 
-        }
-        img.classList.add('sticky');
-        scrollableBlock.style.display = "block"; 
-        overlay.style.display = "block";
-    }
-}
-
-function centerImage(img) {
     var modal = img.parentElement.querySelector('.modal');
     var overlay = img.parentElement.querySelector('.overlay');
 
