@@ -92,13 +92,14 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             max-width: 375px;
         }
         .project-section {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
+            flex-direction: column;
+            padding: 13px;
+            align-items: left;
             margin-bottom: 10rem;
         }
+        
         .clickable-image {
-            width: 100px;
+            width: 200px;
             height: auto;
             cursor: pointer;
             transition: transform 0.3s ease;
@@ -109,7 +110,6 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
             top: auto;
             left: auto;
             width: 70%;
-            max-width: 375px;
             background: white;
             padding: 13px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
