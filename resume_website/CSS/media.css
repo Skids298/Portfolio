@@ -201,7 +201,6 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
       }
 
 
-
 /* Mobile  ranging from 360×640 to 414×896. */
   @media(max-width:600px){
     .header-text{           /*RESUME NOELLE DE VRIES TEXT*/
@@ -235,7 +234,6 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
       padding: 7px;
     }  
   }
-
 
 
 /* Tablet  ranging from 601×962 to 1280×800. */
@@ -279,7 +277,7 @@ all media tags are the same but sizes are adjusted for the different viewscreen*
     }
   }
 
-
+  
 /* Computer ranging from 1280×720 to 1920×1080 */
   @media(min-width:1301px){
     body{
