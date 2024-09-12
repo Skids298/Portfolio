@@ -2,10 +2,12 @@
 name: Bug report
 about: Create a report to help us improve
 title: ''
-labels: ''
-assignees: ''
+labels: bug
+assignees: Skids298
 
 ---
+
+OH no, you found a bug, please let us know where so we can get rid of these nasty little buggers for both you and future viewers.
 
 **Describe the bug**
 A clear and concise description of what the bug is.
