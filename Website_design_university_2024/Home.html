@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Computer Science |  Software Engineering | Computer Science Degree | UMHB</title>
+        <link rel="stylesheet" type="text/css" href="/media.css">
+    
+    </head>
+<!--HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER-->
+
+
+
+<!--BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY-->    
+    <body>
+    <!--MENU OF THE SITE-->
+        <div class="menu">
+            <div class="logo">
+               <img src="UMHB-logo.png" alt="UMHB logo">                            <!--GET A HIGHER QUALITY IMG FOR THE LOGO-->
+               <p>Computer science</p>                                              <!--name of major that the page is about--> 
+            </div>
+            <div class="menu-options">
+                <a href="/visit" alt="Visit UMHB">Visit</a>
+                <a href="/apply" alt="Apply to UMHB">Apply</a>
+                <a href="https://advance.umhb.edu/give">Giving</a>
+                <div class="search">
+                    <form action="/search/s" class="search-bar" id="search-bar" method="get" name="search-bar">
+                        <span class="search-icon
+                                    others"></span> <input name="term" placeholder="Search" type="search" value="">
+                    </form><span class="search-close-icon "></span>
+                </div>
+            </div>
+        </div>
+        <div id="page_content">
+    <!--UMHB AND MAJOR INFORMATION-->
+            <div class="information-container">
+                <div class="container1">
+                    <video id="myVideo" width="500px" height="auto" muted>      
+                        <source src="LIVE-ON-PURPOSE.mp4">                          <!--video reference-->
+                    </video>
+                    <script>
+                        const video = document.getElementById('myVideo');           //wait for video to play when it is in view
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    if (entry.intersectionRatio === 1) {            // Check if the bottom of the video is visible                                       
+                                        video.play();                               // Play the video when the bottom is fully in view
+                                    }
+                                } 
+                                else {
+                                    video.pause();
+                                }
+                            });
+                        }, {
+                            threshold: 1.0
+                        });
+                        observer.observe(video);                                    // Observe the video element
+                    </script>
+                    <div class="c1-text">
+                        <p>                                                         <!--info about UMHB-->
+                            Start your UMHB journey. No matter
+                            what major you choose, enjoy the smaller
+                            class sizes that promote deeper student-teacher
+                            interaction. Take advantage of office hours to ask
+                            in-depth questions, or benefit from our 
+                            <strong>free tutoring</strong> services. <br>
+                            Outside of class, you can join clubs and enjoy weekly 
+                            activities designed to help you meet people and create
+                            <strong>long-lasting connections.</strong><br>
+                            As a Christian university, faith is an integral part
+                            of our community and curriculum. We strive to equip
+                            students not only for success in their chosen careers
+                            but also for a life of purpose and service,
+                            grounded in strong spiritual values.
+                        </p>
+                    </div>
+                </div>
+                <div class="container2">
+                    <img src="UMHB-cheer.jpg" width=100% height="350px"
+                         overflow="hidden">                                         <!--img of UMHB-->
+                </div>
+                <div class="container3">
+                    <img src="students.jpg" width=100% height="350px">              <!--img of students in the degree-->
+                </div>
+                <div class="container4">
+                        <h2>Join the UMHB computer science program</h2>
+                    <div class="c4-text">
+                        <p>                                                         <!--info about the degree-->
+                            Here you will be able to hone the skills neccesary to succeed in this rapidly
+                            changing field. Student will learn about a variety of different
+                            fields including <strong>AI, cyber-security, </strong>web-development, database,
+                            and many more. This broad exposure will deepen students' 
+                            overall understanding of the technology landscape and provide a strong foundation 
+                            in multiple areas of the industry. With this knowledge, 
+                            students will be better equipped to make informed decisions about their future career paths.
+                            with <strong>specializations in: </strong>
+                            <ul>                                                    <!--list of specializations-->
+                                <li>Network centric</li>
+                                <li>Data Analysis and Visualization</li>
+                            </ul>
+                        </p>
+                        <a class="button purple large"          
+                           href="/humanities-sciences/csep/home" 
+                           alt="school of computer science" 
+                           title="school of computer science">Visit School of Computer Science</a>
+                    </div>
+                    
+                </div>
+            </div>
+    <!--YELLOW BANNER WITH INFO BUBBLES-->
+            <div id="info_bubble">
+                <div class="gold-banner">
+                    <div class="bubble_1">
+                        <h2>99%</h2>
+                        <h3>acceptence</h3>
+                    </div>
+                    <div class="bubble_2">
+                        <h2>1/13/2025</h2>
+                        <h3>Next semester</h3>
+                    </div>
+                    <div class="bubble_3">
+                        <h2>around 70</h2>
+                        <h3>clubs & societies</h3>
+                    </div>
+                </div>
+            </div>
+    <!--CARD CAROUSEL-->
+    <div class="carousel">
+        <div class="carousel-container">
+            <div class="card card1" data-index="1">                                 <!--CARD 1-->
+                <p class="card_header">What are some jobs in computer science?</p>
+                <ul>
+                    <li>Computer security analyst</li>
+                    <li>Human-computer interface programmer</li>
+                    <li>Database program analyst</li>
+                    <li>Cryptography analyst</li>
+                    <li>Small device app developer</li>
+                    <li>Web-based programmer</li>
+                    <li>Software Engineer</li>
+                </ul>
+            </div>
+            <div class="card card2" data-index="2">                                <!--CARD 2-->
+                <p class="card_header">Who is hiring UMHB computer science degree students?</p>
+                <ul>
+                    <li>Dell</li>
+                    <li>Microsoft</li>
+                    <li>Cisco</li>
+                    <li>National Security Agency</li>
+                    <li>General Motors</li>
+                    <li>McLane Advanced Technologies</li>
+                </ul>
+            </div>
+            <div class="card card3" data-index="3">                                 <!--CARD 3-->
+                <p class="card_header">Where can I go to grad school with a major in computer science?</p>
+                <ul>
+                    <li>University of Mary Hardin-Baylor</li>
+                    <li>University of Texas at Austin</li>
+                    <li>Baylor University</li>
+                    <li>Texas A&M University</li>
+                    <li>University of Texas at Arlington</li>
+                    <li>University of Texas at Dallas</li>
+                    <li>University of Texas at San Antonio</li>
+                </ul>
+            </div>
+            <div class="card card4" data-index="4">                                 <!--CARD 4-->
+                <p class="card_header">Why computer science?</p>
+                <article>
+                <p>Whether the setting is business, science, or social engagement,
+                    computer science professionals are in high demand for their
+                    ability to devise creative technological solutions. 
+                </p>
+                </article>
+                
+            </div>
+            <div class="card card5" data-index="5">                                 <!--CARD 5-->
+                <p class="card_header">What classes will be given?</p>
+                <ul>
+                    <li>Telecommunications and Networks</li>
+                    <li>AI</li>
+                    <li>Webdevelopment</li>
+                    <li>Object-Oriented Programming</li>
+                    <li>Algorithms and Data Structures</li>
+                </ul> 
+            </div>
+        </div> 
+        <div class="controls">                                                      <!--controls to move between cards-->
+            <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    </div>
+    
+    <script>                                                                        //move card and postition them
+        let currentIndex = 2;
+        function moveCarousel(direction) {
+            const cards = document.querySelectorAll('.card');
+            const totalItems = cards.length;
+            const cardWidth = cards[0].offsetWidth;
+            const viewportWidth = window.innerWidth;
+            const centerOffset = (viewportWidth - cardWidth) / 2;
+
+        // Update the current index
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = totalItems - 1;
+            } else if (currentIndex >= totalItems) {
+                currentIndex = 0;
+            }
+
+        // Apply transformations for each card
+            cards.forEach((card, index) => {
+                const offset = index - currentIndex;
+
+            // Calculate the position to center the selected card
+                const positionX = centerOffset + offset * (cardWidth + 20);
+
+            // Reset the card styles
+                card.style.transform = `translateX(${positionX}px) scale(0.9)`;
+                card.style.opacity = '0.8'; 
+                card.classList.remove('selected');
+                card.classList.add('unselected');
+
+            // Style the selected card
+                if (index === currentIndex) {
+                    card.style.transform = `translateX(${centerOffset}px) scale(1.2)`;
+                    card.style.opacity = '1'; 
+                    card.classList.add('selected');
+                    card.classList.remove('unselected');
+            }
+        });
+    }
+    // Initialize the carousel position
+        moveCarousel(0);
+    </script>
+
+    <!--CHAT WITH CRUnk -->
+    <div id="chatbox">
+        <h2>Any other question?</h2>
+        <h4>Ask CRUnk, mascot and now Computer Real-time User-assistant.</h4>
+        <div class="box-wrapper">
+            <div class="box1">
+                <img class="crunk_img" src="/CRUnk.png" alt="CRUnk img">
+            </div>
+            <div class="boxb">
+                <div class="CRUnk_bubble">
+                    <div class="CRUnk_text">
+                        Hello! I am CRUnk
+                    </div>
+                </div>
+            </div>
+            <div class="boxc">
+                <button class="clickable-button" onclick="centerImage(this)">Chat</button>        
+                <div class="overlay" id="overlay"></div>
+                <div class="modal" id="modal">
+                    <div class="modal-content">                                           
+                        <div id="message-container"></div>                                <!--This will contain the chat messages -->
+                        <div class="input-area">
+                            <input type="text" id="userInput" placeholder="Type your message here">
+                            <button onclick="sendMessage()">></button>                    <!--MAKE THE BUTTON THE ARROW IMG-->
+                        </div>
+                        <button class="close-modal" onclick="closeModal()">Close</button> <!--Close the modal-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Typing Animation on Scroll into View
+    const crunkText = document.querySelector('.CRUnk_text');
+    const typingDuration = 4000; // Set the duration of the typing animation (4s = 4000ms)
+    
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                crunkText.classList.add('start-animation'); // Add class when in view
+                setTimeout(function() {
+                    crunkText.style.borderRight = "none"; // Remove caret after typing animation
+                }, typingDuration);
+            }
+        });
+    });
+
+    observer.observe(crunkText);
+
+    // Clickable Project Image Modal Functionality
+    const projectImages = document.querySelectorAll('.project-image'); // assuming all project images have this class
+
+    projectImages.forEach(image => {
+        image.addEventListener('click', function() {
+            centerImage(this); // Pass the clicked image element to the function
+        });
+    });
+});
+
+// Function to handle sticky image and modal logic
+function centerImage(img) {
+    var modal = img.parentElement.querySelector('.modal');
+    var overlay = img.parentElement.querySelector('.overlay');
+    
+    if (img.classList.contains('sticky')) {
+        // Close modal if it's already sticky
+        img.classList.remove('sticky');
+        modal.classList.remove('open');
+        overlay.classList.remove('open');
+        document.body.classList.remove('no-scroll'); // Allow scrolling again
+    } else {
+        // If another image is sticky, close that first
+        var existingStickyImage = document.querySelector('.sticky');
+        if (existingStickyImage) {
+            existingStickyImage.classList.remove('sticky');
+            existingStickyImage.parentElement.querySelector('.modal').classList.remove('open');
+            existingStickyImage.parentElement.querySelector('.overlay').classList.remove('open');
+        }
+        
+        // Make the clicked image sticky and open modal
+        img.classList.add('sticky');
+        modal.classList.add('open');
+        overlay.classList.add('open');
+        document.body.classList.add('no-scroll'); // Prevent scrolling
+    }
+}
+    //close the modal
+        function closeModal() {
+            var stickyImage = document.querySelector('.sticky');
+            if (stickyImage) {
+                stickyImage.classList.remove('sticky');
+                var modal = stickyImage.parentElement.querySelector('.modal');
+                var overlay = stickyImage.parentElement.querySelector('.overlay');
+                modal.classList.remove('open');
+                overlay.classList.remove('open');
+                document.body.classList.remove('no-scroll'); // Allow scrolling again
+            }
+        }
+    //send and display message on screen
+        function sendMessage() {
+            const userInput = document.getElementById("userInput").value;
+            const messageContainer = document.getElementById("message-container");
+            if (userInput.trim() !== "") {
+                // Create a new message bubble for the user
+                const userMessage = document.createElement("div");
+                userMessage.classList.add("message", "user-message");
+                userMessage.textContent = userInput;
+                // Append the user's message to the container
+                messageContainer.appendChild(userMessage);
+                // Clear the input field after sending
+                document.getElementById("userInput").value = "";
+                // Scroll to the bottom of the container to show the latest message
+                messageContainer.scrollTop = messageContainer.scrollHeight;
+                // Simulate a bot reply after a delay
+                setTimeout(() => {
+                    const botMessage = document.createElement("div");
+                    botMessage.classList.add("message", "bot-message");
+                    botMessage.textContent = "Hello! This is CRUnk!";                           // Placeholder bot response CHANGE 
+                    messageContainer.appendChild(botMessage);
+                    messageContainer.scrollTop = messageContainer.scrollHeight;
+                }, 1000); // 1-second delay for bot reply simulation
+            }
+        }
+        </script>
+    <!--APPLY OR REQUEST MORE INFO BUTTONS-->
+            <div class="contact">                                                          <!--buttons to take you to application or request info-->
+                <div id="apply"><a href="linkto application">Apply</a></div>
+                <div id="info"><a href="linkto form">Request info</a></div>
+            </div>
+            <br/>
+            <br/>
+    </body>
+<!--BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY-->
+    <footer>
+        
+    </footer>
+</html>

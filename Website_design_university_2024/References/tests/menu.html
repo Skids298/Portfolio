@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <style>
+            .menu {
+            background-color: #4d008c;
+            color: white;
+            display: flex;
+            justify-content: space-between; /* Ensures space between logo and menu options */
+            align-items: center;
+            padding: 10px;
+        }
+        .logo {
+            display: flex;
+            flex-direction: column; /* Aligns the image and text vertically */
+        }
+        .logo img {
+            width: 300px;
+            height: auto;
+        }
+        .logo p {
+            font-size: 19px;
+            margin-top: 10px; /* Adds space between image and text */
+        }
+        .menu-options {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        .menu-options a{
+            color: white;
+            text-decoration: none;
+            font-size: px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+               <img src="UMHB-logo.png">
+               <p>Computer science</p> 
+            </div>
+            <div class="menu-options">
+                <a href="/visit" alt="Visit UMHB">Visit</a>
+                <a href="/apply" alt="Apply to UMHB">Apply</a>
+                <a href="https://advance.umhb.edu/give">Giving</a>
+                <div class="search">
+                    <form action="/search/s" class="search-bar" id="search-bar" method="get" name="search-bar">
+                        <span class="search-icon
+                                    others"></span> <input name="term" placeholder="Search" type="search" value="">
+                    </form><span class="search-close-icon "></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

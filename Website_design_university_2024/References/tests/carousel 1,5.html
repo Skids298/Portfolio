@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Computer Science |  Software Engineering | Computer Science Degree | UMHB</title>
+        <style>
+            body{
+                overflow-x: hidden;
+            }
+        .carousel{
+            width: 100vw;
+            height: 100vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .carousel-container{
+            align-items: center;
+            display: flex;
+            height: 400px;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+        }
+        .card{
+            height:400px;
+            width: 250px;
+            margin: 0 10px;
+            border-radius: 25px;
+            color: white;
+            position: absolute;
+            background-size: contain;
+            background-color: #4d008c;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+        .card.selected{
+            transform: scale(1.2);
+            z-index: 1;
+        }
+        .card.unselected {
+            opacity: 0.8;
+            z-index: -1;
+        }
+        .card_header{
+            color: #ffc425;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+        article{
+            font-family: 'Merriweather', serif;
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 1.25em;
+        } 
+        .controls{
+            display: flex;
+            justify-content: center;
+            margin: 25px 0;
+            height: 100px;
+        }
+        .controls button{
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+            font-size: 30px;
+            margin: 0 50px;
+            padding: 0 12px;
+            text-transform: capitalize;
+        }
+        .controls button:focus{
+            outline: none;
+        }
+        .contols-previous{
+            position:relative;
+        }
+        .prev:hover, .next:hover {
+            background-color: #ffc425;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="card card1" data-index="1">
+                    <p class="card_header">What are some jobs in computer science?</p><br><br>
+                    <ul>
+                        <li>Computer security analyst</li>
+                        <li>Human-computer interface programmer</li>
+                        <li>Database program analyst</li>
+                        <li>Cryptography analyst</li>
+                        <li>Small device app developer</li>
+                        <li>Web-based programmer</li>
+                        <li>Software Engineer</li>
+                    </ul>
+                </div>
+                <div class="card card2" data-index="2">
+                    <p class="card_header">Who is hiring UMHB computer science degree students?</p><br><br>
+                    <ul>
+                        <li>Dell</li>
+                        <li>Microsoft</li>
+                        <li>Cisco</li>
+                        <li>National Security Agency</li>
+                        <li>General Motors</li>
+                        <li>McLane Advanced Technologies</li>
+                    </ul>
+                </div>
+                <div class="card card3" data-index="3">
+                    <p class="card_header">Where can I go to grad school with a major in computer science?</p><br><br>
+                    <ul>
+                        <li>University of Mary Hardin-Baylor</li>
+                        <li>University of Texas at Austin</li>
+                        <li>Baylor University</li>
+                        <li>Texas A&M University</li>
+                        <li>University of Texas at Arlington</li>
+                        <li>University of Texas at Dallas</li>
+                        <li>University of Texas at San Antonio</li>
+                    </ul>
+                </div>
+                <div class="card card4" data-index="4">
+                    <p class="card_header">Why computer science?</p><br><br>
+                    <p>Whether the setting is business, science, or social engagement,
+                        computer science professionals are in high demand for their
+                        ability to devise creative technological solutions. 
+                    </p>
+                </div>
+                <div class="card card5" data-index="5">
+                    <p class="card_header">What classes will be given?</p><br><br>
+                    <ul>
+                        <li>Telecommunications and Networks</li>
+                        <li>AI</li>
+                        <li>Webdevelopment</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Algorithms and Data Structures</li>
+                    </ul> 
+                </div>
+            </div> 
+            <div class="controls">
+                <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </div>
+        <script>
+            let currentIndex = 2;
+        function moveCarousel(direction) {
+            const cards = document.querySelectorAll('.card');
+            const totalItems = cards.length;
+            const cardWidth = 250;  // Width of each card
+            const viewportWidth = window.innerWidth;  // Get viewport width
+            const centerOffset = (viewportWidth - cardWidth) / 2;  // Adjust for centering
+    
+            // Update the current index
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = totalItems - 1;
+            } else if (currentIndex >= totalItems) {
+                currentIndex = 0;
+            }
+    
+            // Apply transformations for each card
+            cards.forEach((card, index) => {
+                const offset = index - currentIndex;
+    
+                // Calculate the position to center the selected card
+                const positionX = centerOffset + offset * (cardWidth + 20);  // Adding some space between cards
+    
+                // Reset the card styles
+                card.style.transform = `translateX(${positionX}px) scale(0.9)`; // Slightly smaller for unselected
+                card.style.opacity = '0.8'; // Less opacity for unselected
+                card.classList.remove('selected');
+                card.classList.add('unselected');
+    
+                // Style the selected card
+                if (index === currentIndex) {
+                    card.style.transform = `translateX(${positionX}px) scale(1.2)`; // Center the selected card and scale it up
+                    card.style.opacity = '1'; // Full opacity for selected card
+                    card.classList.add('selected');
+                    card.classList.remove('unselected');
+                }
+            });
+        }
+    
+        // Initialize the carousel position
+        moveCarousel(0);
+        </script>   
+    </body>
+</html>
+
+
+    

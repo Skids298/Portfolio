@@ -1,0 +1,3209 @@
+/*FONT FACES IMPORT*/
+    @font-face {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 300;
+        src: url("/fonts/merriweather-v17-latin-300.eot");
+    /* IE9 Compat Modes */
+        src: local("Merriweather Light"), local("Merriweather-Light"),
+            url("/fonts/merriweather-v17-latin-300.eot?#iefix") 
+            format("embedded-opentype"), url("/fonts/merriweather-v17-latin-300.woff2") 
+            format("woff2"), url("/fonts/merriweather-v17-latin-300.woff") format("woff"), 
+            url("/fonts/merriweather-v17-latin-300.ttf") format("truetype"), 
+            url("/fonts/merriweather-v17-latin-300.svg#Merriweather") format("svg");
+    /* Legacy iOS */
+        font-display: swap;
+    }
+/* merriweather-300italic - latin */
+    @font-face {
+        font-family: 'Merriweather';
+        font-style: italic;
+        font-weight: 300;
+        src: url("/fonts/merriweather-v17-latin-300italic.eot");
+    /* IE9 Compat Modes */
+        src: local("Merriweather Light Italic"), local("Merriweather-LightItalic"), 
+            url("/fonts/merriweather-v17-latin-300italic.eot?#iefix") 
+            format("embedded-opentype"), url("/fonts/merriweather-v17-latin-300italic.woff2") 
+            format("woff2"), url("/fonts/merriweather-v17-latin-300italic.woff") format("woff"), 
+            url("/fonts/merriweather-v17-latin-300italic.ttf") format("truetype"), 
+            url("/fonts/merriweather-v17-latin-300italic.svg#Merriweather") format("svg");
+    /* Legacy iOS */
+        font-display: swap;
+    }
+/* source-sans-pro-regular - latin */
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        src: url("/fonts/source-sans-pro-v10-latin-regular.eot");
+    /* IE9 Compat Modes */
+        src: local("Source Sans Pro Regular"),
+            local("SourceSansPro-Regular"),
+            url("/fonts/source-sans-pro-v10-latin-regular.eot?#iefix") format("embedded-opentype"),
+            url("/fonts/source-sans-pro-v10-latin-regular.woff2") format("woff2"),
+            url("/fonts/source-sans-pro-v10-latin-regular.woff") format("woff"),
+            url("/fonts/source-sans-pro-v10-latin-regular.ttf") format("truetype"),
+            url("/fonts/source-sans-pro-v10-latin-regular.svg#SourceSansPro") format("svg");
+    /* Legacy iOS */
+        font-display: swap;
+    }
+/* source-sans-pro-italic - latin */
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: italic;
+        font-weight: 400;
+        src: url("/fonts/source-sans-pro-v10-latin-italic.eot");
+    /* IE9 Compat Modes */
+        src: local("Source Sans Pro Italic"), local("SourceSansPro-Italic"), 
+            url("/fonts/source-sans-pro-v10-latin-italic.eot?#iefix") format("embedded-opentype"), 
+            url("/fonts/source-sans-pro-v10-latin-italic.woff2") format("woff2"), 
+            url("/fonts/source-sans-pro-v10-latin-italic.woff") format("woff"), 
+            url("/fonts/source-sans-pro-v10-latin-italic.ttf") format("truetype"), 
+            url("/fonts/source-sans-pro-v10-latin-italic.svg#SourceSansPro") format("svg");
+    /* Legacy iOS */
+        font-display: swap;
+    }
+/* source-sans-pro-700 - latin */
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        src: url("/fonts/source-sans-pro-v10-latin-700.eot");
+    /* IE9 Compat Modes */
+        src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), 
+            url("/fonts/source-sans-pro-v10-latin-700.eot?#iefix") format("embedded-opentype"), 
+            url("/fonts/source-sans-pro-v10-latin-700.woff2") format("woff2"), 
+            url("/fonts/source-sans-pro-v10-latin-700.woff") format("woff"), 
+            url("/fonts/source-sans-pro-v10-latin-700.ttf") format("truetype"), 
+            url("/fonts/source-sans-pro-v10-latin-700.svg#SourceSansPro") format("svg");
+    /* Legacy iOS */
+        font-display: swap;
+    }
+/* source-sans-pro-700italic - latin */
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: italic;
+        font-weight: 700;
+        src: url("/fonts/source-sans-pro-v10-latin-700italic.eot");
+        /* IE9 Compat Modes */
+        src: local("Source Sans Pro Bold Italic"), local("SourceSansPro-BoldItalic"), 
+        url("/fonts/source-sans-pro-v10-latin-700italic.eot?#iefix") 
+        format("embedded-opentype"), url("/fonts/source-sans-pro-v10-latin-700italic.woff2") 
+        format("woff2"), url("/fonts/source-sans-pro-v10-latin-700italic.woff") format("woff"), 
+        url("/fonts/source-sans-pro-v10-latin-700italic.ttf") format("truetype"), 
+        url("/fonts/source-sans-pro-v10-latin-700italic.svg#SourceSansPro") format("svg");
+        /* Legacy iOS */
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'UMHB';
+        font-weight: normal;
+        font-style: normal;
+        src: url("/fonts/icomoon.eot?wepht2");
+        src: url("/fonts/icomoon.eot?wepht2#iefix") format("embedded-opentype"), 
+        url("/fonts/icomoon.ttf?wepht2") format("truetype"), url("/fonts/icomoon.woff?wepht2") 
+        format("woff"), url("/fonts/icomoon.svg?wepht2#icomoon") format("svg");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'UMHB2';
+        font-weight: normal;
+        font-style: normal;
+        src: url("/fonts/UMHB.eot");
+        src: url("/fonts/UMHB.eot#iefix") format("embedded-opentype"), url("/fonts/UMHB.ttf") 
+        format("truetype"), url("/fonts/UMHB.woff") format("woff"), 
+        url("/fonts/UMHB.svg#icomoon") format("svg");
+        font-display: swap;
+    }
+
+
+/*MEDIA 375PX MEDIA 375PX MEDIA 375PX MEDIA 375PX MEDIA 375PX */
+@media(max-width: 376px){
+    /*GENERAL PAGE LAYOUT*/    
+    body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        max-width: 375px;
+    }
+/*MENU BAR TOP OF SCREEN*/
+    .menu {
+        background-color: #4d008c;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img {
+        width: 200px;
+        height: auto;
+        position: relative;
+        top: 10px;
+        left: 5px;
+        padding-bottom: 10px;
+    }
+    .logo p {
+        font-size: 18px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-indent: 10px;
+        position: relative;
+        margin: 0;
+    }
+    .menu-options {
+        display: flex;            
+        justify-content: flex-end;
+        gap: 5px;
+        position: relative;
+        top:45px;
+    }
+    .menu-options a{
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .search {                           /*SEARCH BAR EDIT SIZE TO MAKE IT FIT*/
+        display: flex;
+        height: fit-content;
+    }
+    .search-bar {
+        display: flex;
+        width: 100px;
+    }
+    .search-bar input {
+        width: 100%;
+        padding: 2px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .search-icon {
+        margin-right: 5px;
+    }
+    .search-close-icon {
+        cursor: pointer;
+        margin-left: 10px;
+    }
+/*INFORMATION ABOUT UMHB AND THE MAJOR*/
+    .information-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        width: 375px;
+    }
+    #myVideo{
+        padding-top: 15px;
+        align-items: left;
+        padding-left: 20px;
+        width: 300px;
+    }
+    .container1{
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    .c1-text{
+        padding-left: 20px;
+        padding-right: 50px;
+        font-size: 18px;
+    }
+    .container2{
+        flex-basis: 100%;
+        padding: 10px;
+        align-items: right;
+        align-content: right;
+        width: 375px;
+        height:auto;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .container3{
+        order: 4;
+        flex-basis: 100%;
+        padding: 10px;
+        width: 375px;
+        height:auto;
+    }   
+    .container4{
+        order: 3;
+        flex-basis: 100%;
+        padding: 10px;
+    }
+    h2{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        color:#4d008c;
+        font-size: 20px;
+        margin: 0;
+    }
+    .c4-text{
+        padding-left: 20px;
+        padding-right: 50px;
+        font-size: 18px;
+    }
+    a.button.large.purple{
+        border-radius: 5px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 1px;
+        background-color: #4d008c;
+        color: white;
+        font-size: 10px;
+        min-width: 220px;
+        padding: 10px 20px;
+    }
+/*BUBBLE LOOK INFORMATION*/
+    #info_bubble {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .gold-banner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: 210px;
+        background-image: url('Yellow banner 300h.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        width: 100vw;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .gold-banner h2{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        color:white;
+        margin: 0;
+        font-size: 16px;
+    }
+    .bubble_1, .bubble_2, .bubble_3 {
+        border-radius: 50%;
+        background-color: #4d008c;
+        color: white;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    h3{
+        font-size: 12px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
+    }
+/*CARD CARROUSEL DESIGN*/
+    .carousel{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        padding-top: 40px;
+        padding-bottom: 5px;
+    }
+    .carousel-container{
+        align-items: center;
+        display: flex;
+        height: 400px;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+    }
+    .card{
+        height:350px;
+        width: 250px;
+        margin: 0 10px;
+        border-radius: 25px;
+        color: white;
+        position: absolute;
+        background-size: contain;
+        background-color: #4d008c;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+    .card.selected{
+        transform: scale(1.05);
+        z-index: 1;
+    }
+    .card.unselected {
+        opacity: 0.5;
+        z-index: -1;
+    }
+    .card_header{
+        color: #ffc425;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-bottom: 5px;
+    }
+    article{
+        font-family: 'Merriweather', serif;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 18px;
+    } 
+    .controls{
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+        height: 50px;
+    }
+    .controls button{
+        color: black;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        font-size: 30px;
+        margin: 0 50px;
+        padding: 0 12px;
+        text-transform: capitalize;
+    }
+    .controls button:focus{
+        outline: none;
+    }
+    .contols-previous{
+        position:relative;
+    }
+    .prev:hover, .next:hover {
+        color: white;
+        background-color: #ffc425;
+    }
+/*CHAT WITH A STUDENT*/
+    /*Gray-ish box container*/
+    #chatbox{
+        width: 91%;
+        max-width: 375px;
+        margin: 5 auto;
+        background-color: #e6e7e8;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2{
+        color:#4d008c;  
+    }
+    h4{
+        color:#4d008c;
+        margin-bottom: 30px; 
+    }
+    .box-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 200px;
+        list-style-type: none;
+        padding: 20px;
+    }
+/*box a with img of CRUnk*/
+    .boxa {
+        flex: 0 0 100%;
+        width: 50%;
+    }
+    .crunk_img{
+        width: 150px;
+    }
+    .boxb, .boxc {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+/*box b with the "hello! i am CRUnk" text bubble*/
+    .boxb{
+        justify-content: flex-start;
+        justify-items: left;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    .CRUnk_bubble{
+        display: flex;
+        border-radius: 15px 15px 15px 0;
+        margin: 5px;
+        padding: 1%;
+        min-width: 100px;
+        max-width: 150px;
+        background-color: #8461b6;
+    }
+    .CRUnk_text {
+        font-weight: 200;
+        color: white;
+        margin-left: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid white;
+        display: inline-block;
+        width: 0; /* Start with 0 width */
+        /* No animation initially */
+    }
+    .start-animation {
+        animation: typing 4s steps(45, end), blink-caret 0.45s step-end infinite;
+        animation-fill-mode: forwards;
+    }
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: white; }
+    }
+    /*box c with the chat button*/        
+    .boxc{
+        justify-content: flex-end;
+        justify-items: right;
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+    .clickable-button{
+        background-color: #4d008c; 
+        color: #fcc425; 
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block; 
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-left: 30px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .clickable-button:hover {
+        background-color: #ffc425;
+        color: #4d008c;
+    }
+    /*modal itself when opened*/
+    .modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fcc425;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        width: 320px;                           /*Width when modal is opened adjust for different screens*/
+        min-height: min-content;
+        max-height: 600px;
+        overflow-y: auto;
+    }
+    .modal.open {
+        display: block;
+    }
+    .modal-content {
+        text-align: justify;
+    }
+    #message-container {
+        height: 300px;
+        overflow-y: auto;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .message {
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        max-width: 70%;
+        clear: both;
+    }
+    .user-message {
+        background-color: #4d008c;
+        color: white;
+        border-radius: 15px 15px 0px 15px;
+        float: right; 
+        text-align: right;
+    }
+    .bot-message {
+        background-color: #8461b6;
+        color: white;
+        border-radius: 15px 15px 15px 0;
+        float: left; 
+        text-align: left;
+    }
+    .input-area {
+        display: flex;
+        justify-content: space-between;
+    }
+    input[type="text"] {
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    button {
+        padding: 10px 15px;
+        background-color: #8461b6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    button:hover {
+        background-color: #4d008c;
+        color: white;
+    }
+    .close-modal {
+        background: #8461b6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .close-modal:hover {
+        background: #4d008c;
+        color:white;
+    }
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+    .overlay.open {
+        display: block;
+    }
+    .sticky {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+   
+/*INFORMATION AND OFTEN ASKED QUESTIONS*/
+    .contact {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        text-align: left;
+        gap: 50px;
+        padding-top: 30px;
+    }
+    #info, #apply {
+        width: 125px;
+        height:25px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #info a, #apply a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #info {
+        background-color: #ffc425;
+        color: #4d008c;
+        font-weight: bold;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    #apply {
+        background-color: #4d008c;
+        color: white;
+        font-weight: bold;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+}
+
+
+/*MEDIA 480PX MEDIA 480PX MEDIA 480PX MEDIA 480PX MEDIA 480PX*/
+@media(min-width: 377px) and (max-width: 480px){
+   /*GENERAL PAGE LAYOUT*/    
+   body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/*MENU BAR TOP OF SCREEN*/
+.menu {
+    background-color: #4d008c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+.logo img {
+    width: 200px;
+    height: auto;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    padding-bottom: 10px;
+}
+.logo p {
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-indent: 10px;
+    position: relative;
+    margin: 0;
+}
+.menu-options {
+    display: flex;            
+    justify-content: flex-end;
+    gap: 10px;
+    position: relative;
+    top:45px;
+}
+.menu-options a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.search {                          
+    display: flex;
+    height: fit-content;
+}
+.search-bar {
+    display: flex;
+    width: 75px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 2px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search-icon {
+    margin-right: 5px;
+}
+.search-close-icon {
+    cursor: pointer;
+    margin-left: 10px;
+}
+/*INFORMATION ABOUT UMHB AND THE MAJOR*/
+.information-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    width: 100%;
+}
+#myVideo{
+    padding-top: 15px;
+    align-items: left;
+    padding-left: 20px;
+    width: 300px;
+}
+.container1{
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.c1-text{
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 18px;
+}
+.container2{
+    flex-basis: 100%;
+    padding: 10px;
+    align-items: right;
+    align-content: right;
+    width: 100%;
+    height:auto;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.container3{
+    order: 4;
+    flex-basis: 100%;
+    padding: 10px;
+    width: 100%;
+    height:auto;
+}   
+.container4{
+    order: 3;
+    flex-basis: 100%;
+    padding: 10px;
+}
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color:#4d008c;
+    font-size: 20px;
+    margin: 0;
+}
+.c4-text{
+    padding-left: 20px;
+    padding-right: 50px;
+    font-size: 18px;
+}
+a.button.large.purple{
+    border-radius: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #4d008c;
+    color: white;
+    font-size: 12px;
+    min-width: 220px;
+    padding: 10px 20px;
+}
+/*BUBBLE LOOK INFORMATION*/
+#info_bubble {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.gold-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 210px;
+    background-image: url('Yellow banner 300h.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+}
+.gold-banner h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color:white;
+    margin: 0;
+    font-size: 16px;
+}
+.bubble_1, .bubble_2, .bubble_3 {
+    border-radius: 50%;
+    background-color: #4d008c;
+    color: white;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+h3{
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+/*CARD CARROUSEL DESIGN*/
+.carousel{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+.carousel-container{
+    align-items: center;
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+.card{
+    height:350px;
+    width: 250px;
+    margin: 0 10px;
+    border-radius: 25px;
+    color: white;
+    position: absolute;
+    background-size: contain;
+    background-color: #4d008c;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.card.selected{
+    transform: scale(1.05);
+    z-index: 1;
+}
+.card.unselected {
+    opacity: 0.5;
+    z-index: -1;
+}
+.card_header{
+    color: #ffc425;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 2px;
+    padding-bottom: 5px;
+}
+article{
+    font-family: 'Merriweather', serif;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+} 
+.controls{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    height: 50px;
+}
+.controls button{
+    color: black;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 50px;
+    padding: 0 12px;
+    text-transform: capitalize;
+}
+.controls button:focus{
+    outline: none;
+}
+.contols-previous{
+    position:relative;
+}
+.prev:hover, .next:hover {
+    color: white;
+    background-color: #ffc425;
+}
+/*CHAT WITH A STUDENT*/
+/*Gray-ish box container*/
+#chatbox{
+    width: 100%;
+    max-width: 100%;
+    margin: 5 auto;
+    background-color: #e6e7e8;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2{
+    color:#4d008c;  
+}
+h4{
+    color:#4d008c;
+    margin-bottom: 30px; 
+}
+.box-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+    list-style-type: none;
+    padding: 20px;
+}
+/*box a with img of CRUnk*/
+.boxa {
+    flex: 0 0 100%;
+    width: 50%;
+}
+.crunk_img{
+    width: 150px;
+}
+.boxb, .boxc {
+    flex: 0 0 50%;
+    width: 50%;
+}
+/*box b with the "hello! i am CRUnk" text bubble*/
+.boxb{
+    justify-content: flex-start;
+    justify-items: left;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.CRUnk_bubble{
+    display: flex;
+    border-radius: 15px 15px 15px 0;
+    margin: 5px;
+    padding: 1%;
+    min-width: 100px;
+    max-width: 150px;
+    background-color: #8461b6;
+}
+.CRUnk_text {
+    font-weight: 200;
+    color: white;
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    display: inline-block;
+    width: 0; /* Start with 0 width */
+    /* No animation initially */
+}
+.start-animation {
+    animation: typing 4s steps(45, end), blink-caret 0.45s step-end infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+/*box c with the chat button*/        
+.boxc{
+    justify-content: flex-end;
+    justify-items: right;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+.clickable-button{
+    background-color: #4d008c; 
+    color: #fcc425; 
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block; 
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.clickable-button:hover {
+    background-color: #ffc425;
+    color: #4d008c;
+}
+/*modal itself when opened*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fcc425;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 320px;                           /*Width when modal is opened adjust for different screens*/
+    min-height: min-content;
+    max-height: 600px;
+    overflow-y: auto;
+}
+.modal.open {
+    display: block;
+}
+.modal-content {
+    text-align: justify;
+}
+#message-container {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.message {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    max-width: 70%;
+    clear: both;
+}
+.user-message {
+    background-color: #4d008c;
+    color: white;
+    border-radius: 15px 15px 0px 15px;
+    float: right; 
+    text-align: right;
+}
+.bot-message {
+    background-color: #8461b6;
+    color: white;
+    border-radius: 15px 15px 15px 0;
+    float: left; 
+    text-align: left;
+}
+.input-area {
+    display: flex;
+    justify-content: space-between;
+}
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    padding: 10px 15px;
+    background-color: #8461b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #4d008c;
+    color: white;
+}
+.close-modal {
+    background: #8461b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.close-modal:hover {
+    background: #4d008c;
+    color:white;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.overlay.open {
+    display: block;
+}
+.sticky {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+.no-scroll {
+    overflow: hidden;
+}
+
+/*INFORMATION AND OFTEN ASKED QUESTIONS*/
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    text-align: left;
+    gap: 50px;
+    padding-top: 30px;
+}
+#info, #apply {
+    width: 125px;
+    height:25px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#info a, #apply a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#info {
+    background-color: #ffc425;
+    color: #4d008c;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#apply {
+    background-color: #4d008c;
+    color: white;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+} 
+}
+
+
+/*MEDIA 481PX-767PX MEDIA 481PX-767PX MEDIA 481PX-767PX MEDIA 481PX-767PX */
+@media(min-width: 481px) and (max-width: 767px){
+    /*GENERAL PAGE LAYOUT*/    
+    body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+/*MENU BAR TOP OF SCREEN*/
+    .menu {
+        background-color: #4d008c;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img {
+        width: 200px;
+        height: auto;
+        position: relative;
+        top: 10px;
+        left: 5px;
+        padding-bottom: 10px;
+    }
+    .logo p {
+        font-size: 18px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-indent: 10px;
+        position: relative;
+        margin: 0;
+    }
+    .menu-options {
+        display: flex;            
+        justify-content: flex-end;
+        gap: 5px;
+        position: relative;
+        top:45px;
+    }
+    .menu-options a{
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        padding-right: 10px;
+    }
+    .search {                           /*SEARCH BAR EDIT SIZE TO MAKE IT FIT*/
+        display: flex;
+        height: fit-content;
+        padding-right: 10px;
+    }
+    .search-bar {
+        display: flex;
+        width: 100px;
+    }
+    .search-bar input {
+        width: 100%;
+        padding: 2px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .search-icon {
+        margin-right: 5px;
+    }
+    .search-close-icon {
+        cursor: pointer;
+        margin-left: 10px;
+    }
+/*INFORMATION ABOUT UMHB AND THE MAJOR*/
+    .information-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    #myVideo{
+        padding-top: 15px;
+        align-items: left;
+        padding-left: 20px;
+        width: 300px;
+    }
+    .container1{
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    .c1-text{
+        padding-left: 20px;
+        padding-right: 50px;
+        font-size: 18px;
+    }
+    .container2{
+        flex-basis: 100%;
+        padding: 10px;
+        align-items: right;
+        align-content: right;
+        width: 350px;
+        height:auto;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .container3{
+        order: 4;
+        flex-basis: 100%;
+        padding: 10px;
+        width: 375px;
+        height:auto;
+    }   
+    .container4{
+        order: 3;
+        flex-basis: 100%;
+        padding: 10px;
+    }
+    h2{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        color:#4d008c;
+        font-size: 20px;
+        margin: 0;
+    }
+    .c4-text{
+        padding-left: 20px;
+        padding-right: 50px;
+        font-size: 18px;
+    }
+    a.button.large.purple{
+        border-radius: 5px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 1px;
+        background-color: #4d008c;
+        color: white;
+        font-size: 10px;
+        min-width: 220px;
+        padding: 10px 20px;
+    }
+/*BUBBLE LOOK INFORMATION*/
+    #info_bubble {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .gold-banner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: 210px;
+        background-image: url('Yellow banner 300h.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        width: 100vw;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .gold-banner h2{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        color:white;
+        margin: 0;
+        font-size: 16px;
+    }
+    .bubble_1, .bubble_2, .bubble_3 {
+        border-radius: 50%;
+        background-color: #4d008c;
+        color: white;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    h3{
+        font-size: 12px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
+    }
+/*CARD CARROUSEL DESIGN*/
+    .carousel{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        padding-top: 40px;
+        padding-bottom: 5px;
+    }
+    .carousel-container{
+        align-items: center;
+        display: flex;
+        height: 400px;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+    }
+    .card{
+        height:250px;
+        width: 375px;
+        margin: 0 10px;
+        border-radius: 25px;
+        color: white;
+        position: absolute;
+        background-size: contain;
+        background-color: #4d008c;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+    .card.selected{
+        transform: scale(1.05);
+        z-index: 1;
+    }
+    .card.unselected {
+        opacity: 0.5;
+        z-index: -1;
+    }
+    .card_header{
+        color: #ffc425;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 5px;;
+        padding-bottom: 5px;
+    }
+    article{
+        font-family: 'Merriweather', serif;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 18px;
+    } 
+    .controls{
+        display: flex;
+        justify-content: center;
+        margin: 0px 0;
+        height: 50px;
+    }
+    .controls button{
+        color: black;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        font-size: 30px;
+        margin: 0 50px;
+        padding: 0 12px;
+        text-transform: capitalize;
+    }
+    .controls button:focus{
+        outline: none;
+    }
+    .contols-previous{
+        position:relative;
+    }
+    .prev:hover, .next:hover {
+        color: white;
+        background-color: #ffc425;
+    }
+/*CHAT WITH A STUDENT*/
+    /*Gray-ish box container*/
+    #chatbox{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #e6e7e8;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2{
+        color:#4d008c;  
+    }
+    h4{
+        color:#4d008c;
+        margin-bottom: 30px; 
+    }
+    .box-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 200px;
+        list-style-type: none;
+        padding: 20px;
+    }
+/*box a with img of CRUnk*/
+    .boxa {
+        flex: 0 0 100%;
+        width: 50%;
+    }
+    .crunk_img{
+        width: 150px;
+    }
+    .boxb, .boxc {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+/*box b with the "hello! i am CRUnk" text bubble*/
+    .boxb{
+        justify-content: flex-start;
+        justify-items: left;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    .CRUnk_bubble{
+        display: flex;
+        border-radius: 15px 15px 15px 0;
+        margin: 5px;
+        padding: 1%;
+        min-width: 100px;
+        max-width: 150px;
+        background-color: #8461b6;
+    }
+    .CRUnk_text {
+        font-weight: 200;
+        color: white;
+        margin-left: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid white;
+        display: inline-block;
+        width: 0; /* Start with 0 width */
+        /* No animation initially */
+    }
+    .start-animation {
+        animation: typing 4s steps(45, end), blink-caret 0.45s step-end infinite;
+        animation-fill-mode: forwards;
+    }
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: white; }
+    }
+    /*box c with the chat button*/        
+    .boxc{
+        justify-content: flex-end;
+        justify-items: right;
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+    .clickable-button{
+        background-color: #4d008c; 
+        color: #fcc425; 
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block; 
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-left: 30px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .clickable-button:hover {
+        background-color: #ffc425;
+        color: #4d008c;
+    }
+    /*modal itself when opened*/
+    .modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fcc425;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        width: 320px;                           /*Width when modal is opened adjust for different screens*/
+        min-height: min-content;
+        max-height: 600px;
+        overflow-y: auto;
+    }
+    .modal.open {
+        display: block;
+    }
+    .modal-content {
+        text-align: justify;
+    }
+    #message-container {
+        height: 300px;
+        overflow-y: auto;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .message {
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        max-width: 70%;
+        clear: both;
+    }
+    .user-message {
+        background-color: #4d008c;
+        color: white;
+        border-radius: 15px 15px 0px 15px;
+        float: right; 
+        text-align: right;
+    }
+    .bot-message {
+        background-color: #8461b6;
+        color: white;
+        border-radius: 15px 15px 15px 0;
+        float: left; 
+        text-align: left;
+    }
+    .input-area {
+        display: flex;
+        justify-content: space-between;
+    }
+    input[type="text"] {
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    button {
+        padding: 10px 15px;
+        background-color: #8461b6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    button:hover {
+        background-color: #4d008c;
+        color: white;
+    }
+    .close-modal {
+        background: #8461b6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .close-modal:hover {
+        background: #4d008c;
+        color:white;
+    }
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+    .overlay.open {
+        display: block;
+    }
+    .sticky {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+   
+/*INFORMATION AND OFTEN ASKED QUESTIONS*/
+    .contact {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        text-align: left;
+        gap: 50px;
+        padding-top: 30px;
+    }
+    #info, #apply {
+        width: 125px;
+        height:25px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #info a, #apply a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #info {
+        background-color: #ffc425;
+        color: #4d008c;
+        font-weight: bold;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    #apply {
+        background-color: #4d008c;
+        color: white;
+        font-weight: bold;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+}
+
+
+/*MEDIA 768PX-1024PX MEDIA 768PX-1024PX MEDIA 768PX-1024PX MEDIA 768PX-1024PX */
+@media(min-width: 768px) and (max-width: 1022px){
+    /*GENERAL PAGE LAYOUT*/    
+    body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+/*MENU BAR TOP OF SCREEN*/
+    .menu {
+        background-color: #4d008c;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img {
+        width: 400px;
+        height: auto;
+        position: relative;
+        top: 10px;
+        left: 15px;
+        padding-bottom: 10px;
+    }
+    .logo p {
+        font-size: 26px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-indent: 24px;
+        position: relative;
+        margin: 0;
+    }
+    .menu-options {
+        display: flex;            
+        justify-content: flex-end;
+        gap: 20px;
+        position: relative;
+        top:80px;
+    }
+    .menu-options a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .search {                           /*SEARCH BAR EDIT SIZE TO MAKE IT FIT*/
+        display: flex;
+        height: fit-content;
+    }
+    .search-bar {
+        display: flex;
+        width: 100px;
+    }
+    .search-bar input {
+        width: 100%;
+        padding: 2px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .search-icon {
+        margin-right: 5px;
+    }
+    .search-close-icon {
+        cursor: pointer;
+        margin-left: 10px;
+    }
+/*INFORMATION ABOUT UMHB AND THE MAJOR*/
+    .information-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+    #myVideo{
+        width: 400px;
+        padding-top: 15px;
+        align-items: left;
+        padding-left: 50px;
+    }
+    .container1{
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    .c1-text{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 20px;
+    }
+    .container2{
+        flex-basis: 100%;
+        padding: 10px;
+        align-items: right;
+        align-content: right;
+        width: 100%;
+        height:auto;
+        margin-bottom: 40px;
+        margin-top: 0px;
+    }
+    .container3{
+        order: 4;
+        flex-basis: 100%;
+        padding: 10px;
+        width: 100%;
+        height:auto;
+    }   
+    .container4{
+        order: 3;
+        flex-basis: 100%;
+        padding: 10px;
+    }
+    h2{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        color:#4d008c;
+        font-size: 30px;
+        margin: 0;
+    }
+    .c4-text{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 20px;
+    }
+    a.button.large.purple{
+        border-radius: 5px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 1px;
+        background-color: #4d008c;
+        color: white;
+        font-size: 20px;
+        min-width: 220px;
+        padding: 10px 20px;
+    }
+/*BUBBLE LOOK INFORMATION*/
+    #info_bubble {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .gold-banner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: 310px;
+        background-image: url('Yellow banner 300h.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        width: 100vw;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .gold-banner h2{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        color:white;
+        margin: 0;
+    }
+    .bubble_1, .bubble_2, .bubble_3 {
+        border-radius: 50%;
+        background-color: #4d008c;
+        color: white;
+        width: 190px;
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    h3{
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
+    }
+/*CARD CARROUSEL DESIGN*/
+    .carousel{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .carousel-container{
+        align-items: center;
+        display: flex;
+        height: 400px;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+    }
+    .card{
+        height:400px;
+        width: 325px;
+        margin: 0 10px;
+        border-radius: 25px;
+        color: white;
+        position: absolute;
+        background-size: contain;
+        background-color: #4d008c;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+    .card.selected{
+        transform: scale(1.2);
+        z-index: 1;
+    }
+    .card.unselected {
+        opacity: 0.8;
+        z-index: -1;
+    }
+    .card_header{
+    color: #ffc425;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        padding-left: 24px;
+    }
+    article{
+        font-family: 'Merriweather', serif;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+    } 
+    .controls{
+        display: flex;
+        justify-content: center;
+        margin: 25px 0;
+        height: 100px;
+    }
+    .controls button{
+        color: black;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        font-size: 30px;
+        margin: 0 50px;
+        padding: 0 12px;
+        text-transform: capitalize;
+    }
+    .controls button:focus{
+        outline: none;
+    }
+    .contols-previous{
+        position:relative;
+    }
+    .prev:hover, .next:hover {
+        color: white;
+        background-color: #ffc425;
+    } 
+/*CHAT WITH A STUDENT*/
+    /*Gray-ish box container*/
+    #chatbox{
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #e6e7e8;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2{
+        color:#4d008c;  
+    }
+    h4{
+        color:#4d008c;
+        margin-bottom: 30px; 
+    }
+    .box-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 200px;
+        list-style-type: none;
+        padding: 20px;
+    }
+/*box a with img of CRUnk*/
+    .boxa {
+        flex: 0 0 100%;
+        width: 50%;
+    }
+    .crunk_img{
+        width: 150px;
+    }
+    .boxb, .boxc {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+/*box b with the "hello! i am CRUnk" text bubble*/
+    .boxb{
+        justify-content: flex-start;
+        justify-items: left;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    .CRUnk_bubble{
+        display: flex;
+        border-radius: 15px 15px 15px 0;
+        margin: 5px;
+        padding: 1%;
+        min-width: 100px;
+        max-width: 150px;
+        background-color: #8461b6;
+    }
+    .CRUnk_text {
+        font-weight: 200;
+        color: white;
+        margin-left: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid white;
+        display: inline-block;
+        width: 0; /* Start with 0 width */
+        /* No animation initially */
+    }
+    
+    .start-animation {
+        animation: typing 4s steps(45, end), blink-caret 0.45s step-end infinite;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: white; }
+    }
+/*box c with the chat button*/        
+    .boxc{
+        justify-content: flex-end;
+        justify-items: right;
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+    .clickable-button{
+        background-color: #4d008c; 
+        color: #fcc425; 
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block; 
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .clickable-button:hover {
+        background-color: #ffc425;
+        color: #4d008c;
+    }
+/*modal itself when opened*/
+    .modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fcc425;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        width: 320px;                           /*Width when modal is opened adjust for different screens*/
+        min-height: min-content;
+        max-height: 600px;
+        overflow-y: auto;
+    }
+    .modal.open {
+        display: block;
+    }
+    .modal-content {
+        text-align: justify;
+    }
+    #message-container {
+        height: 300px;
+        overflow-y: auto;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .message {
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        max-width: 70%;
+        clear: both;
+    }
+    .user-message {
+        background-color: #4d008c;
+        color: white;
+        border-radius: 15px 15px 0px 15px;
+        float: right; 
+        text-align: right;
+    }
+    .bot-message {
+        background-color: #8461b6;
+        color: white;
+        border-radius: 15px 15px 15px 0;
+        float: left; 
+        text-align: left;
+    }
+    .input-area {
+        display: flex;
+        justify-content: space-between;
+    }
+    input[type="text"] {
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    button {
+        padding: 10px 15px;
+        background-color: #8461b6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    button:hover {
+        background-color: #4d008c;
+        color: white;
+    }
+    .close-modal {
+        background: #8461b6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .close-modal:hover {
+        background: #4d008c;
+        color:white;
+    }
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+    .overlay.open {
+        display: block;
+    }
+    .sticky {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+  
+/*INFORMATION AND OFTEN ASKED QUESTIONS*/
+    .contact {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        text-align: left;
+        gap: 50px;
+        padding-top: 30px;
+    }
+    #info, #apply {
+        width: 200px;
+        height:30px;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #info a, #apply a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #info {
+        background-color: #ffc425;
+        color: #4d008c;
+        font-weight: bold;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    #apply {
+        background-color: #4d008c;
+        color: white;
+        font-weight: bold;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+}
+
+
+/*MEDIA 1025PX-1440PX MEDIA 1025PX-1440PX MEDIA 1025PX-1440PX MEDIA 1025PX-1440PX */
+@media(min-width: 1023px) and (max-width: 1440px){
+    /*GENERAL PAGE LAYOUT*/    
+    body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+/*MENU BAR TOP OF SCREEN*/
+    .menu {
+        background-color: #4d008c;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img {
+        width: 400px;
+        height: auto;
+        position: relative;
+        top: 10px;
+        left: 15px;
+        padding-bottom: 10px;
+    }
+    .logo p {
+        font-size: 26px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-indent: 24px;
+        position: relative;
+        margin: 0;
+    }
+    .menu-options {
+        display: flex;            
+        justify-content: flex-end;
+        gap: 20px;
+        position: relative;
+        top:80px;
+    }
+    .menu-options a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .search {                           /*SEARCH BAR EDIT SIZE TO MAKE IT FIT*/
+        display: flex;
+        height: fit-content;
+    }
+    .search-bar {
+        display: flex;
+        width: 100px;
+    }
+    .search-bar input {
+        width: 100%;
+        padding: 2px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .search-icon {
+        margin-right: 5px;
+    }
+    .search-close-icon {
+        cursor: pointer;
+        margin-left: 10px;
+    }
+/*INFORMATION ABOUT UMHB AND THE MAJOR*/
+    .information-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+    #myVideo{
+        width: 400px;
+        padding-top: 15px;
+        align-items: left;
+        padding-left: 50px;
+    }
+    .container1{
+        flex-basis: 48%;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    .c1-text{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 20px;
+    }
+    .container2{
+        flex-basis: 48%;
+        padding: 10px;
+        padding-top: 70px;
+        align-items: right;
+        align-content: right;
+        width: 100%;
+        height:auto;
+        margin-bottom: 40px;
+        margin-top: 0px;
+    }
+    .container3{
+        flex-basis: 48%;
+        padding: 10px;
+        padding-top: 90px;
+        width: 100%;
+        height:auto;
+    }   
+    .container4{
+        flex-basis: 48%;
+        padding: 10px;
+    }
+    h2{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        color:#4d008c;
+        font-size: 30px;
+        margin: 0;
+    }
+    .c4-text{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 20px;
+    }
+    a.button.large.purple{
+        border-radius: 5px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 1px;
+        background-color: #4d008c;
+        color: white;
+        font-size: 20px;
+        min-width: 220px;
+        padding: 10px 20px;
+    }
+/*BUBBLE LOOK INFORMATION*/
+    #info_bubble {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .gold-banner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: 310px;
+        background-image: url('Yellow banner 300h.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        width: 100vw;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .gold-banner h2{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        color:white;
+        margin: 0;
+    }
+    .bubble_1, .bubble_2, .bubble_3 {
+        border-radius: 50%;
+        background-color: #4d008c;
+        color: white;
+        width: 190px;
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    h3{
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
+    }
+/*CARD CARROUSEL DESIGN*/
+    .carousel{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .carousel-container{
+        align-items: center;
+        display: flex;
+        height: 400px;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+    }
+    .card{
+        height:350px;
+        width: 325px;
+        margin: 0 10px;
+        border-radius: 25px;
+        color: white;
+        position: absolute;
+        background-size: contain;
+        background-color: #4d008c;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+    .card.selected{
+        transform: scale(1.2);
+        z-index: 1;
+    }
+    .card.unselected {
+        opacity: 0.8;
+        z-index: -1;
+    }
+    .card_header{
+    color: #ffc425;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        padding-left: 24px;
+    }
+    article{
+        font-family: 'Merriweather', serif;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+    } 
+    .controls{
+        display: flex;
+        justify-content: center;
+        margin: 25px 0;
+        height: 100px;
+    }
+    .controls button{
+        color: black;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        font-size: 30px;
+        margin: 0 50px;
+        padding: 0 12px;
+        text-transform: capitalize;
+    }
+    .controls button:focus{
+        outline: none;
+    }
+    .contols-previous{
+        position:relative;
+    }
+    .prev:hover, .next:hover {
+        color: white;
+        background-color: #ffc425;
+    } 
+/*CHAT WITH A STUDENT*/
+    /*Gray-ish box container*/
+    #chatbox{
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #e6e7e8;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2{
+        color:#4d008c;  
+    }
+    h4{
+        color:#4d008c;
+        margin-bottom: 30px; 
+    }
+    .box-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 200px;
+        list-style-type: none;
+        padding: 20px;
+    }
+/*box a with img of CRUnk*/
+    .boxa {
+        flex: 0 0 100%;
+        width: 50%;
+    }
+    .crunk_img{
+        width: 150px;
+    }
+    .boxb, .boxc {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+/*box b with the "hello! i am CRUnk" text bubble*/
+    .boxb{
+        justify-content: flex-start;
+        justify-items: left;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    .CRUnk_bubble{
+        display: flex;
+        border-radius: 15px 15px 15px 0;
+        margin: 5px;
+        padding: 1%;
+        min-width: 100px;
+        max-width: 150px;
+        background-color: #8461b6;
+    }
+    .CRUnk_text {
+        font-weight: 200;
+        color: white;
+        margin-left: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid white;
+        display: inline-block;
+        width: 0; /* Start with 0 width */
+        /* No animation initially */
+    }
+    
+    .start-animation {
+        animation: typing 4s steps(45, end), blink-caret 0.45s step-end infinite;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: white; }
+    }
+/*box c with the chat button*/        
+    .boxc{
+        justify-content: flex-end;
+        justify-items: right;
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+    .clickable-button{
+        background-color: #4d008c; 
+        color: #fcc425; 
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block; 
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .clickable-button:hover {
+        background-color: #ffc425;
+        color: #4d008c;
+    }
+/*modal itself when opened*/
+    .modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fcc425;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        width: 320px;                           /*Width when modal is opened adjust for different screens*/
+        min-height: min-content;
+        max-height: 600px;
+        overflow-y: auto;
+    }
+    .modal.open {
+        display: block;
+    }
+    .modal-content {
+        text-align: justify;
+    }
+    #message-container {
+        height: 300px;
+        overflow-y: auto;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .message {
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        max-width: 70%;
+        clear: both;
+    }
+    .user-message {
+        background-color: #4d008c;
+        color: white;
+        border-radius: 15px 15px 0px 15px;
+        float: right; 
+        text-align: right;
+    }
+    .bot-message {
+        background-color: #8461b6;
+        color: white;
+        border-radius: 15px 15px 15px 0;
+        float: left; 
+        text-align: left;
+    }
+    .input-area {
+        display: flex;
+        justify-content: space-between;
+    }
+    input[type="text"] {
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    button {
+        padding: 10px 15px;
+        background-color: #8461b6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    button:hover {
+        background-color: #4d008c;
+        color: white;
+    }
+    .close-modal {
+        background: #8461b6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .close-modal:hover {
+        background: #4d008c;
+        color:white;
+    }
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+    .overlay.open {
+        display: block;
+    }
+    .sticky {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+  
+/*INFORMATION AND OFTEN ASKED QUESTIONS*/
+    .contact {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        text-align: left;
+        gap: 50px;
+        padding-top: 30px;
+    }
+    #info, #apply {
+        width: 200px;
+        height:30px;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #info a, #apply a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #info {
+        background-color: #ffc425;
+        color: #4d008c;
+        font-weight: bold;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    #apply {
+        background-color: #4d008c;
+        color: white;
+        font-weight: bold;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+}
+
+
+/*MEDIA 1201PX MEDIA 1201PX MEDIA 1201PX MEDIA 1201PX MEDIA 1201PX MEDIA 1201PX */
+@media(min-width: 1201px){
+/*GENERAL PAGE LAYOUT*/    
+    body{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+/*MENU BAR TOP OF SCREEN*/
+    .menu {
+        background-color: #4d008c;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img {
+        width: 400px;
+        height: auto;
+        position: relative;
+        top: 10px;
+        left: 15px;
+        padding-bottom: 10px;
+    }
+    .logo p {
+        font-size: 26px;
+        font-family: "Source Sans Pro", sans-serif;
+        text-indent: 24px;
+        position: relative;
+        margin: 0;
+    }
+    .menu-options {
+        display: flex;            
+        justify-content: flex-end;
+        gap: 20px;
+        position: relative;
+        top:80px;
+    }
+    .menu-options a{
+        color: white;
+        text-decoration: none;
+        font-size: 19px;
+    }
+/*INFORMATION ABOUT UMHB AND THE MAJOR*/
+    .information-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+    #myVideo{
+        padding-top: 15px;
+        align-items: left;
+        padding-left: 50px;
+    }
+    .container1{
+        flex-basis: 48%;
+        margin-bottom: 70px;
+        margin-top: 30px;
+    }
+    .c1-text{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 1.25em;
+    }
+    .container2{
+        flex-basis: 48%;
+        padding: 10px;
+        align-items: right;
+        align-content: right;
+        width: 100%;
+        height:auto;
+        margin-bottom: 70px;
+        margin-top: 30px;
+    }
+    .container3{
+    flex-basis: 48%;
+    padding: 10px;
+    width: 100%;
+    height:auto;
+    }   
+    .container4{
+        flex-basis: 48%;
+        padding: 10px;
+    }
+    h2{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        color:#4d008c;
+        font-size: 30px;
+        margin: 0;
+    }
+    .c4-text{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 1.25em;
+    }
+    a.button.large.purple{
+        border-radius: 5px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 1px;
+        background-color: #4d008c;
+        color: white;
+        font-size: 18px;
+        min-width: 220px;
+        padding: 10px 20px;
+    }
+/*BUBBLE LOOK INFORMATION*/
+    #info_bubble {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .gold-banner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: 310px;
+        background-image: url('Yellow banner 300h.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        width: 100vw;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .gold-banner h2{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        color:white;
+        margin: 0;
+    }
+    .bubble_1, .bubble_2, .bubble_3 {
+        border-radius: 50%;
+        background-color: #4d008c;
+        color: white;
+        width: 190px;
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    h3{
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
+    }
+/*CHAT WITH A STUDENT*/
+    /*Gray-ish box container*/
+    #chatbox{
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #e6e7e8;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2{
+        color:#4d008c;  
+    }
+    h4{
+        color:#4d008c;
+        margin-bottom: 30px; 
+    }
+    .box-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 200px;
+        list-style-type: none;
+        padding: 20px;
+    }
+/*box a with img of CRUnk*/
+    .boxa {
+        flex: 0 0 100%;
+        width: 50%;
+    }
+    .crunk_img{
+        width: 150px;
+    }
+    .boxb, .boxc {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+/*box b with the "hello! i am CRUnk" text bubble*/
+    .boxb{
+        justify-content: flex-start;
+        justify-items: left;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    .CRUnk_bubble{
+        display: flex;
+        border-radius: 15px 15px 15px 0;
+        margin: 5px;
+        padding: 1%;
+        min-width: 100px;
+        max-width: 150px;
+        background-color: #8461b6;
+    }
+    .CRUnk_text {
+        font-weight: 200;
+        color: white;
+        margin-left: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid white;
+        display: inline-block;
+        width: 0; /* Start with 0 width */
+        /* No animation initially */
+    }
+    
+    .start-animation {
+        animation: typing 4s steps(45, end), blink-caret 0.45s step-end infinite;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: white; }
+    }
+/*box c with the chat button*/        
+    .boxc{
+        justify-content: flex-end;
+        justify-items: right;
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+    .clickable-button{
+        background-color: #4d008c; 
+        color: #fcc425; 
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block; 
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .clickable-button:hover {
+        background-color: #ffc425;
+        color: #4d008c;
+    }
+/*modal itself when opened*/
+    .modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fcc425;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        width: 320px;                           /*Width when modal is opened adjust for different screens*/
+        min-height: min-content;
+        max-height: 600px;
+        overflow-y: auto;
+    }
+    .modal.open {
+        display: block;
+    }
+    .modal-content {
+        text-align: justify;
+    }
+    #message-container {
+        height: 300px;
+        overflow-y: auto;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .message {
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        max-width: 70%;
+        clear: both;
+    }
+    .user-message {
+        background-color: #4d008c;
+        color: white;
+        border-radius: 15px 15px 0px 15px;
+        float: right; 
+        text-align: right;
+    }
+    .bot-message {
+        background-color: #8461b6;
+        color: white;
+        border-radius: 15px 15px 15px 0;
+        float: left; 
+        text-align: left;
+    }
+    .input-area {
+        display: flex;
+        justify-content: space-between;
+    }
+    input[type="text"] {
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    button {
+        padding: 10px 15px;
+        background-color: #8461b6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    button:hover {
+        background-color: #4d008c;
+        color: white;
+    }
+    .close-modal {
+        background: #8461b6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .close-modal:hover {
+        background: #4d008c;
+        color:white;
+    }
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+    .overlay.open {
+        display: block;
+    }
+    .sticky {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+/*CARD CARROUSEL DESIGN*/
+    .carousel{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .carousel-container{
+        align-items: center;
+        display: flex;
+        height: 400px;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+    }
+    .card{
+        height:400px;
+        width: 325px;
+        margin: 0 10px;
+        border-radius: 25px;
+        color: white;
+        position: absolute;
+        background-size: contain;
+        background-color: #4d008c;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+    .card.selected{
+        transform: scale(1.2);
+        z-index: 1;
+    }
+    .card.unselected {
+        opacity: 0.8;
+        z-index: -1;
+    }
+    .card_header{
+    color: #ffc425;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    article{
+        font-family: 'Merriweather', serif;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.25em;
+    } 
+    .controls{
+        display: flex;
+        justify-content: center;
+        margin: 25px 0;
+        height: 100px;
+    }
+    .controls button{
+        color: black;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        font-size: 30px;
+        margin: 0 50px;
+        padding: 0 12px;
+        text-transform: capitalize;
+    }
+    .controls button:focus{
+        outline: none;
+    }
+    .contols-previous{
+        position:relative;
+    }
+    .prev:hover, .next:hover {
+        color: white;
+        background-color: #ffc425;
+    }   
+/*INFORMATION AND OFTEN ASKED QUESTIONS*/
+    .contact {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        text-align: left;
+        gap: 50px;
+        padding-top: 30px;
+    }
+    #info, #apply {
+        width: 200px;
+        height:30px;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #info a, #apply a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #info {
+        background-color: #ffc425;
+        color: #4d008c;
+        font-weight: bold;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    #apply {
+        background-color: #4d008c;
+        color: white;
+        font-weight: bold;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+}

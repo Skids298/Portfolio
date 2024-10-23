@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons"></a>
+        <link rel="stylesheet" href="/openAI.py" />
+        <script defer src="/openAI.py"></script>
+        <style>
+    /*Gray-ish box container*/
+            #chatbox{
+                width: 100%;
+                max-width: 500px;
+                margin: 0 auto;
+                background-color: #e6e7e8;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h2{
+                color:#4d008c;  
+            }
+            h4{
+                color:#4d008c;
+                margin-bottom: 30px; 
+            }
+            .box-wrapper {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 200px;
+                list-style-type: none;
+                padding: 20px;
+            }
+    /*box a with img of CRUnk*/
+            .boxa {
+                flex: 0 0 100%;
+                width: 50%;
+            }
+            img{
+                width: 150px;
+            }
+            .boxb, .boxc {
+                flex: 0 0 50%;
+                width: 50%;
+            }
+    /*box b with the "hello! i am CRUnk" text bubble*/
+            .boxb{
+                justify-content: flex-start;
+                justify-items: left;
+                align-items: flex-start;
+                align-content: flex-start;
+            }
+            .CRUnk_bubble{
+                display: flex;
+                border-radius: 15px 15px 15px 0;
+                margin: 5px;
+                padding: 1%;
+                min-width: 100px;
+                max-width: 150px;
+                background-color: #8461b6;
+            }
+            .CRUnk_text {
+                font-weight: 200;
+                color: white;
+                margin-left: 10px;
+                overflow: hidden;
+                white-space: nowrap;
+                border-right: 3px solid white;
+                display: inline-block;
+                animation: typing 4s steps(45,end), blink-caret 0.45s step-end infinite;
+                animation-fill-mode: forwards;
+            }
+            @keyframes typing {
+                from { width: 0; }
+                to { width:100%; }
+            }
+            @keyframes blink-caret {
+                from, to { border-color: transparent; }
+                50% { border-color: white; }
+            }
+    /*box c with the chat button*/        
+            .boxc{
+                justify-content: flex-end;
+                justify-items: right;
+                align-items: flex-end;
+                align-content: flex-end;
+            }
+            .clickable-button{
+                background-color: #4d008c; 
+                color: #fcc425; 
+                padding: 15px 32px;
+                text-align: center;
+                display: inline-block; 
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                cursor: pointer;
+                border-radius: 12px;
+            }
+            .clickable-button:hover {
+                background-color: #ffc425;
+                color: #4d008c;
+            }
+    /*modal itself when opened*/
+            .modal {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #fcc425;
+                padding: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                z-index: 1000;
+                width: 320px;                           /*Width when modal is opened adjust for different screens*/
+                min-height: min-content;
+                max-height: 600px;
+                overflow-y: auto;
+            }
+            .modal.open {
+                display: block;
+            }
+            .modal-content {
+                text-align: justify;
+            }
+            #message-container {
+                height: 300px;
+                overflow-y: auto;
+                padding: 10px;
+                background-color: #fff;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .message {
+                display: block;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 20px;
+                max-width: 70%;
+                clear: both;
+            }
+            .user-message {
+                background-color: #4d008c;
+                color: white;
+                border-radius: 15px 15px 0px 15px;
+                float: right; 
+                text-align: right;
+            }
+            .bot-message {
+                background-color: #8461b6;
+                color: white;
+                border-radius: 15px 15px 15px 0;
+                float: left; 
+                text-align: left;
+            }
+            .input-area {
+                display: flex;
+                justify-content: space-between;
+            }
+            input[type="text"] {
+                width: 80%;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+            button {
+                padding: 10px 15px;
+                background-color: #8461b6;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            button:hover {
+                background-color: #4d008c;
+                color: white;
+            }
+            .close-modal {
+                background: #8461b6;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            .close-modal:hover {
+                background: #4d008c;
+                color:white;
+            }
+            .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 999;
+            }
+            .overlay.open {
+                display: block;
+            }
+            .sticky {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1000;
+            }
+            .no-scroll {
+                overflow: hidden;
+            }
+            </style>
+    </head>
+    <body>
+        <div id="chatbox">
+            <h2>Any other question?</h2>
+            <h4>Ask CRUnk, mascot and now Computer Real-time User-assistant.</h4>
+            <div class="box-wrapper">
+                <div class="box1">
+                    <img src="/CRUnk.png" alt="CRUnk img">
+                </div>
+                <div class="boxb">
+                    <div class="CRUnk_bubble">
+                        <div class="CRUnk_text">
+                            Hello! I am CRUnk
+                        </div>
+                    </div>
+                </div>
+                <div class="boxc">
+                    <button class="clickable-button" onclick="centerImage(this)">Chat</button>        
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="modal">
+                        <div class="modal-content">                                     <!--information about the project-->
+                            <div id="message-container"></div>                          <!-- This will contain the chat messages -->
+                            <div class="input-area">
+                                <input type="text" id="userInput" placeholder="Type your message here">
+                                <button onclick="sendMessage()">></button>              <!--MAKE THE BUTTON THE ARROW IMG-->
+                            </div>
+                            <button class="close-modal" onclick="closeModal()">Close</button> <!--Close the modal-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        //id="codeGPTWidgetScript"
+        //type="module"
+        //async
+        //src="https://widget.codegpt.co/chat-widget.js"
+        //defer
+        //data-widget-id="64186fcb-3fff-4dd7-82d1-9e9a4bab8847">-->
+        
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the .CRUnk_text element
+            const crunkText = document.querySelector('.CRUnk_text');
+            // Set the duration of the typing animation (match CSS duration)
+            const typingDuration = 4000;
+            // Remove the caret after typing animation is done
+            setTimeout(function() {
+                crunkText.style.borderRight = "none"; 
+            }, typingDuration);
+            });
+    
+        //make the project image clickable
+        function centerImage(img) {
+            var modal = img.parentElement.querySelector('.modal');
+            var overlay = img.parentElement.querySelector('.overlay');
+            if (img.classList.contains('sticky')) {
+                img.classList.remove('sticky');
+                modal.classList.remove('open');
+                overlay.classList.remove('open');
+                document.body.classList.remove('no-scroll'); // Allow scrolling again
+            } else {
+                var existingStickyImage = document.querySelector('.sticky');
+            if (existingStickyImage) {
+                existingStickyImage.classList.remove('sticky');
+                existingStickyImage.parentElement.querySelector('.modal').classList.remove('open');
+                existingStickyImage.parentElement.querySelector('.overlay').classList.remove('open');
+            }
+            img.classList.add('sticky');
+            modal.classList.add('open');
+            overlay.classList.add('open');
+            document.body.classList.add('no-scroll'); // Prevent scrolling
+            }
+        }
+    //close the modal
+        function closeModal() {
+            var stickyImage = document.querySelector('.sticky');
+            if (stickyImage) {
+                stickyImage.classList.remove('sticky');
+                var modal = stickyImage.parentElement.querySelector('.modal');
+                var overlay = stickyImage.parentElement.querySelector('.overlay');
+                modal.classList.remove('open');
+                overlay.classList.remove('open');
+                document.body.classList.remove('no-scroll'); // Allow scrolling again
+            }
+        }
+    
+    //send and display message on screen
+    function sendMessage() {
+        const userInput = document.getElementById("userInput").value;
+        const messageContainer = document.getElementById("message-container");
+
+        if (userInput.trim() !== "") {
+            // Display user's message
+            const userMessage = document.createElement("div");
+            userMessage.classList.add("message", "user-message");
+            userMessage.textContent = userInput;
+            messageContainer.appendChild(userMessage);
+            messageContainer.scrollTop = messageContainer.scrollHeight;
+
+            // Send the message to the Flask API
+            fetch('/ask', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ question: userInput }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display the bot's response
+                const botMessage = document.createElement("div");
+                botMessage.classList.add("message", "bot-message");
+                botMessage.textContent = data.answer;  // AI assistant's response
+                messageContainer.appendChild(botMessage);
+                messageContainer.scrollTop = messageContainer.scrollHeight;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
+            // Clear input field
+            document.getElementById("userInput").value = "";
+        }
+    }
+        </script>
+    </body>
+</html>
