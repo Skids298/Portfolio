@@ -157,7 +157,57 @@
                             Close</button>                                          <!--Close the modal-->
                     </div>
                 </div>
-            </div> 
+            </div>
+            <div class="project-pic">                                               <!--PROJECT 3-->
+                <h3>UMHB website redesign</h3>
+                <picture class="clickable-image" onclick="centerImage(this)">       <!--Main image that is clickable for more info-->
+                    <source media="(max-width:375px)"
+                            srcset="/resume_website/IMG/Project/UMHB_website/UMHB_Secondary_1C-Purple_200w.png">
+                    <source media="(max-width:1024px)"
+                            srcset="/resume_website/IMG/Project/UMHB_website/UMHB_Secondary_1C-Purple_320w.png">
+                    <source media="(max-width:1305px)"
+                            srcset="/resume_website/IMG/Project/UMHB_website/UMHB_Secondary_1C-Purple_500w.png">
+                    <img src="/resume_website/IMG/Project/UMHB_website/UMHB_Secondary_1C-Purple_500w.png" alt="UMHB secondary logo">
+                </picture> 
+                <div class="overlay" id="overlay"></div>
+                <div class="modal" id="modal">
+                    <div class="modal-content">                                     <!--information about the project-->
+                        <video id="myVideo" controls muted>
+                            <source src="/resume_website/IMG/Project/UMHB_website/Recording 2024-10-23 105029.mp4" 
+                                    type="video/mp4">
+                        </video>
+                        <script>
+                            const video = document.getElementById('myVideo');           //wait for video to play when it is in view
+                            const observer = new IntersectionObserver((entries) => {
+                                entries.forEach(entry => {
+                                    if (entry.isIntersecting) {
+                                        if (entry.intersectionRatio === 1) {            // Check if the bottom of the video is visible                                       
+                                            video.play();                               // Play the video when the bottom is fully in view
+                                        }
+                                    } 
+                                    else {
+                                        video.pause();
+                                    }
+                                });
+                            }, {
+                                threshold: 1.0
+                            });
+                            observer.observe(video);                                    // Observe the video element
+                        </script>
+                        <p>
+                            Since I have been working for my internship at school I had been tasked
+                            to make a potential new layout for the website, 
+                            specifically the pages that talk about the majors in more dept.
+                            I only needed to redisign the computer science page and 
+                            started out looking at the current design. 
+                            Looking and thinking about ways to improving and I got to work.
+                            This is the final result.
+                        </p>
+                        <button class="close-modal" onclick="closeModal()">
+                            Close</button>                                          <!--Close the modal-->
+                    </div>
+                </div>
+            </div>  
         </div>
     </div>
     <script src="/resume_website/JavaScript.js"></script>
